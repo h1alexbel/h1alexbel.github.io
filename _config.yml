@@ -1,1 +1,69 @@
 theme: jekyll-theme-minimal
+title: Aliaksei @h1alexbel Bialiauski's blog
+email: abialiauski.dev@gmail.com
+description: Personal blog of Aliaksei @h1alexbel Bialiauski about programming.
+url: "https://www.h1alexbel.com"
+twitter_username: h1alexbel
+github_username: h1alexbel
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
+author:
+  first_name: "Aliaksei"
+  last_name: "Bialiauski"
+  username: "h1alexbel"
+  gender: "male"
+  email: abialiauski.dev@gmail.com
+encoding: utf-8
+timezone: Europe/Minsk
+permalink: :year/:month/:day/:title.html
+exclude:
+  - README.md
+  - Gemfile.lock
+  - Gemfile
+  - Rakefile
+  - LICENSE.txt
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+plugins:
+  - jekyll-feed
+  - jekyll-bits
+  - jekyll-paginate
+  - jekyll-plantuml
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jekyll-related-posts
+paginate: 8
+paginate_path: "p/:num"
+excerpt_separator: <!--more-->
+feed:
+  title: Aliaksei @h1alexbel Bialiauski's blog
+  subtitle: Personal blog of Aliaksei @h1alexbel Bialiauski about computers.
+  path: rss.xml
+sass:
+  style: compressed
+  deploy_style: compressed
+  compile_in_place: false
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+      title: Aliaksei @h1alexbel Bialiauski's blog
+      description: Personal blog of Aliaksei @h1alexbel Bialiauski about computers.
+  - scope:
+      path: "static"
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
