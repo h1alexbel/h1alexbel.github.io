@@ -11,7 +11,7 @@
 </head>
 <body class="body">
 <div class="center">
-    <img src="photo-modified.png" width="250" height="250">
+    <img src="images/photo-modified.png" width="250" height="250">
 </div>
 <div class="center">
     <p>
@@ -48,3 +48,48 @@
 </div>
 </body>
 </html>
+
+---
+keywords:
+- blog
+- driver733
+---
+
+{% for post in paginator.posts %}
+<article class="article-preview">
+    {{ post.date | date: "%B %-d, %Y" }}
+    <a href="{{ site.url }}{{ post.url }}#disqus_thread" class="inline-element a-black" data-proofer-ignore>comments</a>
+    <h1>
+        <a href="{{ site.baseurl }}{{ post.url }}">
+            {{ post.title }}
+        </a>
+    </h1>
+    {{ post.excerpt }}
+    <figure>
+        <img src="{{ post.figure }}"
+             alt="{{ post.figalt }}">
+        <figcaption>{{ post.figcaption }}</figcaption>
+    </figure>
+    <a href="{{ site.baseurl }}{{ post.url }}" class="btn btn-outline-info btn-read" role="button">
+        Read <span class="fas fa-long-arrow-alt-right"></span>
+    </a>
+</article>
+{% endfor %}
+
+<article class="center">
+    {% if paginator.previous_page %}
+    {% if paginator.previous_page == 1 %}
+    <a href="/">&lt;&lt;</a>
+    {% else %}
+    <a href="/p/{{ paginator.previous_page }}">&lt;&lt;</a>
+    {% endif %}
+    {% else %}
+    <span class="mute">&lt;&lt;</span>
+    {% endif %}
+    page {{ paginator.page }} of {{ paginator.total_pages }}
+    {% if paginator.next_page %}
+    <a href="/p/{{ paginator.next_page }}">&gt;&gt;</a>
+    {% else %}
+    <span class="mute">&gt;&gt;</span>
+    {% endif %}
+</article>
