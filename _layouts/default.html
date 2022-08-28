@@ -15,12 +15,13 @@ layout: compress
           data-proofer-ignore>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
           integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/css/main.css"/>
-    <link rel="stylesheet" href="/assets/css/code.css"/>
+    <link rel="stylesheet" href="../assets/css/default.scss"/>
+    <link rel="stylesheet" href="../assets/css/code.scss"/>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<!--    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">-->
+<!--    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">-->
     <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" href="../photo-modified.png">
     <meta name="google-site-verification" content="Jia5aHWAjnEe6vdzKMhbJFc71-Rgewomm3tl7V1mM24"/>
     <meta name="keywords" content="{{ page.keywords | join:', ' | xml_escape }}"/>
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1"/>
@@ -42,8 +43,8 @@ layout: compress
     <meta name="twitter:image:width" content="1600">
     <meta name="twitter:image:height" content="900">
     <meta name="twitter:account_id" content="1022440692541517825"/>
-    <meta name="twitter:creator" content="@driver733"/>
-    <meta name="twitter:site" content="@driver733"/>
+    <meta name="twitter:creator" content="@h1alexbel"/>
+    <meta name="twitter:site" content="@h1alexbel"/>
     <meta name="twitter:title" property="og:title" content="{{ page.title }}"/>
     <meta name="twitter:description" property="og:description" content="{{ page.description }}"/>
     <meta name="twitter:url" property="og:url" content="{{ site.url }}{{ page.url }}"/>
@@ -51,8 +52,14 @@ layout: compress
     <meta property="og:image" content="{{ site.url }}{{ page.figure }}"/>
     <meta property="og:image:secure_url" content="{{ site.url }}{{ page.figure }}"/>
     <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/body.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/name.css">
+    <link rel="stylesheet" href="../assets/css/speciality.css">
 </head>
 <body>
+<div class="center">
 <section>
     <header>
         <ul>
@@ -60,30 +67,32 @@ layout: compress
             <li><a href="/about.html" class="text-info">About</a></li>
         </ul>
         </nav>
-        <nav class="header-middle">
-            <ul>
-                <li><a class="social text-info fab fa-twitter notranslate" title="Follow me on Twitter"
-                       href="https://twitter.com/driver733"></a></li>
-                <li><a class="social text-info fab fa-facebook-f notranslate" title="Follow me on Facebook"
-                       href="https://www.facebook.com/driver733"></a></li>
-                <li><a class="social text-info fab fa-telegram notranslate" title="Text me in Telegram"
-                       href="https://t.me/driver733" data-proofer-ignore></a></li>
-                <li><a class="social text-info fab fa-github  notranslate" title="My GitHub profile"
-                       href="https://github.com/driver733"></a></li>
-                <li><a class="social text-info fab fa-stack-overflow notranslate" title="My StackOverflow profile"
-                       href="https://stackoverflow.com/users/2441104/driver733"></a></li>
-                <li><a class="social text-info fas fa-rss notranslate" title="Subscribe to my RSS feed" href="{{ "/rss.xml"
-                    | prepend: site.baseurl }}"></a></li>
-                <li><a class="social text-info fas fa-envelope notranslate" title="Email me"
-                       href="mailto:yakushin@terpmail.umd.edu"></a></li>
-            </ul>
-        </nav>
+        <div class="center">
+<!--            <ul>-->
+                <p>
+                    <a class="social text-info fab fa-twitter notranslate" title="Follow me on Twitter"
+                       href="https://twitter.com/h1alexbel"></a>
+                </p>
+                <p>
+                    <a class="social text-info fab fa-telegram notranslate" title="Text me in Telegram"
+                       href="https://t.me/abialiauskiJavaDev" data-proofer-ignore></a>
+                </p>
+                <p><a class="social text-info fab fa-github  notranslate" title="My GitHub profile"
+                       href="https://github.com/h1alexbel"></a></p>
+                <p><a class="social text-info fab fa-stack-overflow notranslate" title="My StackOverflow profile"
+                       href="https://stackoverflow.com/users/19147117/abialiauski"></a></p>
+                <p><a class="social text-info fas fa-rss notranslate" title="Subscribe to my RSS feed" href="{{ "/rss.xml"
+                    | prepend: site.baseurl }}"></a></p>
+                <p><a class="social text-info fas fa-envelope notranslate" title="Email me"
+                       href="mailto:abialiauski.dev@gmail.com"></a></p>
+<!--            </ul>-->
+        </div>
         <nav class="header-bottom">
             <div class="search">
                 <form method="get" action="https://www.google.com/search"
                       itemprop="potentialAction" itemscope="" itemtype="http://schema.org/SearchAction">
                     <meta itemprop="target" content="https://www.google.com/search?q={q}"/>
-                    <input name="sitesearch" value="driver733.com" type="hidden"/>
+                    <input name="sitesearch" value="h1alexbel.com" type="hidden"/>
                     <input itemprop="query-input" type="text" id="search-query" class="field field-text"
                            required="required"
                            name="q" placeholder="Search..." autocomplete="off"/>
@@ -95,12 +104,13 @@ layout: compress
     <footer>
         (c)
         <span itemscope="" itemtype="http://schema.org/Person">
-          <span itemprop="name">Mikhail Yakushin</span>
+          <span itemprop="name">Aliaksei Bialiauski</span>
         </span>
         <br/>
-        2018
+        2022
     </footer>
 </section>
+</div>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127781126-1"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
