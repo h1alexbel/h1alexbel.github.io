@@ -39,7 +39,7 @@ plugins:
   - jekyll-redirect-from
   - jekyll-related-posts
 paginate: 8
-paginate_path: "/blog/p/:num"
+paginate_path: "/p/:num"
 excerpt_separator: <!--more-->
 feed:
   title: Aliaksei @h1alexbel Bialiauski's blog
