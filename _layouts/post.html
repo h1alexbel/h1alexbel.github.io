@@ -1,25 +1,24 @@
-<!-- -&#45;&#45;-->
-<!--layout: default-->
-<!--amp: true-->
-<!-- -&#45;&#45;-->
+---
+layout: default
+---
 
 <article itemscope="" itemtype="http://schema.org/BlogPosting">
-    <div itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject">
-    <meta itemprop="url" content="{{ site.url }}/images/tomato.png"/>
-    <meta itemprop="height" content="250"/>
-    <meta itemprop="width" content="250"/>
-    </div>
+    <!--<div itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject">-->
+    <!--<meta itemprop="url" content="{{ site.url }}/images/tomato.png"/>-->
+    <!--<meta itemprop="height" content="250"/>-->
+    <!--<meta itemprop="width" content="250"/>-->
+    <!--</div>-->
     <meta itemprop="image" content=""/>
     <div itemscope="" itemprop="author" itemtype="http://schema.org/Person">
         <meta itemprop="name" content="Mikhail Yakushin"/>
     </div>
     <div itemscope="" itemprop="publisher" itemtype="http://schema.org/Organization">
         <meta itemprop="name" content="driver733's blog"/>
-        <div itemprop="logo" itemscope="" itemtype="http://schema.org/ImageObject">
-        <meta itemprop="url" content="{{ site.url }}/images/tomato.png"/>
-        <meta itemprop="height" content="250"/>
-        <meta itemprop="width" content="250"/>
-        </div>
+        <!--<div itemprop="logo" itemscope="" itemtype="http://schema.org/ImageObject">-->
+        <!--<meta itemprop="url" content="{{ site.url }}/images/tomato.png"/>-->
+        <!--<meta itemprop="height" content="250"/>-->
+        <!--<meta itemprop="width" content="250"/>-->
+        <!--</div>-->
     </div>
     <div class="inline-element-first">
         <time
@@ -94,7 +93,7 @@
        data-proofer-ignore>
         <img class="share-icon circular"
              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjWKdVE9MBBLKSWROP_FR-MBEYM_YQ1-7MqoRwWnh8u9gCAJH3"
-             alt="Hacker News"/>
+             alt="Hacker News" />
     </a>
 
     <!--Telegram-->
@@ -115,7 +114,7 @@
        title="VK">
         <img class="share-icon"
              src="https://simplesharebuttons.com/images/somacro/vk.png"
-             alt="VK"/>
+             alt="VK" />
     </a>
 
     <!--Email-->
@@ -135,7 +134,7 @@
         this.page.url = document.location.href.split('?')[0].split('#')[0];
         this.page.identifier = this.page.url;
     };
-    (function () {
+    (function() {
         var d = document, s = d.createElement('script');
         s.src = '//driver733.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
