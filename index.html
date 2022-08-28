@@ -50,99 +50,129 @@
 <!--</html>-->
 
 
+<!-- -&#45;&#45;-->
+<!--layout: default-->
+<!--title: "Yegor's Blog About Computers"-->
+<!--description: |-->
+<!--Yegor Bugayenko blogging about object-oriented programming, Java,-->
+<!--project management, philosophy, and startup investments;-->
+<!--at least one new post every week.-->
+<!--image: /images/face-1200x1200.jpg-->
+<!--sitemap: false-->
+<!--keywords:-->
+<!-- - java blog-->
+<!-- - java-->
+<!-- - software development blog-->
+<!-- - programming blog-->
+<!-- - yegor bugayenko blog-->
+<!-- - quality of software-->
+<!-- - software blog-->
+<!-- - high quality programming-->
+<!-- -&#45;&#45;-->
+
+<!--<div itemscope="" itemtype="http://schema.org/Blog">-->
+<!--    {% for post in paginator.posts %}-->
+<!--    {% if post.noindex %}-->
+<!--    {% else %}-->
+<!--    <div class="wrapper">-->
+<!--        <section class="front" itemprop="blogPosts" itemscope="" itemtype="http://schema.org/BlogPosting">-->
+<!--            <article>-->
+<!--                <header>-->
+<!--                    <h1>-->
+<!--                        <a href="{{ post.url }}">-->
+<!--                            <span itemprop="name headline mainEntityOfPage">{{ post.title }}</span>-->
+<!--                        </a>-->
+<!--                    </h1>-->
+<!--                    <ul class="subline">-->
+<!--                        <li>-->
+<!--                            <time itemprop="datePublished dateModified" datetime="{{ post.date | date_to_xmlschema }}">-->
+<!--                                {{ post.date | date: "%-d %B %Y" }}-->
+<!--                            </time>-->
+<!--                        </li>-->
+<!--                        <li itemprop="wordCount">-->
+<!--                            {{ post.content | number_of_words | append: ' words' }}-->
+<!--                        </li>-->
+<!--                        <li>-->
+<!--                            {% capture words %}-->
+<!--                            {{ post.content | number_of_words | minus: 180 }}-->
+<!--                            {% endcapture %}-->
+<!--                            {% unless words contains '-' %}-->
+<!--                            {{ words | plus: 180 | divided_by: 180 | append: ' minutes to read' }}-->
+<!--                            {% endunless %}-->
+<!--                        </li>-->
+<!--                        <li>-->
+<!--                            <i class="icon icon-comments"></i>-->
+<!--                            <a href="{{ site.url }}{{ post.url }}#disqus_thread" itemprop="discussionUrl">comments</a>-->
+<!--                        </li>-->
+<!--                    </ul>-->
+<!--                </header>-->
+<!--                <div class="main" itemprop="description">-->
+<!--                    {{ post.excerpt }}-->
+<!--                </div>-->
+<!--                <p>-->
+<!--                    <a href="{{ post.url }}" itemprop="url">-->
+<!--                        Continue...-->
+<!--                    </a>-->
+<!--                </p>-->
+<!--            </article>-->
+<!--        </section>-->
+<!--    </div>-->
+<!--    {% endif %}-->
+<!--    {% endfor %}-->
+<!--</div>-->
+
+<!--<div class="wrapper">-->
+<!--    <footer>-->
+<!--        <div class="pagination">-->
+<!--            <div class="left">-->
+<!--                {% if paginator.previous_page %}-->
+<!--                {% if paginator.previous_page == 1 %}-->
+<!--                <a href="/"><i class="icon icon-fast-backward"></i></a>-->
+<!--                {% else %}-->
+<!--                <a href="/p/{{ paginator.previous_page }}"><i class="icon icon-fast-backward"></i></a>-->
+<!--                {% endif %}-->
+<!--                {% else %}-->
+<!--                <span class="mute"><i class="icon icon-fast-backward"></i></span>-->
+<!--                {% endif %}-->
+<!--            </div>-->
+<!--            page {{ paginator.page }} of {{ paginator.total_pages }}-->
+<!--            <div class="right">-->
+<!--                {% if paginator.next_page %}-->
+<!--                <a href="/p/{{ paginator.next_page }}"><i class="icon icon-fast-forward"></i></a>-->
+<!--                {% else %}-->
+<!--                <span class="mute"><i class="icon icon-fast-forward"></i></span>-->
+<!--                {% endif %}-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </footer>-->
+<!--</div>-->
 ---
 layout: default
-title: "Yegor's Blog About Computers"
-description: |
-Yegor Bugayenko blogging about object-oriented programming, Java,
-project management, philosophy, and startup investments;
-at least one new post every week.
-image: /images/face-1200x1200.jpg
-sitemap: false
-keywords:
-- java blog
-- java
-- software development blog
-- programming blog
-- yegor bugayenko blog
-- quality of software
-- software blog
-- high quality programming
+title: My Blog
 ---
 
-<div itemscope="" itemtype="http://schema.org/Blog">
-    {% for post in paginator.posts %}
-    {% if post.noindex %}
-    {% else %}
-    <div class="wrapper">
-        <section class="front" itemprop="blogPosts" itemscope="" itemtype="http://schema.org/BlogPosting">
-            <article>
-                <header>
-                    <h1>
-                        <a href="{{ post.url }}">
-                            <span itemprop="name headline mainEntityOfPage">{{ post.title }}</span>
-                        </a>
-                    </h1>
-                    <ul class="subline">
-                        <li>
-                            <time itemprop="datePublished dateModified" datetime="{{ post.date | date_to_xmlschema }}">
-                                {{ post.date | date: "%-d %B %Y" }}
-                            </time>
-                        </li>
-                        <li itemprop="wordCount">
-                            {{ post.content | number_of_words | append: ' words' }}
-                        </li>
-                        <li>
-                            {% capture words %}
-                            {{ post.content | number_of_words | minus: 180 }}
-                            {% endcapture %}
-                            {% unless words contains '-' %}
-                            {{ words | plus: 180 | divided_by: 180 | append: ' minutes to read' }}
-                            {% endunless %}
-                        </li>
-                        <li>
-                            <i class="icon icon-comments"></i>
-                            <a href="{{ site.url }}{{ post.url }}#disqus_thread" itemprop="discussionUrl">comments</a>
-                        </li>
-                    </ul>
-                </header>
-                <div class="main" itemprop="description">
-                    {{ post.excerpt }}
-                </div>
-                <p>
-                    <a href="{{ post.url }}" itemprop="url">
-                        Continue...
-                    </a>
-                </p>
-            </article>
-        </section>
-    </div>
-    {% endif %}
-    {% endfor %}
+<!-- This loops through the paginated posts -->
+{% for post in paginator.posts %}
+<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+<p class="author">
+    <span class="date">{{ post.date }}</span>
+</p>
+<div class="content">
+    {{ post.content }}
 </div>
+{% endfor %}
 
-<div class="wrapper">
-    <footer>
-        <div class="pagination">
-            <div class="left">
-                {% if paginator.previous_page %}
-                {% if paginator.previous_page == 1 %}
-                <a href="/"><i class="icon icon-fast-backward"></i></a>
-                {% else %}
-                <a href="/p/{{ paginator.previous_page }}"><i class="icon icon-fast-backward"></i></a>
-                {% endif %}
-                {% else %}
-                <span class="mute"><i class="icon icon-fast-backward"></i></span>
-                {% endif %}
-            </div>
-            page {{ paginator.page }} of {{ paginator.total_pages }}
-            <div class="right">
-                {% if paginator.next_page %}
-                <a href="/p/{{ paginator.next_page }}"><i class="icon icon-fast-forward"></i></a>
-                {% else %}
-                <span class="mute"><i class="icon icon-fast-forward"></i></span>
-                {% endif %}
-            </div>
-        </div>
-    </footer>
+<!-- Pagination links -->
+<div class="pagination">
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+    {% else %}
+    <span class="previous">Previous</span>
+    {% endif %}
+    <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+    {% else %}
+    <span class="next ">Next</span>
+    {% endif %}
 </div>
