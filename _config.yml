@@ -16,7 +16,7 @@ author:
   username: "h1alexbel"
   gender: "male"
   email: abialiauski.dev@gmail.com
-encoding: utf-8
+encoding: UTF-8
 timezone: Europe/Minsk
 permalink: :year/:month/:day/:title.html
 exclude:
