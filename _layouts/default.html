@@ -1,7 +1,6 @@
 ---
 layout: compress
 ---
-
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
       lang="en-US" xml:lang="en-US"
@@ -35,58 +34,60 @@ layout: compress
     <link rel="stylesheet" href="../assets/css/col.css">
 </head>
 <body>
-<section>
-    <header>
-        <div class="row">
-            <div class="column">
-                <a href="/" class="text-info">Home</a>
-            </div>
-            <div class="column">
-                <a href="http://h1alexbel.github.io/about-me.html" class="text-info">About</a>
-            </div>
+<div class="wrapper">
+    <aside class="header-toggle unprintable" id="header-toggle" title="Menu"
+           onclick="$('#header').show();$('#header-toggle').hide();">&#9776;</aside>
+    <header class="header" id="header">
+        <div class="face">
+            <a href="/">
+                <img src="../photo-modified.png" class="photo" alt="Aliaksei Bialiauski"/>
+            </a>
         </div>
-        <div class="row">
-            <div class="column">
-                <p>
-                    <a class="social text-info fab fa-twitter notranslate" title="Follow me on Twitter"
-                       href="https://twitter.com/h1alexbel"></a>
-                </p>
-            </div>
-            <div class="column">
-                <p><a class="social text-info fab fa-github  notranslate" title="My GitHub profile"
-                      href="https://github.com/h1alexbel"></a></p>
-            </div>
-            <div class="column">
-                <p><a class="social text-info fab fa-stack-overflow notranslate" title="My StackOverflow profile"
-                      href="https://stackoverflow.com/users/19147117/abialiauski"></a>
-                </p>
-            </div>
-        </div>
-        <div class="center">
-            <nav class="header-bottom">
-                <div class="search">
-                    <form method="get" action="https://www.google.com/search"
-                          itemprop="potentialAction" itemscope="" itemtype="http://schema.org/SearchAction">
-                        <meta itemprop="target" content="https://www.google.com/search?q={q}"/>
-                        <input name="sitesearch" value="h1alexbel.com" type="hidden"/>
-                        <input itemprop="query-input" type="text" id="search-query" class="field field-text"
-                               required="required"
-                               name="q" placeholder="Search..." autocomplete="off"/>
-                    </form>
-                </div>
-            </nav>
+        <nav>
+            <ul class="menu social notranslate">
+                <li><a title="Home" href="/"></a></li>
+                <li><a href="" rel="nofollow"
+                       title="About Me"></a></li>
+                <li><a href="" rel="nofollow"
+                       title="GitHub"><i class="icon icon-github notranslate" aria-hidden="true"></i></a></li>
+                <li><a href="" rel="nofollow"
+                       title="Stack Overflow"><i class="icon icon-stackoverflow notranslate" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/intent/follow?screen_name=h1alexbel" rel="nofollow"
+                       title="Twitter"><i class="icon icon-twitter notranslate" aria-hidden="true"></i></a></li>
+                <li><a href="https://t.me/abialiauskiJavaDev" rel="nofollow"
+                       title="Telegram"><i class="icon icon-telegram notranslate" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/yegor256" rel="nofollow"
+                       title="LinkedIn"><i class="icon icon-linkedin notranslate" aria-hidden="true"></i></a></li>
+            </ul>
+            <ul class="menu">
+                <li><a href="/"
+                       title="Home">Home</a></li>
+                <li><a href="/contents.html"
+                       title="{{ site.posts.size }} Posts">Posts</a></li>
+                <li><a href="http://www.h1alexbel.github.io/about-me.html"
+                       title="Подробнее об авторе">About Me</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <form method="get" action="https://www.google.com/search">
+                <input name="sitesearch" value="h1alexbel.github.io" type="hidden"/>
+                <input type="text" id="search-query" class="field field-text"
+                       onfocus="$('.google').css('visibility', 'visible');" name="q" placeholder="Search..." autocomplete="off"/>
+                <input type="image" src="//www.yegor256.com/images/google-search-icon.svg" class="google"
+                       title="Google Search" alt="Google Search"/>
+            </form>
         </div>
     </header>
-    {{ content }}
-    <footer>
-        (c)
-        <span itemscope="" itemtype="http://schema.org/Person">
+</div>
+{{ content }}
+<div class="wrapper unprintable" style="text-align:center;margin-top:2em;">
+    (c)
+    <span itemscope="" itemtype="http://schema.org/Person">
           <span itemprop="name">Aliaksei Bialiauski</span>
         </span>
-        <br/>
-        2022
-    </footer>
-</section>
+    <br/>
+    2022
+</div>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127781126-1"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
@@ -98,5 +99,7 @@ layout: compress
     gtag('js', new Date());
     gtag('config', 'UA-127781126-1');
 </script>
+<script src="//code.jquery.com/jquery-1.9.0.min.js"></script>
+<script src="//www.yegor256.com/js/all.js?{{ site.data['hash'] }}"></script>
 </body>
 </html>

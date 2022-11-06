@@ -7,9 +7,3 @@ rss.xml
 sitemap.xml
 assets/css/main.css
 assets/css/code.css
-2018/07/27/props-file.html
-2018/10/08/entity-and-dto.html
-2018/10/11/information-vs-data.html
-2018/10/21/dtos-lead-to-temporal-coupling.html
-2018/10/28/orm-alternative.html
-2018/11/05/256-bloghacks-book-review.html

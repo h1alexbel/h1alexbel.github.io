@@ -2,148 +2,141 @@
 layout: default
 ---
 
-<article itemscope="" itemtype="http://schema.org/BlogPosting">
-    <!--<div itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject">-->
-    <!--<meta itemprop="url" content="{{ site.url }}/images/tomato.png"/>-->
-    <!--<meta itemprop="height" content="250"/>-->
-    <!--<meta itemprop="width" content="250"/>-->
-    <!--</div>-->
-    <meta itemprop="image" content=""/>
-    <div itemscope="" itemprop="author" itemtype="http://schema.org/Person">
-        <meta itemprop="name" content="Mikhail Yakushin"/>
+<section itemscope="" itemtype="http://schema.org/BlogPosting">
+    <div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+        <meta itemprop="author" content="{{ site.author.name }}">
+        <meta itemprop="itemReviewed" content="{{ site.url }}{{ page.url }}">
+        <div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+            <meta itemprop="ratingValue" content="9"/>
+            <meta itemprop="bestRating" content="10"/>
+        </div>
+    </div>
+    <div itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject">
+        <meta itemprop="url" content="http://www.yegor256.com/images/yegor-bugayenko-192x192.png"/>
+        <meta itemprop="height" content="192"/>
+        <meta itemprop="width" content="192"/>
     </div>
     <div itemscope="" itemprop="publisher" itemtype="http://schema.org/Organization">
-        <meta itemprop="name" content="driver733's blog"/>
-        <!--<div itemprop="logo" itemscope="" itemtype="http://schema.org/ImageObject">-->
-        <!--<meta itemprop="url" content="{{ site.url }}/images/tomato.png"/>-->
-        <!--<meta itemprop="height" content="250"/>-->
-        <!--<meta itemprop="width" content="250"/>-->
-        <!--</div>-->
+        <meta itemprop="name" content="yegor256.com"/>
+        <div itemprop="logo" itemscope="" itemtype="http://schema.org/ImageObject">
+            <meta itemprop="url" content="../photo-modified.png"/>
+            <meta itemprop="height" content="192"/>
+            <meta itemprop="width" content="192"/>
+        </div>
     </div>
-    <div class="inline-element-first">
-        <time
-                itemprop="datePublished dateModified"
-                datetime="{{ page.date | date_to_xmlschema }}">
-            {{ page.date | date: "%B %-d, %Y" }}
-        </time>
+
+    <div class="wrapper">
+        <header>
+            <p class="printable">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?data={{ site.url }}{{ page.url }}&amp;format=svg"
+                     style="width:125px;height:125px;" alt="QR code"/>
+            </p>
+            <p class="printable">
+                <code itemprop="url">{{ site.url }}{{ page.url }}</code>
+            </p>
+            <h1 itemprop="name headline mainEntityOfPage">{{ page.title }}</h1>
+            {% if page.book %}
+            {{ page.book | book }}
+            {% endif %}
+            <ul class="subline">
+                <li>
+                    <time itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}">
+                        {% assign m = page.date | date: "%-m" %}
+                        {{ page.date | date: "%-d" }}
+                        {% case m %}
+                        {% when '1' %}jan
+                        {% when '2' %}feb
+                        {% when '3' %}march
+                        {% when '4' %}apr
+                        {% when '5' %}may
+                        {% when '6' %}jun
+                        {% when '7' %}jul
+                        {% when '8' %}aug
+                        {% when '9' %}sep
+                        {% when '10' %}oct
+                        {% when '11' %}nov
+                        {% when '12' %}dec
+                        {% endcase %}
+                        {{ page.date | date: "%Y" }}
+                    </time>
+                </li>
+                {% if page.place %}
+                <li class="desktop-only" itemprop="locationCreated">{{ page.place }}</li>
+                {% endif %}
+                <li class="printable" itemscope="" itemprop="author" itemtype="http://schema.org/Person">
+                    <span itemprop="name">Aliaksei Bialiauski</span>
+                </li>
+                <li class="unprintable">
+                    <i class="icon icon-comments"></i>
+                    <a href="{{ site.url }}{{ page.url }}#disqus_thread" itemprop="discussionUrl">comments</a>
+                </li>
+            </ul>
+            <div class="buttons notranslate desktop-only">
+                <nav class="share">
+                    <a href="http://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}"
+                       title="Facebook" class="button" rel="nofollow">
+                        <span class="count count-facebook">0</span>
+                        <i class="icon icon-facebook notranslate" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://twitter.com/share?url={{ site.url }}{{ page.url }}&amp;text={{ page.title | cgi_escape }}"
+                       title="Twitter" class="button" rel="nofollow">
+                        <span class="count count-twitter">0</span>
+                        <i class="icon icon-twitter notranslate" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/cws/share?url={{ site.url }}{{ page.url }}"
+                       title="LinkedIn" class="button" rel="nofollow">
+                        <span class="count count-linkedin">0</span>
+                        <i class="icon icon-linkedin notranslate" aria-hidden="true"></i>
+                    </a>
+                    <a href="http://reddit.com/submit?url={{ site.url }}{{ page.url }}%3F{{ page.date | date: "%Y-%U" }}&amp;title={{ page.title | cgi_escape }}"
+                    title="Reddit" class="button" rel="nofollow">
+                    <span class="count count-reddit">0</span>
+                    <i class="icon icon-reddit notranslate" aria-hidden="true"></i>
+                    </a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <article class="main" itemprop="articleBody">
+                {{ content }}
+            </article>
+        </main>
     </div>
-    <div class="inline-element">
-        <a href="{{ site.url }}{{ page.url }}#disqus_thread" class="a-black" data-proofer-ignore>comments</a>
+
+    <div class="disqus" role="complementary">
+        <div id="disqus_thread" class="disqus-thread"></div>
+        <script>
+            var disqus_config = function () {
+                this.page.url = document.location.href.split('?')[0].split('#')[0];
+                this.page.identifier = this.page.url;
+            };
+            (function() {
+                var d = document, s = d.createElement('script');
+                s.src = '//ru-yegor256-com.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>
+            <div>
+                <p class="red">
+                    JavaScript is disabled in your browser,
+                    that's why you can't see comments under this post.
+                </p>
+            </div>
+        </noscript>
     </div>
-    <h1 itemprop="name headline mainEntityOfPage">{{ page.title }}</h1>
-    {{ page.excerpt }}
-    <figure>
-        <img src="{{ page.figure }}"
-             alt="{{ page.figalt }}"
-             width="650"
-             height="325">
-        <figcaption>{{ page.figcaption }}</figcaption>
-    </figure>
-    {{ content | remove: page.excerpt }}
-</article>
-<div class="share-buttons">
 
-    <!-- Twitter -->
-    <a href="https://twitter.com/share?url={{site.url}}{{page.url}}&amp;text={{ page.title | url_encode }}%0A{{ page.description | url_encode }}"
-       target="_blank"
-       role="button"
-       title="Twitter">
-        <img class="share-icon"
-             src="https://simplesharebuttons.com/images/somacro/twitter.png"
-             alt="Twitter"/>
-    </a>
+    <div class="wrapper">
+        <footer class="footer">
+            <p>
+                &copy;
+                <span itemscope="" itemprop="copyrightHolder" itemtype="http://schema.org/Person">
+          <span itemprop="name">Aliaksei Bialiauski</span>
+        </span>,
+                2014-<span itemprop="copyrightYear">2022</span>
+            </p>
+        </footer>
+    </div>
 
-    <!-- Facebook -->
-    <a href="http://www.facebook.com/sharer.php?u={{site.url}}{{page.url}}"
-       target="_blank"
-       role="button"
-       title="Facebook"
-       data-proofer-ignore>
-        <img class="share-icon"
-             src="https://simplesharebuttons.com/images/somacro/facebook.png"
-             alt="Facebook"/>
-    </a>
-
-    <!--Reddit -->
-    <a href="http://reddit.com/submit?url={{site.url}}{{page.url}}&amp;title={{ page.title | url_encode }}"
-       target="_blank"
-       role="button"
-       title="Reddit">
-        <img class="share-icon"
-             src="https://simplesharebuttons.com/images/somacro/reddit.png"
-             alt="Reddit"/>
-    </a>
-
-    <!--LinkedIn -->
-    <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{site.url}}{{page.url}}"
-       target="_blank"
-       role="button"
-       title="LinkedIn"
-       data-proofer-ignore>
-        <img class="share-icon"
-             src="https://simplesharebuttons.com/images/somacro/linkedin.png"
-             alt="LinkedIn"/>
-    </a>
-
-    <!--Hacker News-->
-    <a href="https://news.ycombinator.com/submitlink?u={{site.url}}{{page.url}}&t={{ page.title | url_encode }}"
-       target="_blank"
-       role="button"
-       title="Hacker News"
-       data-proofer-ignore>
-        <img class="share-icon circular"
-             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjWKdVE9MBBLKSWROP_FR-MBEYM_YQ1-7MqoRwWnh8u9gCAJH3"
-             alt="Hacker News" />
-    </a>
-
-    <!--Telegram-->
-    <a href="https://telegram.me/share/url?url={{ site.url }}{{ page.url }}&text={{ page.title | url_encode }}"
-       target="_blank"
-       role="button"
-       title="Telegram"
-       data-proofer-ignore>
-        <img class="share-icon"
-             src="http://www.stickpng.com/assets/images/5842a8fba6515b1e0ad75b03.png"
-             alt="Telegram"/>
-    </a>
-
-    <!--VK -->
-    <a href="http://vk.com/share.php?url={{site.url}}{{page.url}}"
-       target="_blank"
-       role="button"
-       title="VK">
-        <img class="share-icon"
-             src="https://simplesharebuttons.com/images/somacro/vk.png"
-             alt="VK" />
-    </a>
-
-    <!--Email-->
-    <a href="mailto:?Subject={{ page.title | url_encode }}&amp;Body={{ page.title | url_encode }}%20{{ page.description | url_encode }}%0A{{site.url}}{{page.url}}"
-       title="Email"
-       role="button"
-       data-proofer-ignore>
-        <img class="share-icon"
-             src="https://simplesharebuttons.com/images/somacro/email.png"
-             alt="Email"/>
-    </a>
-
-</div>
-<div class="disqus" id="disqus_thread"></div>
-<script>
-    var disqus_config = function () {
-        this.page.url = document.location.href.split('?')[0].split('#')[0];
-        this.page.identifier = this.page.url;
-    };
-    (function() {
-        var d = document, s = d.createElement('script');
-        s.src = '//driver733.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>
-    Please enable JavaScript to view the
-    <a href="https://disqus.com/?ref_noscript">
-        comments powered by Disqus.
-    </a>
-</noscript>
+</section>
