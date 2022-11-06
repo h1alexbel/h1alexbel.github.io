@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-11-21
+place: Minsk, Belarus
 title: "Test Name"
 ---
 
