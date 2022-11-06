@@ -25,7 +25,7 @@ layout: compress
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="../assets/css/styles.css">
     <link rel="stylesheet" href="../assets/css/body.css">
-    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/main.scss">
     <link rel="stylesheet" href="../assets/css/name.css">
     <link rel="stylesheet" href="../assets/css/speciality.css">
     <link rel="stylesheet" href="../assets/css/col.css">
@@ -33,7 +33,8 @@ layout: compress
 <body>
 <div class="wrapper">
     <aside class="header-toggle unprintable" id="header-toggle" title="Menu"
-           onclick="$('#header').show();$('#header-toggle').hide();">&#9776;</aside>
+           onclick="$('#header').show();$('#header-toggle').hide();">&#9776;
+    </aside>
     <header class="header" id="header">
         <div class="face">
             <a href="/">
@@ -41,28 +42,28 @@ layout: compress
         </div>
         <nav>
             <ul class="menu">
-                <li><a title="Home" href="/"></a></li>
+                <li><a title="Home" href="/">Home</a></li>
                 <li><a href="" rel="nofollow"
-                       title="About Me"></a></li>
+                       title="About Me">About Me</a></li>
                 <li><a href="http://h1alexbel.github.io/about-me.html" rel="nofollow"
-                       title="GitHub"><i class="icon icon-github notranslate" aria-hidden="true"></i></a></li>
+                       title="GitHub">GitHub</a></li>
                 <li><a href="" rel="nofollow"
-                       title="Stack Overflow"><i class="icon icon-stackoverflow notranslate" aria-hidden="true"></i></a></li>
+                       title="Stack Overflow">Stack Overflow</a></li>
                 <li><a href="https://twitter.com/intent/follow?screen_name=h1alexbel" rel="nofollow"
-                       title="Twitter"><i class="icon icon-twitter notranslate" aria-hidden="true"></i></a></li>
+                       title="Twitter">Twitter</a></li>
                 <li><a href="https://t.me/abialiauskiJavaDev" rel="nofollow"
-                       title="Telegram"><i class="icon icon-telegram notranslate" aria-hidden="true"></i></a></li>
+                       title="Telegram">Telegram</a></li>
                 <li><a href="https://www.linkedin.com/in/yegor256" rel="nofollow"
-                       title="LinkedIn"><i class="icon icon-linkedin notranslate" aria-hidden="true"></i></a></li>
+                       title="LinkedIn">LinkedIn</a></li>
             </ul>
         </nav>
         <div class="search">
             <form method="get" action="https://www.google.com/search">
                 <input name="sitesearch" value="h1alexbel.github.io" type="hidden"/>
                 <input type="text" id="search-query" class="field field-text"
-                       onfocus="$('.google').css('visibility', 'visible');" name="q" placeholder="Search..." autocomplete="off"/>
-                <input type="image" src="//www.yegor256.com/images/google-search-icon.svg" class="google"
-                       title="Google Search" alt="Google Search"/>
+                       onfocus="$('.google').css('visibility', 'visible');" name="q" placeholder="Search..."
+                       autocomplete="off"/>
+                <input title="Google Search" alt="Google Search"/>
             </form>
         </div>
     </header>
