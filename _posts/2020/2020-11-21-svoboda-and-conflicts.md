@@ -12,8 +12,6 @@ keywords:
 - либерализм
 - конфликты
   image: /images/2020/11/svoboda.jpg
-  jb_picture:
-  caption: vedomosti.ru
 ---
 
 Последние примерно 400 лет, со времен
