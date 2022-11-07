@@ -24,6 +24,7 @@ caption: Mafioso (1962) by Alberto Lattuada
 и во благо ли она нам.
 
 <!--more-->
+{% jb_picture_body %}
 
 ![sm](/images/2020/11/sm.jpg)
 
