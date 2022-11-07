@@ -6,6 +6,8 @@ url: "https://h1alexbel.github.io/"
 twitter_username: h1alexbel
 github_username: h1alexbel
 markdown: kramdown
+gems:
+  - jekyll-bits
 kramdown:
   input: GFM
   auto_ids: true
