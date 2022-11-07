@@ -3,6 +3,9 @@ layout: post
 date: 2020-11-21
 place: Minsk, Belarus
 title: "Test Name"
+image: /images/2020/11/sm.jpg
+jb_picture:
+caption: Mafioso (1962) by Alberto Lattuada
 ---
 
 Последние примерно 400 лет, со времен
