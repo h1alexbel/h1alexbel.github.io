@@ -39,6 +39,13 @@ title: "Test Name"
 по источнику и содержанию", а мы с вами ---
 [либералы](https://ru.wikipedia.org/wiki/%D0%9B%D0%B8%D0%B1%D0%B5%D1%80%D0%B0%D0%BB%D0%B8%D0%B7%D0%BC)!
 
+```java
+@Anotated
+public class A {
+  private final B b;
+}
+````
+
 [Владимир Путин](https://ru.wikipedia.org/wiki/%D0%9F%D1%83%D1%82%D0%B8%D0%BD,_%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80_%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B8%D1%87)
 на встрече со школьниками
 [отметил](https://rg.ru/2017/07/21/putin-obiasnil-gde-zakanchivaetsia-svoboda-v-internete.html):
