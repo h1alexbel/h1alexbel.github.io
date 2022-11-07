@@ -3,9 +3,6 @@ layout: post
 date: 2020-11-21
 place: Minsk, Belarus
 title: "Test Name"
-image: /images/2020/11/sm.jpg
-jb_picture:
-    caption: Mafioso (1962) by Alberto Lattuada
 ---
 
 Последние примерно 400 лет, со времен
@@ -25,11 +22,7 @@ jb_picture:
 
 <!--more-->
 
-{% jb_picture_body %}
-
 ![sm](/images/2020/11/sm.jpg)
-
-![image-title-here](/images/2020/11/sm.jpg){:class="img-responsive"}
 
 В своих [Двух трактатах о правлении](https://ru.wikipedia.org/wiki/%D0%94%D0%B2%D0%B0_%D1%82%D1%80%D0%B0%D0%BA%D1%82%D0%B0%D1%82%D0%B0_%D0%BE_%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B8)
 английский педагог и философ
