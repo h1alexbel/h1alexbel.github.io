@@ -1,14 +1,37 @@
-# frozen_string_literal: true
-
+#
+# Just run "bundle"
+#
 source 'https://rubygems.org'
-ruby '2.7.1'
 
-gem 'github-pages', '206', group: :jekyll_plugins
-gem 'html-proofer', '3.16.0'
-gem 'mdl', '0.6.0'
+gem 'jekyll', '4.0.1'
+gem 'jekyll-feed', '0.15.1'
+gem 'jekyll-bits', '0.15'
+gem 'jekyll-gist', '1.5.0'
+gem 'jekyll-paginate', '1.1.0'
+gem 'jekyll-plantuml', '1.3.4'
+gem 'jekyll-sass', '1.1.0'
+gem 'jekyll-sass-converter', '2.1.0'
+gem 'jekyll-sitemap', '1.4.0'
+gem 'jekyll-redirect-from', '0.16.0'
+# gem 'jekyll-related-posts'
+
+gem 'fastimage', '2.1.5'
+gem 'fontcustom', '2.0.0'
+gem 'jslint', '1.2.0'
+gem 'html-proofer', '3.7.5'
+gem 'kramdown', '2.1'
+gem 'liquid', '4.0.1'
+gem 'mail', '2.7.1'
+gem 'nokogiri', '1.9.1'
+gem 'nuggets', '1.6.0'
 gem 'pygments.rb', '1.2.1'
-gem 'rake', '13.0.6'
-gem 'rubocop', '0.93.1'
-gem 'rubocop-rspec', '1.44.1'
-gem 'scss_lint', '0.59.0'
-gem 'w3c_validators', '1.3.6'
+gem 'rainbow', '2.2.2'
+gem 'rake', '12.3.2'
+gem 'redcarpet', '3.4.0'
+gem 'rubocop', '0.62.0'
+gem 'rubocop-rspec', '1.30.1'
+gem 'sass', '3.7.2'
+gem 'scss_lint', '0.57.1'
+gem 'trollop', '2.9.9'
+gem 'uuidtools', '2.1.5'
+gem 'w3c_validators', '1.3.4'
