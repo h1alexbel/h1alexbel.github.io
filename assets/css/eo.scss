@@ -1,0 +1,63 @@
+---
+---
+
+body {
+    background-color: #f2f2f2;
+}
+
+header,
+footer {
+    text-align: center;
+}
+
+section {
+    width: 40em;
+}
+
+footer {
+    color: gray;
+}
+
+.disqus {
+    padding-top: 4em;
+}
+
+header {
+    padding-bottom: 1em;
+}
+
+.fork-me {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 8em;
+}
+
+article {
+    border: 0;
+    padding: 2em;
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+
+h1 {
+    margin-top: 0;
+}
+
+.subline {
+    font-size: 90%;
+}
+}
+
+.logo {
+    width: 5em;
+    height: 5em;
+}
+
+.subline {
+    margin-left: 0;
+li {
+    margin-right: 1em;
+    display: inline;
+    list-style: none;
+}
+}
