@@ -1,93 +1,46 @@
 ---
-layout: compress
+layout: default
 ---
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-      lang="en-US" xml:lang="en-US"
-      prefix="og: http://ogp.me/ns#"
-      itemscope=""
-      itemtype="http://schema.org/WebPage">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru" xml:lang="ru"
+      itemscope="" itemtype="http://schema.org/WebPage">
 <head>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"
-          data-proofer-ignore>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
-          integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <link rel="stylesheet" href="../assets/css/default.scss"/>
-    <link rel="stylesheet" href="../assets/css/code.scss"/>
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="icon" href="../photo-modified.png">
-    <meta name="google-site-verification" content="Jia5aHWAjnEe6vdzKMhbJFc71-Rgewomm3tl7V1mM24"/>
-    <meta name="keywords" content="{{ page.keywords | join:', ' | xml_escape }}"/>
+    <meta name="description" content="{{ page.description | xml_escape }}" />
+    <meta name="keywords" content="{{ page.keywords | join:', ' | xml_escape }}" />
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1"/>
-    <link rel="shortcut icon" href="/favicon.ico"/>
+    <link rel="shortcut icon" href="https://www.objectionary.com/cactus.png"/>
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="../assets/css/styles.css">
-    <link rel="stylesheet" href="../assets/css/body.css">
-    <link rel="stylesheet" href="../assets/css/main.scss">
-    <link rel="stylesheet" href="../assets/css/name.css">
-    <link rel="stylesheet" href="../assets/css/speciality.css">
-    <link rel="stylesheet" href="../assets/css/col.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css.min.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yegor256/drops@gh-pages/drops.min.css"/>
+    <link rel="stylesheet" href="/css/main.css?4"/>
 </head>
 <body>
-<div class="wrapper">
-    <aside class="header-toggle unprintable" id="header-toggle" title="Menu"
-           onclick="$('#header').show();$('#header-toggle').hide();">&#9776;
-    </aside>
+<section>
+    <a href="https://github.com/objectionary/news.eolang.org">
+        <img src="/images/fork-me.svg" class="fork-me" alt="Want to contribute? Fork us in GitHub!" />
+    </a>
     <header class="header" id="header">
-        <div class="face">
+        <div>
             <a href="/">
+                <img src="https://www.objectionary.com/cactus.svg" class="logo" alt="EOLANG logo"/>
             </a>
         </div>
         <nav>
-            <ul class="menu">
-                <li><a title="Home" href="/">Home</a></li>
-                <li><a href="http://h1alexbel.github.io/about-me.html" rel="nofollow"
-                       title="About Me">About Me</a></li>
-                <li><a href="https://github.com/h1alexbel" rel="nofollow"
-                       title="GitHub">GitHub</a></li>
-                <li><a href="https://stackoverflow.com/users/19147117/abialiauski" rel="nofollow"
-                       title="Stack Overflow">Stack Overflow</a></li>
-                <li><a href="https://twitter.com/intent/follow?screen_name=h1alexbel" rel="nofollow"
-                       title="Twitter">Twitter</a></li>
-                <li><a href="https://t.me/abialiauskiJavaDev" rel="nofollow"
-                       title="Telegram">Telegram</a></li>
-                <li><a href="https://www.linkedin.com/in/h1alexbel" rel="nofollow"
-                       title="LinkedIn">LinkedIn</a></li>
+            <ul>
+                <li><a href="/" title="Home">Home</a></li>
+                <li><a href="/contents.html" title="Contents">Contents</a></li>
+                <li><a href="/rss.xml" title="RSS">RSS</a></li>
+                <li><a href="/papers.html" title="Papers">Papers</a></li>
             </ul>
         </nav>
-        <div class="search">
-            <form method="get" action="https://www.google.com/search">
-                <input name="sitesearch" value="h1alexbel.github.io" type="hidden"/>
-                <input type="text" id="search-query" class="field field-text"
-                       onfocus="$('.google').css('visibility', 'visible');" name="q" placeholder="Search..."
-                       autocomplete="off"/>
-            </form>
-        </div>
     </header>
-</div>
-{{ content }}
-<div class="wrapper unprintable" style="text-align:center;margin-top:2em;">
-    (c)
-    <span itemscope="" itemtype="http://schema.org/Person">
-          <span itemprop="name">Aliaksei Bialiauski</span>
-        </span>
-    <br/>
-    2022
-</div>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127781126-1"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-
-    gtag('js', new Date());
-    gtag('config', 'UA-127781126-1');
-</script>
-<script src="//code.jquery.com/jquery-1.9.0.min.js"></script>
-<script src="//www.yegor256.com/js/all.js?{{ site.data['hash'] }}"></script>
+    {{ content }}
+    <footer>
+        &copy; eolang.org
+    </footer>
+</section>
+<script>var disqus_shortname = 'news-eolang-org';</script>
+<script id="dsq-count-scr" src="//news-eolang-org.disqus.com/count.js" async="async"></script>
 </body>
 </html>
