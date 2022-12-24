@@ -29,13 +29,15 @@ Hands-on experience with:
 - Integration(Change Data Capture) Development {**ETL**}
 
 Interested in ```R&D``` in the area of **Big Data**, **IoT**, and **Serverless computing**
-Looking forward to the public speaking, and teaching
+Looking forward to the public speaking, and teaching.
 <br>
+
 I'm the founder and lead architect of
-[Dothem](https://github.com/h1alexbel/dothem),
-[Alerter-Mail](https://github.com/h1alexbel/alerter-mail),
-[Ticketsyncs](https://github.com/ticketsyncs/clockfarm),
-[Realo](https://github.com/h1alexbel/realo),
+- [Dothem](https://github.com/h1alexbel/dothem),
+- [Alerter-Mail](https://github.com/h1alexbel/alerter-mail),
+- [Ticketsyncs](https://github.com/ticketsyncs/clockfarm),
+- [Realo](https://github.com/h1alexbel/realo),
+
 and [a few others](/pets.html).
 You can sponsor me on [GitHub](https://github.com/sponsors/h1alexbel).
 Here are [my favorite books](/books.html)
