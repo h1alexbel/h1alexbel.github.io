@@ -9,7 +9,7 @@ writer, blogger, speaker, project manager, CEO, seed investor,
 and philanthropist.
 ---
 
-![sm](../images/2020/11/sm.jpg)
+![sm](images/2020/11/sm.jpg)
 
 I'm Yegor Bugayenko (Russian:
 <span lang="ru" xml:lang="ru">Ег&#x43E;&#x301;р Буга&#x435;&#x301;нко</span>),
