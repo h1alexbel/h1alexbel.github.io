@@ -7,7 +7,7 @@ description: |
 About Aliaskei Bialiauski, the Backend Software Engineer.
 ---
 
-![sm](images/about-me.jpg)
+<img width="500" height="500" src="images/about-me.jpg">
 
 I'm Aliaksei Bialiauski (Russian:
 <span lang="ru" xml:lang="ru">Алексей Беля́вский</span>),
