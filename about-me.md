@@ -43,6 +43,7 @@ You can sponsor me on [GitHub](https://github.com/sponsors/h1alexbel).
 Here are [my favorite books](/books.html)
 about software engineering.
 
+<br>
 I plan to achieve these certificates:
 
 - [Oracle Certified Professional Java 17 SE](https://education.oracle.com/oracle-certified-professional-java-se-17-developer/trackp_OCPJSE17)
