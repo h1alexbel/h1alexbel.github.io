@@ -22,7 +22,7 @@ mostly in Java. And, I am an active contributor of a few open source projects.
 
 Hands-on experience with:
 
-- Backend Java Development of distributed systems on enterprise-level projects {```Spring Framework```, ```Apache Kafka```}
+- Backend Java Development of distributed systems on enterprise-level projects {```Spring```, ```Apache Kafka```}
 - NoSQL data modeling {```Cassandra```, ```DynamoDB```}
 - ```AWS```
 - DevOps {```K8s```, ```Terraform/CloudFormation```}
