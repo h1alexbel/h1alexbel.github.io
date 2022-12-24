@@ -22,13 +22,13 @@ mostly in Java. And, I am an active contributor of a few open source projects.
 
 Hands-on experience with:
 
-- Backend Java Development of distributed systems on enterprise-level projects {```Spring```, ```Apache Kafka```}
-- NoSQL data modeling {```Cassandra```, ```DynamoDB```}
-- ```AWS```
-- DevOps {```K8s```, ```Terraform/CloudFormation```}
-- Integration(Change Data Capture) Development {```ETL```}
+- Backend Java Development of distributed systems on enterprise-level projects {**Spring**, **Apache Kafka**}
+- NoSQL data modeling {**Cassandra**, **DynamoDB**}
+- **AWS**
+- DevOps {**K8s**, **Terraform/CloudFormation**}
+- Integration(Change Data Capture) Development {**ETL**}
 
-Interested in R&D in the area of Big Data, IoT, and Serverless computing
+Interested in ```R&D``` in the area of **Big Data**, **IoT**, and **Serverless computing**
 Looking forward to the public speaking, and teaching
 <br>
 I'm the founder and lead architect of
