@@ -45,9 +45,9 @@ I'm the founder and lead architect of
 [Rultor](https://www.rultor.com),
 and [a few others](/pets.html).
 You can sponsor me on [GitHub](https://github.com/sponsors/yegor256).
-Here are [my favorite books]({% pst 2015/apr/2015-04-22-favorite-software-books %})
+Here are [my favorite books]()
 about software engineering, and a detailed description of
-[my work environment]({% pst 2017/jun/2017-06-27-my-environment %}).
+[my work environment]().
 I'm an Oracle Certified Master and Java EE 6 Enterprise Architect
 ([OCMEA](/pdf/certifications/OCMJEA-Feb11.pdf)).
 Besides that, I'm a proud holder of
@@ -105,7 +105,7 @@ and
 [Blog@Zold](https://blog.zold.io).
 
 Ah, one more thing. I'm a big fan of good movies, so here's
-[my list]({% pst 2014/apr/2014-04-06-movies-for-thanasis %}) of the ones
+[my list]() of the ones
 I would recommend you watch. Also, here is my list of favorite
 [fiction](/fiction.html) and [non-fiction](/non-fiction.html) books.
 
