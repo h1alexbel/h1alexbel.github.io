@@ -16,45 +16,30 @@ a Software Engineer, Architect, and researcher.
 Update: Since July 2022 I'm work as Backend Software Engineer
 at [```Solvd```](http://solvd.com).
 
-I am a **Passionate Software Craftsman** and **Backend Engineer** with strong background in system design, and object-oriented design with Java. Also, I'm a huge fan of IaaC using Terraform.
+I am a **Passionate Software Craftsman** and **Backend Engineer** with strong background in distributed systems, and object-oriented analysis and design with Java. Also, I'm a huge fan of IaaC using Terraform.
 I [write](https://github.com/h1alexbel)
-mostly in Java. And, I am an active contributor of a few open source projects.
+mostly in Java. And, I am a founder and active contributor of a few open source projects.
 
 Hands-on experience with:
 
-- Backend Java Development of distributed systems on enterprise-level projects {**Spring**, **Apache Kafka**}
-- NoSQL data modeling {**Cassandra**, **DynamoDB**}
-- **AWS**
-- DevOps {**K8s**, **Terraform/CloudFormation**}
-- Integration(Change Data Capture) Development {**ETL**}
+- Building scalable, highly available and maintainable technology solutions;
+- Integration(Change Data Capture) Development;
+- Data Storages(RDBMS, NoSQL);
+- Cloud Computing & DevOps;
+- OOAD;
+- Agile practices;
 
-Interested in ```R&D``` in the area of **Big Data**, **IoT**, and **Serverless computing**
+Interested in ```R&D``` in the area of **Big Data**, **IoT**, and **Serverless Cloud computing**
 Looking forward to the public speaking, and teaching.
 <br>
 
-I'm the founder and lead architect of
-- [Dothem](https://github.com/h1alexbel/dothem),
-- [Alerter-Mail](https://github.com/h1alexbel/alerter-mail),
-- [Ticketsyncs](https://github.com/ticketsyncs/clockfarm),
-- [Realo](https://github.com/h1alexbel/realo),
-
-and [a few others](/pets.html).
+I'm the founder and lead architect of [Realo](https://github.com/h1alexbel/realo), [Alerter-Mail](https://github.com/h1alexbel/alerter-mail), [Ticketsyncs](https://github.com/ticketsyncs/clockfarm), and a [few others](/pets.html).
+<br>
 You can sponsor me on [GitHub](https://github.com/sponsors/h1alexbel).
 Here are [my favorite books](/books.html)
 about software engineering.
 
-<br>
-I plan to achieve these certificates:
-
-- [Oracle Certified Professional Java 17 SE](https://education.oracle.com/oracle-certified-professional-java-se-17-developer/trackp_OCPJSE17)
-- [AWS Certified Cloud Practitioner](https://aws.amazon.com/certification/certified-cloud-practitioner/)
-- [OMG UML](https://www.omg.org/ocup-2/)
-- [Certified Kubernetes Application Developer](https://www.cncf.io/certification/ckad/)
-- [Hashicorp Infrastructure Automation Architect](https://www.hashicorp.com/certification/terraform-associate)
-
-I'm also visible sometimes at
-[InfoQ](https://www.infoq.com/profile/Aliaksei-Bialiauski.1/),
-[Stackoverflow](https://stackoverflow.com/users/19147117/h1alexbel).
+I'm also make some videos about System Design, OOAD, and Software Architecture in general. Check out my [channel]().
 
 Ah, one more thing. I'm a big fan of good movies, so here's
 [my list](https://www.kinopoisk.ru/user/122290319/votes/) of the ones.
