@@ -2,7 +2,7 @@
 [![Hits-of-Code](https://hitsofcode.com/view/github/h1alexbel/h1alexbel.github.io?branch=main)](https://hitsofcode.com/view/github/h1alexbel/h1alexbel.github.io?branch=main)
 [![My Twitter](https://img.shields.io/badge/Twitter-follow-active?logo=twitter)](https://twitter.com/intent/follow?screen_name=h1alexbel)
 
-This blog is inspired by [Yegor256](https://yegor256.com)
+This blog is inspired by [yegor256](https://yegor256.com)
 <br>
 This is my blog: [h1alexbel.github.io](https://h1alexbel.github.io)
 
