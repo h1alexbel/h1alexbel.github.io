@@ -39,7 +39,7 @@ You can sponsor me on [GitHub](https://github.com/sponsors/h1alexbel).
 Here are [my favorite books](/books.html)
 about software engineering.
 
-I'm also make some videos about System Design, OOAD, and Software Architecture in general. Check out my [channel]().
+I'm also make some videos about System Design, OOAD, and Software Architecture in general. Check out my [channel](https://www.youtube.com/@absimplearchitect/featured).
 
 Ah, one more thing. I'm a big fan of good movies, so here's
 [my list](https://www.kinopoisk.ru/user/122290319/votes/) of the ones.
