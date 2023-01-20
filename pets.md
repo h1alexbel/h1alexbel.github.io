@@ -1,6 +1,7 @@
 ---
 layout: static
 title: "My pet projects"
+tags: oss
 date: 2023-01-20
 permalink: pets.html
 ---
