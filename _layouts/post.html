@@ -50,7 +50,7 @@ layout: default
                     </time>
                 </li>
                 {% if page.place %}
-                <li class="desktop-only" itemprop="locationCreated">{{ page.place }}</li>
+                <li itemprop="locationCreated">{{ page.place }}</li>
                 <li>{% for tag in page.tags %}
                     <a href="/tag/{{ tag }}.html"><code><nobr>{{ tag }}</nobr></code></a>
                 </li>
