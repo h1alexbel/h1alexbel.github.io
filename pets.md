@@ -5,7 +5,7 @@ date: 2023-01-20
 permalink: pets.html
 ---
 
-<a href="https://www.github.com/amihaiemil" target="_blank"><img src="https://ghchart.rshah.org/h1alexbel" title="My Github contributions chart" alt="amihaiemil's Github chart" /></a>
+<a href="https://www.github.com/h1alexbel" target="_blank"><img src="https://ghchart.rshah.org/h1alexbel" title="My Github contributions chart" alt="amihaiemil's Github chart" /></a>
 
 <script>
 $(document).ready(
