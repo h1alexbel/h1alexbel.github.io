@@ -51,7 +51,7 @@ layout: default
                 </li>
                 {% if page.place %}
                 <li class="desktop-only" itemprop="locationCreated">{{ page.place }}</li>
-                <li itemprop="tags">{{ page.date | date: "%b %-d, %Y" }} • tags:
+                <li>• tags:
                     {% for tag in page.tags %}
                     <a href="/tag/{{ tag }}.html"><code><nobr>{{ tag }}</nobr></code></a>
                 </li>
