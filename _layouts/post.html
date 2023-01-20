@@ -51,6 +51,10 @@ layout: default
                 </li>
                 {% if page.place %}
                 <li class="desktop-only" itemprop="locationCreated">{{ page.place }}</li>
+                <li itemprop="tags">{{ page.date | date: "%b %-d, %Y" }} • tags:
+                    {% for tag in page.tags %}
+                    <a href="/tag/{{ tag }}.html"><code><nobr>{{ tag }}</nobr></code></a></li>
+                </p>
                 {% endif %}
                 <li class="printable" itemscope="" itemprop="author" itemtype="http://schema.org/Person">
                     <span itemprop="name">Aliaksei Bialiauski</span>
