@@ -22,12 +22,13 @@ mostly in Java. And, I am a founder and active contributor of a few open source 
 
 Hands-on experience with:
 
-- Building scalable, highly available and maintainable technology solutions;
-- Integration(Change Data Capture) Development: **Debezium**, **Kafka**;
-- Data Storages(RDBMS: **PostgreSQL**, NoSQL: **DynamoDB**, **Cassandra**, **Neo4j**);
-- Cloud Computing & DevOps: **Terraform**, **AWS**, **Kubernetes**;
-- OOAD;
-- Agile practices;
+- Building scalable, highly available and maintainable technology solutions
+- SOA
+- Integration development
+- Data Storages: **PostgreSQL**, **DynamoDB** 
+- Cloud Computing & DevOps: **Terraform**, **AWS**, **Kubernetes**
+- OOAD
+- Agile practices
 
 Interested in ```R&D``` in the area of **Big Data**, and **Serverless Cloud computing**
 Looking forward to the public speaking, and teaching.
