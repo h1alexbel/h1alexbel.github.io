@@ -23,13 +23,13 @@ mostly in Java. And, I am a founder and active contributor of a few open source 
 Hands-on experience with:
 
 - Building scalable, highly available and maintainable technology solutions;
-- Integration(Change Data Capture) Development;
-- Data Storages(RDBMS, NoSQL);
-- Cloud Computing & DevOps;
+- Integration(Change Data Capture) Development: **Debezium**, **Kafka**;
+- Data Storages(RDBMS: **PostgreSQL**, NoSQL: **DynamoDB**, **Cassandra**, **Neo4j**);
+- Cloud Computing & DevOps: **Terraform**, **AWS**, **Kubernetes**;
 - OOAD;
 - Agile practices;
 
-Interested in ```R&D``` in the area of **Big Data**, **IoT**, and **Serverless Cloud computing**
+Interested in ```R&D``` in the area of **Big Data**, and **Serverless Cloud computing**
 Looking forward to the public speaking, and teaching.
 <br>
 
@@ -42,7 +42,7 @@ about software engineering.
 I'm also make some videos about System Design, OOAD, and Software Architecture in general. Check out my [channel](https://www.youtube.com/@absimplearchitect/featured).
 
 Ah, one more thing. I'm a big fan of good movies, so here's
-[my list](https://www.kinopoisk.ru/user/122290319/votes/) of the ones.
+[my list](/movies.html) of the ones.
 
 If you are interested, my [personality type](https://en.wikipedia.org/wiki/Myers%E2%80%93Briggs_Type_Indicator)
 is [INTJ-A](/images/personality.png).
