@@ -1,6 +1,6 @@
 ---
 layout: tag_page
-title: "Tag: Architecture"
-tag: arc
+title: "Tag: Kubernetes"
+tag: k8s
 shareable: false
 ---
