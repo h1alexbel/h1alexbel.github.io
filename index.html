@@ -41,6 +41,13 @@ title: Aliaksei's Blog about Software
                             {{ post.date | date: "%Y" }}
                         </time>
                     </li>
+                    {% if page.place %}
+                    <li itemprop="locationCreated">{{ page.place }}</li>
+                    <li>{% for tag in page.tags %}
+                        <a href="/tag/{{ tag }}.html"><code><nobr>{{ tag }}</nobr></code></a>
+                    </li>
+                    {% endfor %}
+                    {% endif %}
                     <li>
                         <i class="icon icon-comments"></i>
                         <a href="{{ site.url }}{{ post.url }}#disqus_thread" itemprop="discussionUrl">comments</a>
