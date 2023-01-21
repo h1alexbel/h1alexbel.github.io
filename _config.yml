@@ -1,4 +1,4 @@
-theme: jekyll-theme-minimal
+remote_theme: pages-themes/architect@v0.2.0
 title: Aliaksei @h1alexbel Bialiauski's blog
 email: abialiauski.dev@gmail.com
 description: Personal blog of Aliaksei @h1alexbel Bialiauski about programming.
@@ -31,6 +31,7 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
 plugins:
+  - jekyll-remote-theme
   - jekyll-feed
   - jekyll-bits
   - jekyll-paginate
