@@ -13,7 +13,7 @@ Java 11, Kubernetes, Spring Boot 2.7, PostgreSQL, Liquibase, Maven
 - [Alerter-Mail](https://github.com/h1alexbel/alerter-mail):
 An Email assistant/Telegram Chat-Bot. It helps you to deliver PDF documents faster.
 ```
-Java 17, Terraform, S3, MongoDB, Maven
+Java 11, Terraform, S3, MongoDB, Maven
 ```
 - [Dothem](https://github.com/h1alexbel/dothem):
 Personal Backlog of Tasks, integrated with GitHub and Todoist.
