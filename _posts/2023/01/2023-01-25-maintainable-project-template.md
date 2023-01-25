@@ -14,7 +14,7 @@ In this blog post I will share my key points of successful project, and how to b
 
 <!--more-->
 
-<img src="/images/2023/01/bcs.png" width="150" height="150">
+<img src="/images/2023/01/bcs.png" width="1200" height="650">
 
 # 1. Build pipeline
 
