@@ -14,9 +14,8 @@ layout: default
             <meta itemprop="bestRating" content="10"/>
         </div>
     </div>
-
     <div class="wrapper">
-        <header>
+        <header style="font-family: 'Computer Modern Serif', serif">
             <p class="printable">
                 <img src="https://api.qrserver.com/v1/create-qr-code/?data={{ site.url }}{{ page.url }}&amp;format=svg"
                      style="width:125px;height:125px;" alt="QR code"/>
@@ -89,7 +88,9 @@ layout: default
         </header>
         <main style="font-family: 'Computer Modern Serif', serif">
             <article class="main" itemprop="articleBody">
+                <b>
                 {{ content }}
+                </b>
             </article>
         </main>
     </div>

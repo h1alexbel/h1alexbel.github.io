@@ -11,30 +11,36 @@ layout: default
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1"/>
     <link rel="shortcut icon" href="../images/logo.png"/>
     <title>{{ page.title }}</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/aaaakshat/cm-web-fonts@latest/fonts.css">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css.min.css"/>
     <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yegor256/drops@gh-pages/drops.min.css"/>
+
     <link rel="stylesheet" href="../assets/css/eo.scss"/>
     <link rel="stylesheet" href="../assets/css/col.css">
 </head>
 <body>
 <section>
     <header class="header" id="header">
-                <div>
-                    <a href="/">
-                        <img width="125px" height="125px" src="https://res.cloudinary.com/dcvb0ntc5/image/upload/v1671739450/photo-modified_gbwhbs.png" class="logo" alt="Blog Logo"/>
-                    </a>
-                </div>
-        <nav>
+        <div>
+            <a href="/">
+                <img width="125px" height="125px"
+                     src="https://res.cloudinary.com/dcvb0ntc5/image/upload/v1671739450/photo-modified_gbwhbs.png"
+                     class="logo" alt="Blog Logo"/>
+            </a>
+        </div>
+        <nav style="font-family: 'Computer Modern Serif', serif">
             <ul>
                 <li><a class="class" href="https://github.com/h1alexbel">
-                    <img width="24px" height="24px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/github.svg">
+                    <img width="24px" height="24px"
+                         src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/github.svg">
                 </a></li>
                 <li><a class="class" href="https://stackoverflow.com/users/19147117/abialiauski">
                     <img width="24px" height="24px"
                          src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/stackoverflow.svg">
                 </a></li>
                 <li><a class="class" href="https://www.linkedin.com/in/h1alexbel">
-                    <img width="24px" height="24px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg">
+                    <img width="24px" height="24px"
+                         src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg">
                 </a></li>
                 <li><a class="class" href="https://twitter.com/h1alexbel">
                     <img width="24px" height="24px"
@@ -46,7 +52,8 @@ layout: default
                 </a></li>
                 <li>
                     <a class="class" href="mailto:abialiauski.dev@gmail.com">
-                        <img width="24px" height="24px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/gmail.svg">
+                        <img width="24px" height="24px"
+                             src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/gmail.svg">
                     </a>
                 </li>
             </ul>
@@ -59,8 +66,12 @@ layout: default
             </ul>
         </nav>
     </header>
-    {{ content }}
-    <footer>
+    <div style="font-family: 'Computer Modern Serif', serif">
+        <b>
+            {{ content }}
+        </b>
+    </div>
+    <footer style="font-family: 'Computer Modern Serif', serif">
         &copy; Aliaksei Bialiauski
     </footer>
 </section>
