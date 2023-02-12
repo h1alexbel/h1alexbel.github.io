@@ -3,8 +3,6 @@ layout: static
 title: "My Favorite SE Books"
 date: 2022-12-24
 permalink: books.html
-description: |
-My favorite Software Engineering Books
 ---
 
 There are plenty of books about software engineering, but only a few of them rank
