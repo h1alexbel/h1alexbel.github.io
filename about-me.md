@@ -17,7 +17,7 @@ Update: Since July 2022 I'm work as Backend Software Engineer
 at [```Solvd```](http://solvd.com).
 
 I am a **Passionate Software Craftsman** and **Backend Engineer** with strong background in distributed parallel/reactive systems, and object-oriented analysis and design with Java. Also, I'm a huge fan of IaaC using Terraform.
-I [write](https://github.com/h1alexbel)
+I [**write**](https://github.com/h1alexbel)
 mostly in Java. And, I am a founder and active contributor of a few open source projects.
 
 Hands-on experience with:
