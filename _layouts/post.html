@@ -52,7 +52,9 @@ layout: default
                 {% if page.place %}
                 <li itemprop="locationCreated">{{ page.place }}</li>
                 <li>{% for tag in page.tags %}
-                    <a href="/tag/{{ tag }}.html"><code><nobr>{{ tag }}</nobr></code></a>
+                    <a href="/tag/{{ tag }}.html"><code>
+                        <nobr>{{ tag }}</nobr>
+                    </code></a>
                 </li>
                 {% endfor %}
                 {% endif %}
@@ -78,7 +80,8 @@ layout: default
                         <span class="count count-linkedin">0</span>
                         <i class="icon icon-linkedin notranslate" aria-hidden="true"></i>
                     </a>
-                    <a href="http://reddit.com/submit?url={{ site.url }}{{ page.url }}%3F{{ page.date | date: "%Y-%U" }}&amp;title={{ page.title | cgi_escape }}"
+                    <a href="http://reddit.com/submit?url={{ site.url }}{{ page.url }}%3F{{ page.date | date: " %Y-%U"
+                    }}&amp;title={{ page.title | cgi_escape }}"
                     title="Reddit" class="button" rel="nofollow">
                     <span class="count count-reddit">0</span>
                     <i class="icon icon-reddit notranslate" aria-hidden="true"></i>
@@ -88,9 +91,7 @@ layout: default
         </header>
         <main style="font-family: 'Computer Modern Serif', serif">
             <article class="main" itemprop="articleBody">
-                <b>
                 {{ content }}
-                </b>
             </article>
         </main>
     </div>
@@ -102,7 +103,7 @@ layout: default
                 this.page.url = document.location.href.split('?')[0].split('#')[0];
                 this.page.identifier = this.page.url;
             };
-            (function() {
+            (function () {
                 var d = document, s = d.createElement('script');
                 s.src = '//ru-yegor256-com.disqus.com/embed.js';
                 s.setAttribute('data-timestamp', +new Date());
