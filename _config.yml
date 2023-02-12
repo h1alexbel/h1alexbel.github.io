@@ -57,7 +57,7 @@ defaults:
     values:
       layout: "default"
       title: Aliaksei @h1alexbel Bialiauski's blog
-      description: Personal blog of Aliaksei @h1alexbel Bialiauski about computers.
+      description: Personal blog of Aliaksei @h1alexbel Bialiauski about software engineering.
   - scope:
       path: "static"
       type: "pages"
