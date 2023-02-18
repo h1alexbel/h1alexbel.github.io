@@ -1,6 +1,6 @@
 ---
 layout: tag_page
-title: "Tag: Project Reactor"
-tag: reactor
+title: "Tag: Reactive Programming"
+tag: reactive
 shareable: false
 ---
