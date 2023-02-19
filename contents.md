@@ -26,4 +26,4 @@ style: |
 
 All tags in alphabetic order:
 
-{{ site.tags | tag_cloud }}
+{{ site.tags }}
