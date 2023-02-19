@@ -27,7 +27,3 @@ style: |
 All tags in alphabetic order:
 
 {{ site.tags | tag_cloud }}
-
-Intensity of writing:
-{% wordcount %},
-written in {% placescount %}.
