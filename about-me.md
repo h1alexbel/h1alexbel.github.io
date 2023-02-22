@@ -3,8 +3,6 @@ layout: static
 title: "About Me"
 date: 2022-12-24
 permalink: about-me.html
-description: |
-About Aliaskei Bialiauski, the Backend Software Engineer.
 ---
 
 <img width="500" height="500" src="images/about-me.jpg">

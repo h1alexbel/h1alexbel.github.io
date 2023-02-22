@@ -3,7 +3,7 @@ remote_theme: pages-themes/architect@v0.2.0
 title: Aliaksei Bialiauski
 name: Aliaksei Bialiauski
 email: abialiauski.dev@gmail.com
-description: Personal blog of Aliaksei @h1alexbel Bialiauski about programming.
+description: Personal blog of Aliaksei @h1alexbel Bialiauski about software engineering.
 url: "https://h1alexbel.github.io/"
 twitter_username: h1alexbel
 github_username: h1alexbel
@@ -45,7 +45,7 @@ paginate_path: "/p/:num"
 excerpt_separator: <!--more-->
 feed:
   title: Aliaksei @h1alexbel Bialiauski's blog
-  subtitle: Personal blog of Aliaksei @h1alexbel Bialiauski about computers.
+  subtitle: Personal blog of Aliaksei @h1alexbel Bialiauski about software engineering.
   path: rss.xml
 sass:
   style: compressed
