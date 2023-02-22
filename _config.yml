@@ -1,6 +1,7 @@
 theme: jekyll-theme-minimal
 remote_theme: pages-themes/architect@v0.2.0
-title: Aliaksei @h1alexbel Bialiauski's blog
+title: Aliaksei Bialiauski
+name: Aliaksei Bialiauski
 email: abialiauski.dev@gmail.com
 description: Personal blog of Aliaksei @h1alexbel Bialiauski about software engineering.
 url: "https://h1alexbel.github.io/"
@@ -50,21 +51,3 @@ sass:
   style: compressed
   deploy_style: compressed
   compile_in_place: false
-defaults:
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "default"
-      title: Aliaksei @h1alexbel Bialiauski's blog
-      description: Personal blog of Aliaksei @h1alexbel Bialiauski about software engineering.
-  - scope:
-      path: "static"
-      type: "pages"
-    values:
-      layout: "page"
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
