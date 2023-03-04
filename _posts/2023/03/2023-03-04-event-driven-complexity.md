@@ -8,7 +8,7 @@ tags: microservices
 
 Preferring microservices to monolith architecture means more challenges.
 Most difficult ones are: distributed transactions, distributed locking, communication via message broker,
-and of course ${event}. Most of these problems have well-known solutions named patterns.
+and of course enabling events. Most of these problems have well-known solutions named patterns.
 CQRS, Saga, Event sourcing. They all referring to event-driven architecture,
 and unfortunately, they also increase the complexity of the entire system.
 So increasing complexity we are making our software less maintainable.
