@@ -26,7 +26,7 @@ To answer on this question firstly we need to dive deeply into event-driven arch
 <img src="/images/2023/03/events.png">
 
 Each event is **immutable**, which is good for maintainability.
-The same as [**object**](), good event should be small and immutable.
+The same as [**object**](https://www.yegor256.com/2014/11/20/seven-virtues-of-good-object.html), good event should be small and immutable.
 To read the data we are composing events into projections and show then.
 Simple example:
 UserAdded:
@@ -68,7 +68,7 @@ Usually that's a databases.
 
 ## Event bus
 Event bus is just a pipeline of events.
-Like [**Kafka**](), [**RabbitMQ**](), or [**SQS**]().
+Like [**Kafka**](https://kafka.apache.org), [**RabbitMQ**](https://www.rabbitmq.com), or [**SQS**](https://aws.amazon.com/sqs/).
 
 ## Event sourcing
 "The fundamental idea of Event Sourcing is that of
@@ -76,7 +76,7 @@ ensuring every change to the state of an application is
 captured in an event object, and that these event
 objects are themselves stored in the sequence they
 were applied for the same lifetime as the application
-state itself." - [**Martin Fowler**]()
+state itself." - [**Martin Fowler**](https://martinfowler.com)
 Simply put, event sourcing - is the process of persisting business entities as a sequence
 of events.
 
@@ -87,7 +87,7 @@ It is related to ```CQS```, which is Command Query Separation.
 ```CQS``` is an architectural pattern, and the acronym stands for Command Query Separation.
 CQS is the core concept that defines two types of operations handled in a system: a command that executes a task,
 a query that returns information, and there should never be one function to do both of these jobs.
-The term was created by [**Bertrand Meyer**]() in his book ‘Object-oriented Software Construction’ (1988, Prentice Hall).
+The term was created by [**Bertrand Meyer**](https://en.wikipedia.org/wiki/Bertrand_Meyer) in his book [**Object-oriented Software Construction**](https://www.amazon.com/Object-Oriented-Software-Construction-Book-CD-ROM/dp/0136291554) (1988, Prentice Hall).
 
 Also, we need some sort of distributed transactions:
 
@@ -108,7 +108,7 @@ Now to problems: **complexity** and **maintainability**.
 Main complexity we got from frameworks that we are creating and using.
 Our microservices are so complex and unmaintainable not because of Kafka or CQRS involvement.
 But because we use such frameworks, that are designed without any ```simplicity``` and ```maintainability``` in mind.
-Just look at the [**Spring Cloud**]() or more event-oriented [**Eventuate**]().
+Just look at the [**Spring Cloud**](https://spring.io/projects/spring-cloud) or more event-oriented [**Eventuate**](https://eventuate.io).
 
 So, we need to form principles and then construct dedicated frameworks.
 
