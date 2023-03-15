@@ -3,7 +3,7 @@
 source 'https://rubygems.org'
 ruby '2.7.1'
 
-gem 'github-pages', '206', group: :jekyll_plugins
+gem 'github-pages', '228', group: :jekyll_plugins
 gem 'html-proofer', '3.16.0'
 gem 'mdl', '0.6.0'
 gem 'pygments.rb', '1.2.1'
