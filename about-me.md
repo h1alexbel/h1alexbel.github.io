@@ -11,38 +11,32 @@ I'm Aliaksei Bialiauski (Russian:
 <span lang="ru" xml:lang="ru">Алексей Беля́вский</span>),
 a Software Engineer, Architect.
 
-Update: Since July 2022 I'm work as Backend Software Engineer
+Update: Since July 2022 I'm work as Kotlin/Java SDE
 at [```Solvd```](http://solvd.com).
 
-I am a **Passionate Software Craftsman** and **Backend Engineer** with strong background in distributed parallel/reactive systems, and object-oriented analysis and design with Java. Also, I'm a huge fan of IaaC using Terraform.
+I am a **Passionate Software Craftsman** with strong background in distributed parallel/reactive systems, and object-oriented analysis and design with Java.
 I [**write**](https://github.com/h1alexbel)
-mostly in Java. And, I am a founder and active contributor of a few open source projects.
+mostly in Java. And, I am a [founder](/pets.html) and active contributor of a few open source projects.
 
-Hands-on experience with:
+Hands-on experience in building scalable, highly available and maintainable technology solutions using:
+- Microservices
+- Stream Processing/Integration development with **Kafka**
+- Data Storages: **PostgreSQL**, **Cassandra**
+- Cloud Computing & DevOps: **AWS**, **Kubernetes**
+- OOAD with **Java**
 
-- Building scalable, highly available and maintainable technology solutions
-- SOA, Microservices
-- Integration development
-- Data Storages: **PostgreSQL**, **DynamoDB** 
-- Cloud Computing & DevOps: **Terraform**, **AWS**, **Kubernetes**
-- OOAD
-- Agile practices
+Interested in ```R&D``` in the area of **Distributed Systems and Parallel Computing**.
 
-Interested in ```R&D``` in the area of **Big Data**, and **Serverless Cloud computing**.
-<br>
-Looking forward to the public speaking, and teaching.
-<br>
+I'm also make some videos about System Design, OOAD, and Software Architecture in general.
+Check out my [**YouTube channel**](https://www.youtube.com/@absimplearchitect/featured).
 
-I'm the founder and lead architect of [```Realo```](https://github.com/h1alexbel/realo), [```Alerter-Mail```](https://github.com/h1alexbel/alerter-mail), [```Dothem```](https://github.com/h1alexbel/dothem), and a [**few others**](/pets.html).
-<br>
-You can sponsor me on [**GitHub**](https://github.com/sponsors/h1alexbel).
 Here are [**my favorite books**](/books.html)
 about software engineering.
-
-I'm also make some videos about System Design, OOAD, and Software Architecture in general. Check out my [**YouTube channel**](https://www.youtube.com/@absimplearchitect/featured).
 
 Ah, one more thing. I'm a big fan of good movies, so here's
 [**my list**](/movies.html) of the ones.
 
 If you are interested, my [**personality type**](https://en.wikipedia.org/wiki/Myers%E2%80%93Briggs_Type_Indicator)
 is [```INTJ-A```](/images/personality.png).
+
+Sponsor me on [**GitHub**](https://github.com/sponsors/h1alexbel).
