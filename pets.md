@@ -5,11 +5,11 @@ date: 2023-01-20
 permalink: pets.html
 ---
 
-<img class="pet-item" alt="logo" src="https://raw.githubusercontent.com/eo-cqrs/eo-kafka/master/logo.svg" height="100px" /> 
+<img class="pet-item" alt="logo" src="https://raw.githubusercontent.com/eo-cqrs/eo-kafka/master/logo.svg" height="25px" /> 
 
 <a href="https://eo-cqrs.github.io/eo-kafka"><b>eo-kafka</b></a> (Java) EO Kafka Producers and consumers for working with Apache Kafka message broker.
 
-<img class="pet-item" alt="logo" src="https://raw.githubusercontent.com/eo-cqrs/.github/master/eo-cqrs.svg" height="100px" /> 
+<img class="pet-item" alt="logo" src="https://raw.githubusercontent.com/eo-cqrs/.github/master/eo-cqrs.svg" height="25px" /> 
 
 <a href="https://eo-cqrs.github.io/eo-qce"><b>eo-qce</b></a> (Java) Objects for handling Queries, Commands and Events in Event Sourcing & CQRS. 
 
