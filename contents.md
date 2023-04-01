@@ -16,9 +16,6 @@ permalink: contents.html
 [```reactive```](/tag/reactive.html)
 
 This is a full list of all blog posts published:
-
-<article class="container-page">
-  <h1 class="page-title">{{ site.data.lang[site.language].categories_title }}</h1>
   <ul class="categories-list">
     {% assign sorted_posts = site.posts | sort: 'date' %}{% for post in sorted_posts %}
       <div class="posts-list-item">
@@ -27,4 +24,3 @@ This is a full list of all blog posts published:
       </div>
     {% endfor %}
   </ul>
-</article>
