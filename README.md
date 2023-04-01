@@ -8,12 +8,12 @@ This blog is inspired by [yegor256](https://yegor256.com), big thanks to him!
 <br>
 This is my blog: [h1alexbel.github.io](https://h1alexbel.github.io)
 
+## How to Contribute
+
 You are welcome to submit corrections to this blog. In order to do that,
 you will need [Ruby](https://www.ruby-lang.org/en/) 2.3+,
 [Bundler](https://bundler.io/),
 and [PlantUML](http://plantuml.com/) installed. Then, run this:
-
-## How to Contribute
 
 ```bash
 $ bundle update
