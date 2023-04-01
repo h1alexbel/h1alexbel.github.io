@@ -22,3 +22,4 @@ This is a full list of all blog posts published:
 <span class="posts-list-item-name float-left"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></span>
 <span class="posts-list-item-date float-right">{{ post.date | date: "%Y-%m-%d" }}</span>
 </div>
+{% endif %}
