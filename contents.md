@@ -14,3 +14,7 @@ permalink: contents.html
 [```oop```](/tag/oop.html)
 [```oss```](/tag/oss.html)
 [```reactive```](/tag/reactive.html)
+
+This is a full list of {{ size.posts.size }} blog posts published:
+
+{{ site.posts }}
