@@ -5,13 +5,18 @@ date: 2023-01-20
 permalink: pets.html
 ---
 
-<img alt="logo" src="https://raw.githubusercontent.com/eo-cqrs/eo-kafka/master/logo.svg" height="25px" /> 
+<p>
+<img alt="logo" src="https://raw.githubusercontent.com/eo-cqrs/eo-kafka/master/logo.svg" style="width:150px;height:150px;" /> 
 
 <a href="https://eo-cqrs.github.io/eo-kafka"><b>eo-kafka</b></a> (Java) EO Kafka Producers and consumers for working with Apache Kafka message broker.
+</p>
 
-<img alt="logo" src="https://raw.githubusercontent.com/eo-cqrs/.github/master/eo-cqrs.svg" height="25px" /> 
+<p>
+<img alt="logo" src="https://raw.githubusercontent.com/eo-cqrs/.github/master/eo-cqrs.svg" style="width:150px;height:150px;" /> 
 
 <a href="https://eo-cqrs.github.io/eo-qce"><b>eo-qce</b></a> (Java) Objects for handling Queries, Commands and Events in Event Sourcing & CQRS. 
+</p>
+
 
 <a href="https://github.com/h1alexbel/alerter-mail"><b>alerter-mail</b></a>: An Email assistant/Telegram Chat-Bot. It helps you to deliver PDF documents faster.
 ```
