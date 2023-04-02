@@ -10,8 +10,8 @@ permalink: contents.html
 [```maintainability```](/tag/maintainability.html)
 [```microservices```](/tag/microservices.html)
 [```nosql```](/tag/nosql.html)
-[```oop```](/tag/oop.html)
 [```oss```](/tag/oss.html)
+[```pets```](/tag/pets.html)
 [```reactive```](/tag/reactive.html)
 
 This is a full list of all blog posts published:
