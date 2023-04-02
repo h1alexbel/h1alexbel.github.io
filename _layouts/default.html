@@ -23,7 +23,7 @@ layout: default
 <section>
     <header class="header" id="header">
         <div>
-            <a href="/">
+            <a href="/about-me.html">
                 <img width="125px" height="125px"
                      src="https://res.cloudinary.com/dcvb0ntc5/image/upload/v1671739450/photo-modified_gbwhbs.png"
                      class="logo" alt="Blog Logo"/>
@@ -72,7 +72,7 @@ layout: default
         {{ content }}
     </div>
     <footer style="font-family: 'Computer Modern Serif', serif">
-        &copy; Aliaksei Bialiauski
+        Copyright &copy; {{ site.time | date: '%Y' }}. {{ site.domain }}.
     </footer>
 </section>
 <script>var disqus_shortname = 'news-eolang-org';</script>
