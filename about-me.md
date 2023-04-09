@@ -14,14 +14,14 @@ a Software Engineer, Architect.
 Update: Since July 2022 I'm work as Kotlin/Java SDE
 at [```Solvd```](http://solvd.com).
 
-I am a **Passionate Software Craftsman** and **Powerful Contributor** with strong background in distributed parallel/reactive systems, and object-oriented analysis and design with Java.
+I am a **Passionate Software Craftsman** and **Contributor** with strong background in backend distributed parallel/reactive systems, and object-oriented analysis and design with Java.
 I [**write**](https://github.com/h1alexbel)
-mostly in Java. And, I am a [founder](/pets.html) and active contributor of a few open source projects.
+mostly in Java. And, I am a [**founder**](/pets.html) and active contributor of a few open source projects.
 
 Hands-on experience in building scalable, highly available and maintainable technology solutions using:
 - Microservices
-- Stream Processing/Integration development with **Kafka**
 - Data Storages: **PostgreSQL**, **Cassandra**
+- Stream Processing/Integration development with **Kafka**
 - Cloud Computing & DevOps: **AWS**, **Kubernetes**
 - OOAD with **Java**
 
