@@ -6,7 +6,7 @@ title: "Worst & Best practices of Software Development"
 tags: maintainability quality
 ---
 
-Most projects now failing due to not stupid or lazy developers, but because of low quality-level of the software
+Most projects now failing not because of stupid or lazy developers, but because of low quality-level of the software
 projects.
 Low quality of CI/CD pipeline, Code Reviewing, weak or no Testing, no Style Checking, poor Documentation and so on.
 This blog post one by one will explain what should be done, so you can call your project of high quality and contribute
