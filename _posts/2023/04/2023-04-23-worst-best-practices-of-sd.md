@@ -123,7 +123,7 @@ What you should include in your wall:
 
 Once the [wall](#3-build-quality-wall) is built we don't need to say to developers:
 "Please, write only a good code, I'm counting on you".
-No sense since quality wall is configured.
+No sense since quality wall is configured to reject bad code.
 Instead, say: "Please, write code faster"
 
 ## 5. Independent Quality Reviews
