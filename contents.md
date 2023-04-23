@@ -12,6 +12,7 @@ permalink: contents.html
 [```nosql```](/tag/nosql.html)
 [```oss```](/tag/oss.html)
 [```pets```](/tag/pets.html)
+[```quality```](/tag/quality.html)
 [```reactive```](/tag/reactive.html)
 
 This is a full list of all blog posts published:
