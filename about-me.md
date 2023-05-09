@@ -9,7 +9,7 @@ permalink: about-me.html
 
 I'm Aliaksei Bialiauski (Russian:
 <span lang="ru" xml:lang="ru">Алексей Беля́вский</span>),
-a Software Engineer, Architect.
+a Integration Developer, Architect.
 
 Update: Since July 2022 I'm work as Kotlin/Java SDE
 at [```Solvd```](http://solvd.com).
@@ -20,9 +20,9 @@ mostly in Java. And, I am a [**founder**](/pets.html) and active contributor of 
 
 Hands-on experience in building scalable, highly available and maintainable technology solutions using:
 - Microservices
-- Data Storages: **PostgreSQL**, **Cassandra**
+- Data Storages: **PostgreSQL**
 - Stream Processing/Integration development with **Kafka**
-- Cloud Computing & DevOps: **AWS**, **Kubernetes**
+- Cloud Computing & DevOps: **AWS**, **Kubernetes**, **Terraform**
 - OOAD with **Java**
 
 Interested in ```R&D``` in the area of **Distributed Systems and Parallel Computing**.
