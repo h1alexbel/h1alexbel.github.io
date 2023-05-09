@@ -126,7 +126,12 @@ Once the [wall](#3-build-quality-wall) is built we don't need to say to develope
 No sense since quality wall is configured to reject bad code.
 Instead, say: "Please, write code faster"
 
-## 5. Independent Quality Reviews
+## 5. Versioning
+Keep your software versioned. Follow simple [semver.org](https://semver.org/) or even [0ver.org](https://0ver.org/).
+<br>
+Thanks, [l3r8y](https://www.l3r8y.ru/) (Ivan Ivanchuk) for noticing this practice.
+
+## 6. Independent Quality Reviews
 
 Independent Quality Reviews is indicator of ensured the quality of software projects.
 IQRs involve an objective and impartial evaluation of the software development process, deliverables,
