@@ -27,7 +27,7 @@ Hands-on experience in building scalable, highly available and maintainable tech
 
 Interested in ```R&D``` in the area of **Distributed Systems and Parallel Computing**.
 
-I'm also make some videos about System Design, OOAD, and Software Architecture in general.
+I'm also make some videos about Software Design, OOAD, and Software Architecture in general.
 Check out my [**YouTube channel**](https://www.youtube.com/@absimplearchitect/featured).
 
 Here are [**my favorite books**](/books.html)
