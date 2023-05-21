@@ -15,6 +15,8 @@ permalink: contents.html
 [```quality```](/tag/quality.html)
 [```reactive```](/tag/reactive.html)
 
+Total: {{ site.posts.size }}.
+
 This is a full list of all blog posts published:
   <ul class="categories-list">
     {% assign sorted_posts = site.posts | sort: 'date' %}{% for post in sorted_posts %}
