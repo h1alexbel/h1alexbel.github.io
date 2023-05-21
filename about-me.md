@@ -9,12 +9,12 @@ permalink: about-me.html
 
 I'm Aliaksei Bialiauski (Russian:
 <span lang="ru" xml:lang="ru">Алексей Беля́вский</span>),
-a Integration Developer, Architect.
+an Integration Developer, Architect.
 
 Update: Since July 2022 I'm work as Kotlin/Java SDE
 at [```Solvd```](http://solvd.com).
 
-I am a **Passionate Software Engineer** with strong background in distributed parallel/reactive systems, and object-oriented analysis and design with Java.
+I am a **Passionate Software Engineer** with a strong background in distributed parallel/reactive systems, and object-oriented analysis and design with Java.
 I [**write**](https://github.com/h1alexbel)
 mostly in Java. And, I am a [**founder**](/pets.html) and active contributor of a few open source projects.
 
@@ -27,7 +27,7 @@ Hands-on experience in building scalable, highly available and maintainable tech
 
 Interested in ```R&D``` in the area of **Distributed Systems and Parallel Computing**.
 
-I'm also make some videos about Software Design, OOAD, and Software Architecture in general.
+I'm also making some videos about Software Design, OOAD, and Software Architecture in general.
 Check out my [**YouTube channel**](https://www.youtube.com/@absimplearchitect/featured).
 
 Here are [**my favorite books**](/books.html)
