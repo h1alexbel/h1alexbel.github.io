@@ -29,6 +29,7 @@ Interested in ```R&D``` in the area of **Distributed Systems and Parallel Comput
 
 I'm also making some videos about Software Design, OOAD, and Software Architecture in general.
 Check out my [**YouTube channel**](https://www.youtube.com/@absimplearchitect/featured).
+All my guides and lectures are published [**here**](/guides.html).
 
 Here are [**my favorite books**](/books.html)
 about software engineering.
