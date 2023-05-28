@@ -11,7 +11,7 @@ I'm Aliaksei Bialiauski (Russian:
 <span lang="ru" xml:lang="ru">Алексей Беля́вский</span>),
 an Integration Developer, Architect.
 
-Update: Since July 2022 I'm work as Kotlin/Java SDE
+Update: Since July 2022 I'm work as Integration/Java Developer
 at [```Solvd```](http://solvd.com).
 
 I am a **Passionate Software Engineer** with a strong background in distributed parallel/reactive systems, and object-oriented analysis and design with Java.
