@@ -5,7 +5,7 @@ place: Minsk, Belarus
 title: "One Click Deployment to Google Cloud Compute Engine"
 tags: devops
 ---
-This is a short and simple guide to how to deploy a new version of your application to the Google Cloud,
+This is a short and simple guide to how to deploy a new version of your application to the Google Cloud Compute Engine,
 just from GitHub issue. Fully automated. No scripts.
 
 <!--more-->
