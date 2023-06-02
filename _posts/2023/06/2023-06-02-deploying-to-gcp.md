@@ -10,6 +10,8 @@ just from GitHub issue. Fully automated. No scripts.
 
 <!--more-->
 
+<img src="/images/2023/06/broen-introducing.jpg">
+
 Deploying an application to the [Google Cloud](https://cloud.google.com/) is very easy for me.
 I just post a comment in the GitHub issue: `@rultor deploy, image is <image id>, instance is <instance> `.
 [Rultor](http://www.rultor.com/), DevOps chatbot, deploys the application to [Compute Engine](https://cloud.google.com/compute) in just 5 minutes.
@@ -68,7 +70,8 @@ Now we can run it. Create a new issue on GitHub and post a comment:
 You will get a response in a few seconds. Rultor will do the rest.
 Enjoy deploying from just a browser on your phone like me :)
 
-Also, read in details about Rultor, the interactive DevOps GitHub-based chatbot.
+Also, read in details about Rultor, the interactive DevOps GitHub-based chatbot:
 
-[Documentation](https://doc.rultor.com/).
+[Documentation](https://doc.rultor.com/)
+<br>
 [_Rultor.com, a Merging Bot_](https://www.yegor256.com/2014/07/24/rultor-automated-merging.html).
