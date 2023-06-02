@@ -5,6 +5,7 @@ date: 2023-02-19
 permalink: contents.html
 ---
 [```arc```](/tag/arc.html)
+[```devops```](/tag/devops.html)
 [```java```](/tag/java.html)
 [```k8s```](/tag/k8s.html)
 [```maintainability```](/tag/maintainability.html)
