@@ -16,7 +16,7 @@ In this blog post I will share my key points of successful project, and how to b
 
 <img src="/images/2023/01/bsc.png">
 
-# ```Build pipeline```
+## Build pipeline
 
 Build pipeline is absolutely mandatory. And this is [first](https://www.youtube.com/watch?v=TcD6jJKaLcg&t=78s), what you should configure when you're starting
 new
@@ -48,15 +48,14 @@ jobs:
           mvn clean install
 ```
 
-# ```Merging bot```
+## Merging bot
 
 All pull requests should be merged not by a [human](https://www.yegor256.com/2014/07/21/read-only-master-branch.html),
 but by bot. On GitHub, you can find lots of them. I use and recommend
 [Rultor](https://github.com/rultor).
+[Read in more details](https://www.yegor256.com/2014/07/24/rultor-automated-merging.html).
 
-[More details](https://www.yegor256.com/2014/07/24/rultor-automated-merging.html)
-
-# ```README```
+## README
 
 Proper README styling really helps in project understanding. Unfortunately, most people don't style their README,
 instead, they go to Confluence/Wiki pages and post unlimited amount of documents and information about the project. 1
@@ -70,15 +69,18 @@ There are few points that definitely should be in your README file:
 - Quick Start
 - How to contribute
 
-# ```Tickets```
+## Tickets
 
 Your project should be traceable. In order to achieve that you will need to discipline your team. Just follow simple
 rule: don't make changes without a ticket. Tickets should be the smallest as possible. If it doesn't - decompose it into
 smaller ones. I even suggest you to
 try [Puzzle-Driven-Development](https://www.yegor256.com/2017/04/05/pdd-in-action.html) and micro-tasking.
 
-# ```Dependency management bot```
+## Dependency management bot
 
 After your project will be successfully deployed and used by many users you should watch your dependency list. Time to
 time check if some dependencies are too old or not. Don't do it manually, instead delegate this work to the
 bots. [Renovate bot](https://github.com/renovatebot/renovate) can be a good fit.
+
+By the way, you can use [`l3r8yJ/elegant`](https://github.com/l3r8yJ/elegant) GitHub repository template for creating
+such project from the 1st commit. 
