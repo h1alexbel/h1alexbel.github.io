@@ -3,7 +3,7 @@ layout: post
 date: 2023-06-02
 place: Minsk, Belarus
 title: "One Click Deployment to Google Cloud Compute Engine"
-tags: devops
+tags: devops github
 ---
 This is a short and simple guide on how to deploy a new version of your application to the Google Cloud Compute Engine,
 just from GitHub issue. Fully automated. No scripts.
