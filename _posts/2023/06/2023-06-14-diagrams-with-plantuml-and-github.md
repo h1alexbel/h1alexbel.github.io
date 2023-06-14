@@ -91,5 +91,5 @@ After merging it into `master` branch, diagram will be compiled to SVG and pushe
 
 Diagramming made easy!
 
-Full example at [blamer-io/hub/#31](https://github.com/Blamer-io/hub/pull/31)
+Full example at [blamer-io/hub/#31](https://github.com/Blamer-io/hub/pull/31);
 Result is [here](https://github.com/Blamer-io/hub/blob/master/diagrams/sequence.svg).
