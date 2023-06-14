@@ -89,6 +89,9 @@ Pay attention to that, this **workflow should be in the master branch first**.
 
 After merging it into `master` branch, diagram will be compiled to SVG and pushed there.
 
+## Get the Diagram
+![img.png](/images/2023/06/sequence.svg)
+
 Diagramming made easy!
 
 Full example at [blamer-io/hub/#31](https://github.com/Blamer-io/hub/pull/31);
