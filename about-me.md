@@ -14,9 +14,8 @@ an Integration Developer, Architect.
 Update: Since July 2022 I'm work as Integration/Java Developer
 at [```Solvd```](http://solvd.com).
 
-I am a **Passionate Software Engineer** with a strong background in distributed parallel/reactive systems, and object-oriented analysis and design with Java.
-I [**write**](https://github.com/h1alexbel)
-mostly in Java. And, I am a [**founder**](/pets.html) and active contributor of a few open source projects.
+I am a Software Developer with a strong background in distributed integration systems, and object-oriented analysis and design with Java.
+And, I am a [**founder**](/pets.html) and active [**contributor**](https://github.com/h1alexbel) of a few open source projects.
 
 Hands-on experience in building scalable, highly available and maintainable technology solutions using:
 - Microservices
@@ -25,7 +24,7 @@ Hands-on experience in building scalable, highly available and maintainable tech
 - Cloud Computing & DevOps: **AWS**, **Kubernetes**, **Terraform**
 - OOAD with **Java**
 
-Interested in ```R&D``` in the area of **Distributed Systems and Parallel Computing**.
+Interested in R&D in the area of Integration/Distributed systems.
 
 I'm also making some videos about Software Design, OOAD, and Software Architecture in general.
 Check out my [**YouTube channel**](https://www.youtube.com/@absimplearchitect/featured).
