@@ -6,12 +6,10 @@ permalink: contents.html
 ---
 [```arc```](/tag/arc.html)
 [```devops```](/tag/devops.html)
+[```github```](/tag/github.html)
 [```java```](/tag/java.html)
-[```k8s```](/tag/k8s.html)
 [```maintainability```](/tag/maintainability.html)
 [```microservices```](/tag/microservices.html)
-[```nosql```](/tag/nosql.html)
-[```oss```](/tag/oss.html)
 [```pets```](/tag/pets.html)
 [```quality```](/tag/quality.html)
 [```reactive```](/tag/reactive.html)
