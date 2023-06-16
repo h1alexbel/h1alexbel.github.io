@@ -24,7 +24,7 @@ Hands-on experience in building scalable, highly available and maintainable tech
 - Cloud Computing & DevOps: **AWS**, **Kubernetes**, **Terraform**
 - OOAD with **Java**
 
-Interested in ```R&D``` in the area of Integration/Distributed systems.
+Interested in R&D in the area of Integration/Distributed systems.
 
 I'm also making some videos about Software Design, OOAD, and Software Architecture in general.
 Check out my [**YouTube channel**](https://www.youtube.com/@absimplearchitect/featured).
