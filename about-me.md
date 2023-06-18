@@ -37,6 +37,6 @@ Ah, one more thing. I'm a big fan of good movies, so here's
 [**my list**](/movies.html) of the ones.
 
 If you are interested, my [**personality type**](https://en.wikipedia.org/wiki/Myers%E2%80%93Briggs_Type_Indicator)
-is [```INTJ-A```](/images/personality.png).
+is [**INTJ-A**](/images/personality.png).
 
 Sponsor me on [**GitHub**](https://github.com/sponsors/h1alexbel).
