@@ -7,7 +7,7 @@ tags: maintainability arc
 ---
 
 I don't even know where to start.
-Maintainability is the main Non-Functional Requirement (NFR) in software development to aim for.
+Maintainability is the main Non-Functional Requirement (NFR) in software development to focus on.
 For most software projects, maintainability is the most important thing.
 I believe this post answers on why.
 
