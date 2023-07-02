@@ -65,7 +65,7 @@ I believe that now, we need more high-level languages with focus on specific use
 It should be **simple**, **high-level**, and **specific-focused**.
 That's it.
 
-There are some features of really new and modern programming language:
+There are some features of really new and modern programming language, based on [**D29**](https://www.yegor256.com/2013/12/29/proto.html):
 
 1. VSC support at language level
 2. UML and OCL support at language level
