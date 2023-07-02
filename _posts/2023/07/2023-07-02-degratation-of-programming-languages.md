@@ -19,6 +19,7 @@ It's time to change our tooling.
 <img src="/images/2023/07/gone-girl.jpg">
 
 Now, in 2023, modern programming languages are focusing only on one thing:
+<br>
 _How to satisfy all the developers in the world, that they can use only our language to solve all their problems?_
 
 The Biggest problem we have now,
@@ -29,10 +30,10 @@ The same with static methods.
 The same with 90% of features in "modern" programming languages
 such as Java, Kotlin, TypeScript, Go, Ruby, etc.
 
-While languages and platforms formulate the [maintainability](https://h1alexbel.github.io/2023/06/25/maintainability-first-others-second.html) of the programs we create,
+While languages and platforms formulate the [**maintainability**](https://h1alexbel.github.io/2023/06/25/maintainability-first-others-second.html) of the programs we create,
 modern languages start looking uglier, uglier, and uglier.
 To satisfy all the needs, modern languages inevitably start introduce
-ability to write the same things in a different way, a.k.a flexibility, or [syntactic sugar](https://www.yegor256.com/2017/04/11/flexibility-equates-lower-quality.html).
+ability to write the same things in a different way, a.k.a flexibility, or [**syntactic sugar**](https://www.yegor256.com/2017/04/11/flexibility-equates-lower-quality.html).
 
 > _Simply put, higher quality comes from simpler languages. - Yegor Bugayenko_
 
