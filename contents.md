@@ -6,6 +6,7 @@ permalink: contents.html
 ---
 [```arc```](/tag/arc.html)
 [```devops```](/tag/devops.html)
+[```future```](/tag/future.html)
 [```github```](/tag/github.html)
 [```java```](/tag/java.html)
 [```maintainability```](/tag/maintainability.html)
