@@ -11,6 +11,7 @@ permalink: contents.html
 [```java```](/tag/java.html)
 [```maintainability```](/tag/maintainability.html)
 [```microservices```](/tag/microservices.html)
+[```oop```](/tag/oop.html)
 [```pets```](/tag/pets.html)
 [```quality```](/tag/quality.html)
 [```reactive```](/tag/reactive.html)
