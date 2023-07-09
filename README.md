@@ -2,7 +2,9 @@
 
 [![jekyll](https://github.com/h1alexbel/h1alexbel.github.io/actions/workflows/jekyll.yml/badge.svg)](https://github.com/h1alexbel/h1alexbel.github.io/actions/workflows/jekyll.yml)
 [![pages-build-deployment](https://github.com/h1alexbel/h1alexbel.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/h1alexbel/h1alexbel.github.io/actions/workflows/pages/pages-build-deployment)
+
 [![Hits-of-Code](https://hitsofcode.com/github/h1alexbel/h1alexbel.github.io?branch=main)](https://hitsofcode.com/view/github/h1alexbel/h1alexbel.github.io?branch=main)
+[![Lines-of-Code](https://tokei.rs/b1/github/h1alexbel/h1alexbel.github.io)](https://github.com/h1alexbel/h1alexbel.github.io)
 
 [![My YouTube](https://img.shields.io/badge/YouTube-subscribe-active?logo=youtube)](https://www.youtube.com/c/absimplearchitect?sub_confirmation=1)
 [![My Telegram](https://img.shields.io/badge/Telegram-subscribe-active?logo=telegram)](https://t.me/h1alexbeltalks)
