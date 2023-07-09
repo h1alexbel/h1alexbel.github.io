@@ -34,7 +34,7 @@ It's a default problem now, thanks to Spring and Apache.
 ## Alternative
 
 To refactor this interface, **we need to generalize all methods' parameters**.
-Here I'm using `org.cactoos.Scalar` from [cactoos](https://github.com/yegor256/cactoos).
+Here I'm using `org.cactoos.Scalar` from [**cactoos**](https://github.com/yegor256/cactoos).
 
 ```java
 interface Inputs extends Scalar<Directives> {
@@ -97,7 +97,7 @@ final class Combined implements Inputs {
 }
 ```
 
-Here is the use-case of this pattern in [eo-kafka](https://github.com/eo-cqrs/eo-kafka),
+Here is the use-case of this pattern in eo-kafka, [**sources**](https://github.com/eo-cqrs/eo-kafka),
 (simplified):
 ```java
 public final class FkConsumer implements Consumer<Object, String> {
