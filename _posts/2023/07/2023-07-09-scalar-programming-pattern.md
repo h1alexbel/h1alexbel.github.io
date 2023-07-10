@@ -2,7 +2,7 @@
 layout: post
 date: 2023-07-09
 place: Minsk, Belarus
-title: "Scalar Programming Pattern"
+title: "Scalar Driven Development"
 tags: oop java
 ---
 
@@ -102,7 +102,7 @@ Here is the use-case of this pattern in eo-kafka, [**sources**](https://github.c
 ```java
 public final class FkConsumer implements Consumer<Object, String> {
   private final UUID id;
-  private final FkBroker broker;
+  private final Broker broker;
 
   @Override
   public void subscribe(final Collection<String> topics) {
@@ -138,3 +138,7 @@ public final class FkConsumer implements Consumer<Object, String> {
 
 As you can see, intermediate Broker can be used in various scenarios,
 keeping this interface simple and small.
+
+**P.S**
+<br>
+[**@l3r8yJ**](https://www.l3r8y.ru/) called this way of development - **Scalar Driven Development (SDD)**.
