@@ -45,6 +45,7 @@ in a common software project:
 All of them you need to be aware of!
 
 And don't get me wrong.
+It's not about being Jack of all Trades.
 You need to be a niche specialist, a niche-focused **expert**.
 Imagine X & Y coords, on X is your disciplines,
 while on Y is your tech stack you're expert in.
@@ -82,7 +83,7 @@ VCS, Terraform, Pipelines
 
 PMBOK, RUP
 
-You need to go full cycle.
+Let me summarize all the stuff: you need to go full cycle.
 The best way to do it is to create your own [pet]() project.
 There, you will practice all the disciplines, 
 and you will be able to do them in a large-scale project.
