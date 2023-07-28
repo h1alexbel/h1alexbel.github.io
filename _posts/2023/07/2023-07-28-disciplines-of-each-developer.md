@@ -26,6 +26,31 @@ I strongly believe that being a developer, besides coding, you need to know
 how to help you project.
 Remember, when coders create lines of code,
 professional developers create software that works.
+<br>
+What are the steps to build from zero some more or less
+stable software product?
+
+According to [RUP](), there are 9 disciplines
+in a common software project:
+* Business Modeling
+* Requirements
+* Analysis & Design
+* Implementation
+* Testing
+* Deployment
+* Configuration & Change Management
+* Project Management
+* Environment
+
+All of them you need to be aware of!
+
+And don't get me wrong.
+You need to be a niche specialist, a niche-focused **expert**.
+Imagine X & Y coords, on X is your disciplines,
+while on Y is your tech stack you're expert in.
+**If you are a niche-focused expert,
+and at the same time, know all activities in software project,
+you will the MVP on each project**.
 
 ## Business Modelling
 
