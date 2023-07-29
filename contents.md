@@ -14,6 +14,7 @@ permalink: contents.html
 [```microservices```](/tag/microservices.html)
 [```oop```](/tag/oop.html)
 [```pets```](/tag/pets.html)
+[```process```](/tag/process.html)
 [```quality```](/tag/quality.html)
 [```reactive```](/tag/reactive.html)
 
