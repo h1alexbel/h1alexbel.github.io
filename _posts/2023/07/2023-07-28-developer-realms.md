@@ -30,7 +30,7 @@ professional developers create software that works.
 What are the steps to build from zero some more or less
 stable software product?
 
-According to [RUP](https://en.wikipedia.org/wiki/Rational_unified_process), there are 9 disciplines
+According to [**RUP**](https://en.wikipedia.org/wiki/Rational_unified_process), there are 9 disciplines
 in a common software project:
 * Business Modeling
 * Requirements
@@ -53,6 +53,18 @@ while on Y is your tech stack you're expert in.
 and at the same time, know all activities in software project,
 you will the MVP on each project**.
 
+I summarize all the RUP phases into 
+the following disciplines, the developer realms:
+
+* Business Modeling
+* Requirements
+* Design
+* Implementation
+* Testing
+* Deployment
+* Configuration
+* Project Management
+
 ## Business Modeling
 
 First things first.
@@ -65,9 +77,9 @@ Try to follow simple rule: docs over talks.
 
 Then, after business modeling, we need to 
 start collecting requirements.
-To do it right, you need to know what [SRS](https://en.wikipedia.org/wiki/Software_requirements_specification) is.
-Moreover, you need to be aware of [rules and 
-best practices](https://www.yegor256.com/2015/11/10/ten-mistakes-in-specs.html) when it comes to requirements.
+To do it right, you need to know what [**SRS**](https://en.wikipedia.org/wiki/Software_requirements_specification) is.
+Moreover, you need to be aware of [**rules and 
+best practices**](https://www.yegor256.com/2015/11/10/ten-mistakes-in-specs.html) when it comes to requirements.
 And again, start preparing the right documents.
 I'm usually creating one long README.md file and 
 then commit it into git repo.
@@ -75,7 +87,7 @@ So, your tooling can be: Git + Markdown/LaTeX.
 
 ## Design
 
-To become an [architect](https://h1alexbel.github.io/2023/06/11/arc-tools.html), you definitely need 
+To become an [**architect**](https://h1alexbel.github.io/2023/06/11/arc-tools.html), you definitely need 
 to become very successful here.
 First, master your UML skills.
 You must be able to draw simple UML sketch,
@@ -93,7 +105,7 @@ Again, produce documents that emphasize all your decisions.
 ## Implementation
 
 Finally, coding!
-Your main focus should be on [Software Maintainability](https://h1alexbel.github.io/2023/06/25/maintainability-first-others-second.html).
+Your main focus should be on [**Software Maintainability**](https://h1alexbel.github.io/2023/06/25/maintainability-first-others-second.html).
 It's lots to learn how to reach it.
 It's hard.
 Your open source skills can boost it significantly.
@@ -102,7 +114,7 @@ your own software packages and products.
 Simply put, code reusability is the main virtue here.
 While duplication is a sin.
 
-## Test
+## Testing
 
 First, understand why we need testing.
 It's not about comparing actual and expected results.
@@ -125,20 +137,20 @@ My favorite here.
 You need to be well-versed how your software gets 
 deployed to the end users.
 No excuses.
-Popular tooling is some cloud provider like [AWS](https://aws.amazon.com/) or similar,
-[Kubernetes](https://kubernetes.io/), and [Docker](https://www.docker.com/).
+Popular tooling is some cloud provider like [**AWS**](https://aws.amazon.com/) or similar,
+[**Kubernetes**](https://kubernetes.io/), and [**Docker**](https://www.docker.com/).
 And your deployment must be configured at
 the start of the project
-and be fully automated like [here](https://h1alexbel.github.io/2023/06/02/deploying-to-gcp.html).
+and be fully automated like [**here**](https://h1alexbel.github.io/2023/06/02/deploying-to-gcp.html).
 
-## Configuration Management
+## Configuration
 
 You need to know how to configure your CI/CD pipelines,
 how to set up VCS.
 
-Here, you can also merge [Deployment activities](#deployment) and configuration
-management by using [IaC](https://en.wikipedia.org/wiki/Infrastructure_as_code).
-Terraform is a good one.
+Here, you can also merge [**Deployment activities**](#deployment) and configuration
+management by using [**IaC**](https://en.wikipedia.org/wiki/Infrastructure_as_code).
+[**Terraform**](https://www.terraform.io) is a good one.
 
 ## Project Management
 
@@ -146,10 +158,10 @@ To grow, you need to understand project management.
 I'm not talking about Agile fairy tails, I'm talking about
 some serious project management rules and best practices.
 And you can't learn them in one day.
-From myself, I suggest to read [PMBOK](https://www.pmi.org/pmbok-guide-standards/foundational/pmbok), [CMMI](https://cmmiinstitute.com/) and try to apply them
+From myself, I suggest to read [**PMBOK**](https://www.pmi.org/pmbok-guide-standards/foundational/pmbok), [CMMI](https://cmmiinstitute.com/) and try to apply them
 into your project workflow.
 
 Let me summarize all the stuff: you need to go full cycle.
-The best way to do it is to create your own [pet](https://h1alexbel.github.io/pets.html) project.
+The best way to do it is to create your own [**pet**](https://h1alexbel.github.io/pets.html) project.
 There, you will practice all the disciplines, 
 and you will be able to do them in a large-scale project.
