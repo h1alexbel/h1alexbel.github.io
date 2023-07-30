@@ -53,7 +53,7 @@ while on Y is your tech stack you're expert in.
 and at the same time, know all activities in software project,
 you will the MVP on each project**.
 
-I summarize all the RUP phases into 
+I've summarized all the RUP phases into 
 the following disciplines, the developer realms:
 
 * Business Modeling
