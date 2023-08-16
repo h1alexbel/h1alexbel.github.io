@@ -29,7 +29,7 @@ interface Broker {
 `Broker` interface is not scalable at all.
 On each new logic, new method will be added to it.
 At some point, your interface ends up with 100+ methods.
-It's a default problem now, thanks to Spring and Apache. 
+It's a default problem now, thanks to Spring and Apache.
 
 ## Alternative
 
@@ -138,6 +138,65 @@ public final class FkConsumer implements Consumer<Object, String> {
 
 As you can see, intermediate Broker can be used in various scenarios,
 keeping this interface simple and small.
+
+## Avoiding Workers
+
+To avoid [**evil**](https://www.yegor256.com/2015/03/09/objects-end-with-er.html)
+suffix of your objects: `-ER`,
+a.k.a Worker, we just need to **define our results of manipulations with objects
+as other objects**, that's how Scalar is born.
+
+{% quote Declarative programming means you define results of manipulations with objects as other objects. %}
+
+```java
+interface Mapper<F, T> {
+  T to(F from);
+}
+
+final class SongMapper implements Mapper<HttpRequest, Song> {
+  @Override
+  public Song to(final HttpRequest rq) {
+    return new Song(rq.path("name"));
+  }
+}
+
+// call it
+final SongMapper mapper = new SongMapper();
+final Song song = mapper.to(request);
+```
+`SongMapper` encapsulates nothing, frankly speaking
+it's not even a class, it's nothing more than a set of procedures.
+More than that, `SongMapper`
+represent nothing from a [**real-world**](https://www.yegor256.com/2014/11/20/seven-virtues-of-good-object.html#1-he-exists-in-real-life).
+We are just treating it like some smart object to manage our dumb DTOs.
+
+Instead of doing such procedural things, we can go with SDD; 
+it will make our objects more declarative:
+
+```java
+final class SongFromHttp implements Scalar<Song> {
+  
+  private final HttpRequest request;
+  
+  @Override
+  public Song value() {
+    return new Song(this.request.path("name"));
+  }
+}
+
+// call it
+final Song song = new SongFromHttp(request).value();
+```
+
+The same functionality, but now:
+
+1. we are treating `SongFromHttp`as real-world entity.
+2. `SongFromHttp` has a state inside self: object encapsulates `HttpRequest`
+3. thanks to 2., we can perform lazy computation of `SongFromHttp#value()`
+
+Watch this:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6GMiosTLUTc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 **P.S**
 <br>
