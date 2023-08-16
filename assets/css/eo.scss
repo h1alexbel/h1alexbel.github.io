@@ -54,8 +54,6 @@ h1 {
 }
 
 .quote {
-    @extend %desktop-only;
-    @extend %unprintable;
     border-left: 4 * 10px solid darkgreen;
     float: right;
     font-size: 1.6 * 1em;
