@@ -5,7 +5,7 @@ date: 2022-12-24
 permalink: about-me.html
 ---
 
-<img width="500" height="500" src="images/about-me.jpg">
+<img width="500" height="500" src="images/about.jpg">
 
 I'm Aliaksei Bialiauski (Russian:
 <span lang="ru" xml:lang="ru">Алексей Беля́вский</span>),
