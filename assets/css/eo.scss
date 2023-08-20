@@ -61,7 +61,11 @@ h1 {
     margin: .5 * 1em -5 * 1em .5 * 1em 1em;
     padding-left: .75 * 1em;
     width: 15 * 1em;
-
+    @media screen and (max-width: 900px){
+        .content-desktop {
+            display: none;
+        }
+    }
     &::before {
         content: 'ˮ';
     }
