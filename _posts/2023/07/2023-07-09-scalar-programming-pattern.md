@@ -146,9 +146,9 @@ suffix of your objects: `-ER`,
 a.k.a Worker, we just need to **define our results of manipulations with objects
 as other objects**, that's how Scalar is born.
 
-> Declarative programming
+> "_Declarative programming
   means you define results of manipulations
-  with objects as other objects.
+  with objects as other objects_".
 
 Let's see an example: we need to map `HttpRequest` to `Song` object: 
 
