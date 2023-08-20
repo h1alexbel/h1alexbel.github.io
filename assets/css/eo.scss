@@ -53,25 +53,6 @@ h1 {
     height: 5em;
 }
 
-@media screen and (min-width: 600px){
-  .quote {
-    border-left: 4 * 10px solid darkgreen;
-    float: right;
-    font-size: 1.6 * 1em;
-    line-height: 1.6 * 1em;
-    margin: .5 * 1em -5 * 1em .5 * 1em 1em;
-    padding-left: .75 * 1em;
-    width: 15 * 1em;
-    &::before {
-      content: 'ˮ';
-    }
-  }
-}
-
-.quote {
-    display: none;
-}
-
 .subline {
     margin-left: 0;
 li {
