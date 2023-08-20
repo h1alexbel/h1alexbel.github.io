@@ -146,7 +146,11 @@ suffix of your objects: `-ER`,
 a.k.a Worker, we just need to **define our results of manipulations with objects
 as other objects**, that's how Scalar is born.
 
-> Declarative programming means you define results of manipulations with objects as other objects.
+> Declarative programming
+  means you define results of manipulations
+  with objects as other objects.
+
+Let's see an example: we need to map `HttpRequest` to `Song` object: 
 
 ```java
 interface Mapper<F, T> {
