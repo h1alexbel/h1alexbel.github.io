@@ -183,6 +183,11 @@ Here is my summary of what SDD means:
 3. Delayed calls (unless `value()` is called, nothing will happen)
 4. Absence of getters (there is `value()`, no sense to violate encapsulation)
 
+There are a few real-world examples of how we maintain those 'scalars' in our projects:
+[**eo-kafka**](https://github.com/eo-cqrs/eo-kafka),
+[**cmig**](https://github.com/eo-cqrs/cmig),
+[**cactoos**]() and many more at [**EO-CQRS**](https://github.com/eo-cqrs). 
+
 That's it.
 
 **P.S**
