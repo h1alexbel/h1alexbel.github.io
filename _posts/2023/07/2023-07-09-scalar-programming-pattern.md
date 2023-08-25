@@ -92,6 +92,10 @@ is a good citizen of a pipeline.
 Each of them is represented as a small result,
 as a part of a bigger one.
 
+## Delayed calls
+
+Nothing will be computed until `value()` is called:
+
 ```java
 new Flushed(
   new Validated(
@@ -100,7 +104,7 @@ new Flushed(
     )
   ),
   docs  
-).value(); // nothing will be computed until value() is called
+).value(); // trigger pipeline
 ```
 
 ## Scalars vs. Workers
@@ -169,6 +173,17 @@ The same functionality, but now:
 Watch this:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6GMiosTLUTc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+## Summary
+
+What are we learning here?
+Here is my summary of what SDD means:
+1. State (your object must encapsulate something)
+2. Declarative (scalars are treated as parts of other objects, as some results)
+3. Delayed calls (unless `value()` is called, nothing will happen)
+4. Absence of getters (there is `value()`, no sense to violate encapsulation)
+
+That's it.
 
 **P.S**
 <br>
