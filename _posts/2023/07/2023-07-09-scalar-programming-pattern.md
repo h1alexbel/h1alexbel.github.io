@@ -6,142 +6,114 @@ title: "Scalar Driven Development"
 tags: oop java
 ---
 
-It's very hard to keep small and organized interfaces.
-Scalar pattern makes interfaces simple, maintainable and 
-easy to use for their clients.
+It's very hard to make objects declarative.
+Scalar Driven Development can help you to model
+your objects as declarative parts of application.
 
 <!--more-->
 
 <img src="/images/2023/07/saul-take.png">
 
-## Problem
+First things first.
+Imperative programming covers 99% of code.
+We're still writing the same procedural code, that we did in C 50 years ago.
+We are done with it.
+It's time to cure our brains.
 
-Let's say your interface looks like this: 
+## Scalars are Declarative
+
+Scalar Driven Development is a way to model our objects as declarative parts,
+some results, that will be computed later.
+
+We define the interface first, where we denote our Scalar object.
+
+Here is an example:
 
 ```java
-interface Broker {
-  Broker withTopics(TopicDirs topics);
-  Broker withDatasets(DatasetDirs datasets);
-  Broker withSubs(SubDirs subs);
+interface User extends Scalar<Json>{
+  @Override
+  Json value();
 }
 ```
 
-`Broker` interface is not scalable at all.
-On each new logic, new method will be added to it.
-At some point, your interface ends up with 100+ methods.
-It's a default problem now, thanks to Spring and Apache.
+Our Scalar from User is a JSON document.
+By the way, `Scalar<T>` taken from [**cactoos library**](https://github.com/yegor256/cactoos).
 
-## Alternative
-
-To refactor this interface, **we need to generalize all methods' parameters**.
-Here I'm using `org.cactoos.Scalar` from [**cactoos**](https://github.com/yegor256/cactoos).
-
+Then we are creating a few implementations for it:
 ```java
-interface Inputs extends Scalar<Directives> {
-  @Override
-  Directives value();
-}
-```
-
-Now, all parameters: `TopicDirs`, `DatasetDirs`, `SubDirs`
-will implement `Inputs` interface.
-
-```java
-final class TopicDirs implements Inputs {
-  @Override
-  public Directives value() {
-    return new Directives("...ADD Topic...");
-  }
-}
-
-final class DatasetDirs implements Inputs {
-  @Override
-  public Directives value() {
-    return new Directives("...ADD Datasets...");
-  }
-}
-
-final class SubsDirs implements Inputs {
-  @Override
-  public Directives value() {
-    return new Directives("...ADD Sub...");
-  }
-}
-```
-
-Now, `Broker` interface can have only one method `with()`:
-
-```java
-interface Broker {
+final class Simple implements User {
   
-  Broker with(Inputs inputs);
+  private final String username;
+  
+  @Override
+  public Json value() {
+    return new MutableJson().with("urn", this.username);
+  }
 }
 ```
 
-Now, scalar generic inputs **help clients of this interface use how they want**
-**keeping objects small and cohesive enough**.
+No big deal, just giving username and building a JSON document
+from it.
+Someday, the logic will scale or change completely.
+But we want our object to stay the same, while adding new features.
+The [**Decorator**]() will be in charge:
 
-You even can combine scalars into bigger one, using decorators:
 ```java
-final class Combined implements Inputs {
-
-  private final Inputs origin;
-
+final class Validated implements User {
+  
+  private final Scalar<Json> user;
+  
   @Override
-  public Directives value() {
-    return new Directives(
-      "...ADD Combined...",
-      this.origin.value()
-    );
+  public Json value() {
+    // validate json
+    return this.user.value();
   }
 }
 ```
 
-Here is the use-case of this pattern in eo-kafka, [**sources**](https://github.com/eo-cqrs/eo-kafka),
-(simplified):
+Now we can validate our username before applying it to JSON document storage.
+Frankly speaking, it's not a plain decorator, we are chaining a scalar by passing it.
+
 ```java
-public final class FkConsumer implements Consumer<Object, String> {
-  private final UUID id;
-  private final Broker broker;
+final class Flushed implements User {
+
+  private final Scalar<Json> user;
+  private final Documents docs;
 
   @Override
-  public void subscribe(final Collection<String> topics) {
-    this.broker.with(new SubscribeDirs(topics, this.id).value());
-  }
-
-  @Override
-  public void subscribe(final ConsumerRebalanceListener listener,
-                        final String... topics) {
-    this.broker.with(
-      new WithRebalanceListener(
-        new SubscribeDirs(t, this.id),
-        listener
-      ).value()
-    );
-  }
-
-  @Override
-  public ConsumerRecords<Object, String> records(
-    final String topic, final Duration timeout
-  ) throws Exception {
-    this.broker.with(new SubscribeDirs(topic, this.id).value());
-    this.broker.with(new SeenDirs(topic, rec.value()).value());
-    return records;
-  }
-
-  @Override
-  public void unsubscribe() throws Exception {
-    this.broker.with(new UnsubscribeDirs(this.id).value());
+  public Json value() {
+    this.docs.apply(this.user.value());
   }
 }
 ```
 
-As you can see, intermediate Broker can be used in various scenarios,
-keeping this interface simple and small.
+That's a composition of objects, where each of them
+is a good citizen of a pipeline.
+Each of them is represented as a small result,
+as a part of a bigger one.
 
-## Avoiding Workers
+## Delayed calls
 
-To avoid [**evil**](https://www.yegor256.com/2015/03/09/objects-end-with-er.html)
+Nothing will be computed until `value()` is called:
+
+```java
+new Flushed(
+  new Validated(
+    new Simple(
+      "Aliaksei"
+    )
+  ),
+  docs  
+).value(); // trigger pipeline
+```
+
+## Scalars vs. Workers
+
+`XmlParser`, `BookMapper`, `UserValidator`.
+Who are they?!
+I think they are great candidates for refactoring...
+
+Scalars also will help you to avoid [**evil**](https://www.yegor256.com/2015/03/09/objects-end-with-er.html)
 suffix of your objects: `-ER`,
 a.k.a Worker, we just need to **define our results of manipulations with objects
 as other objects**, that's how Scalar is born.
@@ -201,6 +173,22 @@ The same functionality, but now:
 Watch this:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6GMiosTLUTc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+## Summary
+
+What are we learning here?
+Here is my summary of what SDD means:
+1. State (your object must encapsulate something)
+2. Declarative (scalars are treated as parts of other objects, as some results)
+3. Delayed calls (unless `value()` is called, nothing will happen)
+4. Absence of getters (there is `value()`, no sense to violate encapsulation)
+
+There are a few real-world examples of how we maintain those 'scalars' in our projects:
+[**eo-kafka**](https://github.com/eo-cqrs/eo-kafka),
+[**cmig**](https://github.com/eo-cqrs/cmig),
+[**cactoos**]() and many more at [**EO-CQRS**](https://github.com/eo-cqrs). 
+
+That's it.
 
 **P.S**
 <br>
