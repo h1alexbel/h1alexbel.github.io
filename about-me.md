@@ -14,29 +14,28 @@ an Integration Developer, Architect.
 Update: Since July 2022 I'm work as Integration/Java Developer
 at [```Solvd```](http://solvd.com).
 
-I am a Software Developer with a strong background in distributed integration systems, and object-oriented analysis and design with Java.
-And, I am a [**founder**](/pets.html) and active [**contributor**](https://github.com/h1alexbel) of a few open source projects.
+I am a software developer and architect with a strong background in 
+distributed integration systems, and object-oriented analysis and design with Java.
+<br>
+Tech stack mostly I work with: AWS/GCP, Java, PostgreSQL, Kafka, Kubernetes, Terraform.
+<br>
+Interested in R&D projects in the area of Integration/Distributed systems.
 
-Hands-on experience in building scalable, highly available and maintainable technology solutions using:
-- Microservices
-- Data Storages: **PostgreSQL**
-- Stream Processing/Integration development with **Kafka**
-- Cloud Computing & DevOps: **AWS**, **Kubernetes**, **Terraform**
-- OOAD with **Java**
+I am a big open source fan, I found [**EO-CQRS**](https://eo-cqrs.github.io/.github) 
+and [**actively contribute**](https://github.com/h1alexbel)
+to [**Blamer**](https://blamer-io.github.io/blamer),
+and [**others**](/pets.html).
 
-Interested in R&D in the area of Integration/Distributed systems.
+You can sponsor me on [**GitHub**](https://github.com/sponsors/h1alexbel).
 
-I'm also making some videos about Software Design, OOAD, and Software Architecture in general.
+Also, I'm making some videos about Software Design, OOAD, and Software Architecture in general.
 Check out my [**YouTube channel**](https://www.youtube.com/@absimplearchitect/featured).
-All my guides and lectures are published [**here**](/guides.html).
 
 Here are [**my favorite books**](/books.html)
 about software engineering.
 
-Ah, one more thing. I'm a big fan of good movies, so here's
-[**my list**](/movies.html) of the ones.
-
 If you are interested, my [**personality type**](https://en.wikipedia.org/wiki/Myers%E2%80%93Briggs_Type_Indicator)
 is [**INTJ-A**](/images/personality.png).
 
-Sponsor me on [**GitHub**](https://github.com/sponsors/h1alexbel).
+Ah, one more thing. I'm a big fan of good movies, so here's
+[**my list**](/movies.html) of the ones.
