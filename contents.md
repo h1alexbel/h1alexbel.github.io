@@ -1,6 +1,6 @@
 ---
 layout: static
-title: "Contents"
+title: "Archive"
 date: 2023-02-19
 permalink: contents.html
 ---
