@@ -2,7 +2,7 @@ theme: jekyll-theme-minimal
 remote_theme: pages-themes/architect@v0.2.0
 title: Aliaksei Bialiauski
 name: Aliaksei Bialiauski
-email: avbialiauski@gmail.com
+email: aliaksei.bialiauski@hey.com
 description: Personal blog of Aliaksei @h1alexbel Bialiauski about software engineering.
 url: "https://h1alexbel.github.io/"
 domain: h1alexbel.github.io
@@ -18,7 +18,7 @@ author:
   last_name: "Bialiauski"
   username: "h1alexbel"
   gender: "male"
-  email: avbialiauski@gmail.com
+  email: aliaksei.bialiauski@hey.com
 encoding: UTF-8
 timezone: Europe/Minsk
 permalink: :year/:month/:day/:title.html

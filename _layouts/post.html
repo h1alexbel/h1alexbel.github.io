@@ -16,13 +16,13 @@ layout: default
     </div>
     <div class="wrapper">
         <header style="font-family: 'Computer Modern Serif', serif">
-            <p class="printable">
-                <img src="https://api.qrserver.com/v1/create-qr-code/?data={{ site.url }}{{ page.url }}&amp;format=svg"
-                     style="width:125px;height:125px;" alt="QR code"/>
-            </p>
-            <p class="printable">
-                <code itemprop="url">{{ site.url }}{{ page.url }}</code>
-            </p>
+<!--            <p class="printable">-->
+<!--                <img src="https://api.qrserver.com/v1/create-qr-code/?data={{ site.url }}{{ page.url }}&amp;format=svg"-->
+<!--                     style="width:125px;height:125px;" alt="QR code"/>-->
+<!--            </p>-->
+<!--            <p class="printable">-->
+<!--                <code itemprop="url">{{ site.url }}{{ page.url }}</code>-->
+<!--            </p>-->
             <h1 itemprop="name headline mainEntityOfPage">{{ page.title }}</h1>
             {% if page.book %}
             {{ page.book | book }}
@@ -64,6 +64,7 @@ layout: default
                 </li>
             </ul>
             <div class="buttons notranslate desktop-only">
+                Share on:
                 <nav class="share">
                     <a href="https://news.ycombinator.com/submit">Hacker News</a> |
                     <a href="https://twitter.com/share?url={{ site.url }}{{ page.url }}&amp;text={{ page.title | cgi_escape }}">Twitter</a> |
@@ -77,7 +78,6 @@ layout: default
             </article>
         </main>
     </div>
-
     <div class="disqus" role="complementary">
         <div id="disqus_thread" class="disqus-thread"></div>
         <script>
@@ -101,5 +101,4 @@ layout: default
             </div>
         </noscript>
     </div>
-
 </section>
