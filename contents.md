@@ -11,6 +11,7 @@ permalink: contents.html
       <nobr>{{ tag }}</nobr>
     </code>
   </a>
+{% endfor %}
 </li>
 
 Total: {{ site.posts.size }}.
