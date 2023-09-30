@@ -15,7 +15,6 @@ layout: default
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/aaaakshat/cm-web-fonts@latest/fonts.css">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css.min.css"/>
     <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yegor256/drops@gh-pages/drops.min.css"/>
-
     <link rel="stylesheet" href="../assets/css/eo.scss"/>
     <link rel="stylesheet" href="../assets/css/col.css">
 </head>
@@ -35,7 +34,7 @@ layout: default
                 <input type="text" name="q" maxlength="255" value="" placeholder="Search via Google" class="form-control" />
             </form>
         </div>
-        <nav style="font-family: 'Computer Modern Serif', serif">
+        <nav>
             <ul>
                 <li><a class="class" href="https://github.com/h1alexbel">
                     <img width="24px" height="24px"
@@ -75,10 +74,10 @@ layout: default
             </ul>
         </nav>
     </header>
-    <div style="font-family: 'Computer Modern Serif', serif">
+    <div>
         {{ content }}
     </div>
-    <footer style="font-family: 'Computer Modern Serif', serif">
+    <footer>
         Copyright &copy; 2022-{{ site.time | date: '%Y' }}. {{ site.domain }}.
     </footer>
 </section>
