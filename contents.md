@@ -4,20 +4,14 @@ title: "Contents"
 date: 2023-02-19
 permalink: contents.html
 ---
-[```arc```](/tag/arc.html)
-[```business```](/tag/business.html)
-[```career```](/tag/career.html)
-[```devops```](/tag/devops.html)
-[```future```](/tag/future.html)
-[```github```](/tag/github.html)
-[```java```](/tag/java.html)
-[```maintainability```](/tag/maintainability.html)
-[```microservices```](/tag/microservices.html)
-[```oop```](/tag/oop.html)
-[```pets```](/tag/pets.html)
-[```process```](/tag/process.html)
-[```quality```](/tag/quality.html)
-[```reactive```](/tag/reactive.html)
+
+ <li>{% for tag in page.tags %}
+  <a href="/tag/{{ tag }}.html">
+    <code>
+      <nobr>{{ tag }}</nobr>
+    </code>
+  </a>
+</li>
 
 Total: {{ site.posts.size }}.
 
