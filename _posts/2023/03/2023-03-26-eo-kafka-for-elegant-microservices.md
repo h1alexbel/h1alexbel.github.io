@@ -3,7 +3,7 @@ layout: post
 date: 2023-03-26
 place: Minsk, Belarus
 title: "EO-CQRS/eo-kafka - Kafka Producers and Consumers for Elegant Microservices"
-tags: pets microservices
+tags: [pets, microservices]
 ---
 
 [EO-CQRS](https://github.com/eo-cqrs) is a set of components for creating elegant microservices we started to work on just a few weeks ago.
@@ -13,7 +13,7 @@ Today we will see how Kafka producers and consumers work in an elegant, object-o
 
 <!--more-->
 
-<img src="/images/2023/03/batman-begins.png">
+<img src="/assets/images/2023/03/batman-begins.png">
 
 Let's say we want to create a Kafka Producer. 
 This is how you would do it with the [Spring Framework](https://spring.io/) Kafka starter:

@@ -1,0 +1,20 @@
+- title: Home
+  url: /
+- title: Who Am I?
+  url: /whoami/
+- title: Pets
+  url: /pets/
+- title: More
+  sublinks:
+    - title: Teaching
+      url: /teaching/
+    - title: EO-CQRS
+      url: https://github.com/eo-cqrs/
+    - title: Blamer
+      url: https://blamer-io.github.io/blamer/
+- title: Archive
+  sublinks:
+    - title: Years
+      url: /years/
+    - title: Tags
+      url: /tags/

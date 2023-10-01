@@ -3,7 +3,7 @@ layout: post
 date: 2023-01-21
 place: Warsaw, Poland
 title: "Maintainable Project Template"
-tags: arc maintainability
+tags: [arc, maintainability]
 ---
 
 Nowadays, we live in the era of the open source software. So, we are judged by the projects that we're doing here.
@@ -14,7 +14,7 @@ In this blog post I will share my key points of successful project, and how to b
 
 <!--more-->
 
-<img src="/images/2023/01/bsc.png">
+<img src="/assets/images/2023/01/bsc.png">
 
 ## Build pipeline
 

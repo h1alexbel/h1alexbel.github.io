@@ -17,7 +17,7 @@ As always, fully automated, on GitHub.
 
 <!--more-->
 
-<img src="/images/2023/06/forbrydelsen-2.jpg">
+<img src="/assets/images/2023/06/forbrydelsen-2.jpg">
 
 ## Create `.puml` Diagram
 
@@ -82,15 +82,15 @@ Pay attention to that, this **workflow should be in the master branch first**.
 
 ## Create Pull Request with Diagram Changes
 
-![img.png](/images/2023/06/diagram-trigger-pr.png)
+![img.png](/assets/images/2023/06/diagram-trigger-pr.png)
 
 ## Merge it
-![img.png](/images/2023/06/merge.png)
+![img.png](/assets/images/2023/06/merge.png)
 
 After merging it into `master` branch, diagram will be compiled to SVG and pushed there.
 
 ## Get the Diagram
-![img.png](/images/2023/06/sequence.svg)
+![img.png](/assets/images/2023/06/sequence.svg)
 
 Diagramming made easy!
 

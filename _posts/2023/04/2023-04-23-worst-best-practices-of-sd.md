@@ -3,7 +3,7 @@ layout: post
 date: 2023-04-23
 place: Minsk, Belarus
 title: "Worst & Best practices of Software Development"
-tags: maintainability quality
+tags: [maintainability, quality]
 ---
 
 Most projects now failing not because of stupid or lazy developers, but because of low quality-level of the software
@@ -14,7 +14,7 @@ to it with no fear.
 
 <!--more-->
 
-<img src="/images/2023/04/broen-dinner.png">
+<img src="/assets/images/2023/04/broen-dinner.png">
 
 As software development has evolved, it has become clear that the main reason for project failures is not necessarily
 due to the incompetence of developers, but rather the low quality-level of the software projects themselves.

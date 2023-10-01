@@ -17,13 +17,13 @@ This is my blog: [h1alexbel.github.io](https://h1alexbel.github.io)
 ## How to Contribute
 
 You are welcome to submit corrections to this blog. In order to do that,
-you will need [Ruby](https://www.ruby-lang.org/en/) 2.3+,
-[Bundler](https://bundler.io/),
-and [PlantUML](http://plantuml.com/) installed. Then, run this:
+you will need [Ruby](https://www.ruby-lang.org/en/) 2.3+ 
+and [Bundler](https://bundler.io/) installed.
+Then, run this:
 
 ```bash
 $ bundle update
-$ bundle exec jekyll serve
+$ bundle exec jekyll serve -b ""
 ```
 
 In about 3-4 minutes of building you should be able to see the blog

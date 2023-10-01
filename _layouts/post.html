@@ -2,103 +2,96 @@
 layout: default
 ---
 
-<section itemscope="" itemtype="http://schema.org/BlogPosting">
-    <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico" />
-    <link rel="apple-touch-icon" href="{{ site.baseurl }}/favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/aaaakshat/cm-web-fonts@latest/fonts.css">
-    <div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
-        <meta itemprop="author" content="{{ site.author.name }}">
-        <meta itemprop="itemReviewed" content="{{ site.url }}{{ page.url }}">
-        <div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
-            <meta itemprop="ratingValue" content="9"/>
-            <meta itemprop="bestRating" content="10"/>
-        </div>
-    </div>
-    <div class="wrapper">
-        <header>
-<!--            <p class="printable">-->
-<!--                <img src="https://api.qrserver.com/v1/create-qr-code/?data={{ site.url }}{{ page.url }}&amp;format=svg"-->
-<!--                     style="width:125px;height:125px;" alt="QR code"/>-->
-<!--            </p>-->
-<!--            <p class="printable">-->
-<!--                <code itemprop="url">{{ site.url }}{{ page.url }}</code>-->
-<!--            </p>-->
-            <h1 itemprop="name headline mainEntityOfPage">{{ page.title }}</h1>
-            {% if page.book %}
-            {{ page.book | book }}
-            {% endif %}
-            <ul class="subline">
-                <li>
-                    <time itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}">
-                        {% assign m = page.date | date: "%-m" %}
-                        {{ page.date | date: "%-d" }}
-                        {% case m %}
-                        {% when '1' %}jan
-                        {% when '2' %}feb
-                        {% when '3' %}march
-                        {% when '4' %}apr
-                        {% when '5' %}may
-                        {% when '6' %}jun
-                        {% when '7' %}jul
-                        {% when '8' %}aug
-                        {% when '9' %}sep
-                        {% when '10' %}oct
-                        {% when '11' %}nov
-                        {% when '12' %}dec
-                        {% endcase %}
-                        {{ page.date | date: "%Y" }}
-                    </time>
-                </li>
-                {% if page.place %}
-                <li itemprop="locationCreated">{{ page.place }}</li>
-                <li>{% for tag in page.tags %}
-                    <a href="/tag/{{ tag }}.html"><code>
-                        <nobr>{{ tag }}</nobr>
-                    </code></a>
-                </li>
-                {% endfor %}
-                {% endif %}
-                <li class="unprintable">
-                    <i class="icon icon-comments"></i>
-                    <a href="{{ site.url }}{{ page.url }}#disqus_thread" itemprop="discussionUrl">comments</a>
-                </li>
-            </ul>
-            <div class="buttons notranslate desktop-only">
-                Share on:
-                <nav class="share">
-                    <a href="https://news.ycombinator.com/submit">Hacker News</a> |
-                    <a href="https://twitter.com/share?url={{ site.url }}{{ page.url }}&amp;text={{ page.title | cgi_escape }}">Twitter</a> |
-                    <a href="https://www.linkedin.com/cws/share?url={{ site.url }}{{ page.url }}">LinkedIn</a>
-                </nav>
-            </div>
-        </header>
-        <main>
-            <article class="main" itemprop="articleBody">
-                {{ content }}
-            </article>
-        </main>
-    </div>
-    <div class="disqus" role="complementary">
-        <div id="disqus_thread" class="disqus-thread"></div>
-        <script>
-            var disqus_config = function () {
-                this.page.url = document.location.href.split('?')[0].split('#')[0];
-                this.page.identifier = this.page.url;
-            };
-            (function () {
-                var d = document, s = d.createElement('script');
-                s.src = 'https://https-h1alexbel-github-io.disqus.com/embed.js';
-                s.setAttribute('data-timestamp', +new Date());
-                (d.head || d.body).appendChild(s);
-            })();
-        </script>
-        <noscript>
-            <div>
-                <p class="red">
-                    JavaScript is disabled in your browser,
-                    that's why you can't see comments under this post.
-                </p>
-            </div>
-        </noscript>
-    </div>
-</section>
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+
+    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="post-meta">
+      {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {{ page.date | date: date_format }}
+      </time>
+      {%- if page.last_modified_at -%}
+        ~
+        {%- assign mdate = page.last_modified_at | date_to_xmlschema -%}
+        <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">
+          {{ mdate | date: date_format }}
+        </time>
+      {%- endif -%}
+      {%- if page.author -%}
+        • {% for author in page.author %}
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">{{ author }}</span></span>
+            {%- if forloop.last == false %}, {% endif -%}
+        {% endfor %}
+      {%- endif -%}
+      {% if page.place %}
+        <br>
+        {{ page.place }}
+      {%- endif -%}
+    </p>
+
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  <footer class="post-footer">
+    {% if page.categories.size > 0 %}
+      <div class="post-meta">
+        <i class="fas fa-folder"></i>
+<!--        <ul class="post-taxonomies post-categories">-->
+<!--          {% assign categories = page.categories | sort %}-->
+<!--          {% for category in categories %}-->
+<!--            <li class="post-category">-->
+<!--              {% assign slugified_category = category | slugify %}-->
+<!--              <a href="{{ '/categories/#:category' | replace: ':category', slugified_category | relative_url }}">{{ category }}</a>-->
+<!--            </li>-->
+<!--          {% endfor %}-->
+<!--        </ul>-->
+      </div>
+    {% endif %}
+
+    {% if page.tags.size > 0 %}
+      <div class="post-meta">
+        <i class="fas fa-tags"></i>
+        <ul class="post-taxonomies post-tags">
+          {% assign tags = page.tags | sort %}
+          {% for tag in tags %}
+            <li class="post-tag">
+              {% assign slugified_tag = tag | slugify %}
+              <a href="{{ '/tags/#:tag' | replace: ':tag', slugified_tag | relative_url }}">{{ slugified_tag }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+
+    <nav class="post-pagination" role="navigation">
+      {% if page.previous %}
+        <a class="post-previous" href="{{ page.previous.url | relative_url }}">
+          <h4 class="post-pagination-label">Prev</h4>
+          <span class="post-pagination-title">
+            <i class="fas fa-arrow-left"></i> {{ page.previous.title | markdownify | strip_html }}
+          </span>
+        </a>
+      {% endif %}
+
+      {% if page.next %}
+        <a class="post-next" href="{{ page.next.url | relative_url }}">
+          <h4 class="post-pagination-label">Next</h4>
+          <span class="post-pagination-title">
+            {{ page.next.title | markdownify | strip_html }} <i class="fas fa-arrow-right"></i>
+          </span>
+        </a>
+      {% endif %}
+    </nav>
+  </footer>
+
+  {% if page.comments != false and jekyll.environment == "production" and site.disqus %}
+    {% include disqus.html %}
+  {% endif %}
+
+</article>

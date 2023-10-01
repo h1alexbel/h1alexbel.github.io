@@ -3,14 +3,14 @@ layout: post
 date: 2023-06-02
 place: Minsk, Belarus
 title: "One Click Deployment to Google Cloud Compute Engine"
-tags: devops github
+tags: [devops, github]
 ---
 This is a short and simple guide on how to deploy a new version of your application to the Google Cloud Compute Engine,
 just from GitHub issue. Fully automated. No scripts.
 
 <!--more-->
 
-<img src="/images/2023/06/broen-introducing.jpg">
+<img src="/assets/images/2023/06/broen-introducing.jpg">
 
 Deploying an application to the [Google Cloud](https://cloud.google.com/) is very easy for me.
 I just post a comment in the GitHub issue: `@rultor deploy, image is <image id>, instance is <instance> `.

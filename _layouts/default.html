@@ -1,87 +1,32 @@
----
-layout: default
----
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="ru" xml:lang="ru"
-      itemscope="" itemtype="http://schema.org/WebPage">
-<head>
-    <meta charset="utf-8"/>
-    <meta name="description" content="{{ page.description | xml_escape }}"/>
-    <meta name="keywords" content="{{ page.keywords | join:', ' | xml_escape }}"/>
-    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1"/>
-    <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico" />
-    <link rel="apple-touch-icon" href="{{ site.baseurl }}/favicon.ico" />
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/aaaakshat/cm-web-fonts@latest/fonts.css">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css.min.css"/>
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yegor256/drops@gh-pages/drops.min.css"/>
-    <link rel="stylesheet" href="../assets/css/eo.scss"/>
-    <link rel="stylesheet" href="../assets/css/col.css">
-</head>
-<body>
-<section>
-    <header class="header" id="header">
-        <div>
-            <a href="/about-me.html">
-                <img width="125px" height="125px"
-                     src="https://raw.github.com/h1alexbel/h1alexbel.github.io/main/h1alexbel-2023.png"
-                     class="logo" alt="Blog Logo"/>
-            </a>
-        </div>
-        <div style="display: flex; justify-content: right; align-items: center;">
-            <form method="get" id="search-google" action="https://www.google.com/search" target="_blank">
-                <input type="hidden" name="sitesearch" value="h1alexbel.github.io" />
-                <input type="text" name="q" maxlength="255" value="" placeholder="Search via Google" class="form-control" />
-            </form>
-        </div>
-        <nav>
-            <ul>
-                <li><a class="class" href="https://github.com/h1alexbel">
-                    <img width="24px" height="24px"
-                         src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/github.svg">
-                </a></li>
-                <li><a class="class" href="https://stackoverflow.com/users/19147117/abialiauski">
-                    <img width="24px" height="24px"
-                         src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/stackoverflow.svg">
-                </a></li>
-                <li><a class="class" href="https://www.linkedin.com/in/h1alexbel">
-                    <img width="24px" height="24px"
-                         src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg">
-                </a></li>
-                <li><a class="class" href="https://twitter.com/h1alexbel">
-                    <img width="24px" height="24px"
-                         src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/twitter.svg">
-                </a></li>
-                <li>
-                    <a class="class" href="mailto:aliaksei.bialiauski@hey.com">
-                        <img width="24px" height="24px"
-                             src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/gmail.svg">
-                    </a>
-                </li>
-                <li><a class="class" href="https://t.me/h1alexbeltalks">
-                    <img width="24px" height="24px"
-                         src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/telegram.svg">
-                </a></li>
-            </ul>
-            <ul>
-                <li><a style="color: black; text-decoration: none" href="/" title="Home">Home</a></li>
-                <li><a style="color: black; text-decoration: none" href="/contents.html" title="All">Archive</a></li>
-                <li><a style="color: black; text-decoration: none" href="/pets.html" title="Pets">Pets</a></li>
-                <li><a style="color: black; text-decoration: none" href="/guides.html" title="Guides & Lectures">Teaching</a></li>
-                <li><a style="color: black; text-decoration: none" href="https://h1alexbel.github.io/about-me.html"
-                       title="About Me">About Me</a></li>
-                <li><a style="color: black; text-decoration: none" href="/rss.xml" title="RSS">RSS</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div>
-        {{ content }}
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  <head>
+    {% include head.html %}
+  </head>
+
+  <body>
+    <div class="site-container">
+      <header class="site-header">
+        {% include header.html %}
+      </header>
+      
+      <div class="site-body wrapper">
+        <aside class="site-sidebar" id="site-sidebar">
+          {% if page.toc %}
+            {% include sidebar-toc.html %}
+          {% else %}
+            {% include sidebar.html %}
+          {% endif %}
+        </aside>
+        <main class="site-main" id="site-main" aria-label="Content" tabindex="1">
+          {{ content }}
+          <footer class="site-footer">
+            {% include footer.html %}
+          </footer>
+        </main>
+      </div>
     </div>
-    <footer>
-        Copyright &copy; 2022-{{ site.time | date: '%Y' }}. {{ site.domain }}.
-    </footer>
-</section>
-<script>var disqus_shortname = 'https-h1alexbel-github-io';</script>
-<script id="dsq-count-scr" src='https://https-h1alexbel-github-io.disqus.com/count.js' async="async"></script>
-</body>
+  </body>
+
 </html>
