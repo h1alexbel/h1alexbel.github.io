@@ -16,14 +16,14 @@ Can we design our microservices better?
 
 <!--more-->
 
-<img src="/images/2023/03/broen-clown.png">
+<img src="/assets/images/2023/03/broen-clown.png">
 
 To answer on this question firstly we need to dive deeply into event-driven architecture and its components.
 
-<img src="/images/2023/03/eda.png">
+<img src="/assets/images/2023/03/eda.png">
 
 ## Events
-<img src="/images/2023/03/events.png">
+<img src="/assets/images/2023/03/events.png">
 
 Each event is **immutable**, which is good for maintainability.
 The same as [**object**](https://www.yegor256.com/2014/11/20/seven-virtues-of-good-object.html), good event should be small and immutable.
@@ -92,7 +92,7 @@ The term was created by [**Bertrand Meyer**](https://en.wikipedia.org/wiki/Bertr
 Also, we need some sort of distributed transactions:
 
 ## Saga
-<img src="/images/2023/03/saga.png">
+<img src="/assets/images/2023/03/saga.png">
 
 In microservices, each service has its own database.
 Thus, business transactions should be also split into multiple services.

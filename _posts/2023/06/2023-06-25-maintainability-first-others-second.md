@@ -3,7 +3,7 @@ layout: post
 date: 2023-06-25
 place: Minsk, Belarus
 title: "Maintainability first, Others are secondary"
-tags: maintainability arc
+tags: [maintainability, arc]
 ---
 
 I don't even know where to start.
@@ -13,7 +13,7 @@ I believe this post answers on why.
 
 <!--more-->
 
-<img src="/images/2023/06/broen-gang.png">
+<img src="/assets/images/2023/06/broen-gang.png">
 
 I want to start a talk about maintainability with great Martin Fowler quote:
 

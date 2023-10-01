@@ -17,7 +17,7 @@ Let me explain how it will impact you.
 
 <!--more-->
 
-<img src="/images/2023/08/communicate.png">
+<img src="/assets/images/2023/08/communicate.png">
 
 Presenting is a skill that you need to actively master as a [**software developer**](https://h1alexbel.github.io/2023/07/28/developer-realms.html).
 But when you're presenting your ideas, keep your point very specific and please 

@@ -2,15 +2,14 @@
 layout: default
 ---
 
-<section class="container content-section text-center" itemscope="" itemtype="http://schema.org/BlogPosting">
-    <div class="wrapper">
-        <header itemprop="name">
-            <h1>{{ page.title }}</h1>
-        </header>
-        <main>
-            <article class="main" itemprop="articleBody">
-                {{ content }}
-            </article>
-        </main>
-    </div>
-</section>
+<article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+</article>

@@ -15,7 +15,7 @@ This is not far away from the truth. But reactive programming has more concepts 
 
 <!--more-->
 
-<img src="/images/2023/02/we-are-friends.png">
+<img src="/assets/images/2023/02/we-are-friends.png">
 
 ## Non-blocking?
 

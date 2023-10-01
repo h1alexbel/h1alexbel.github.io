@@ -3,7 +3,7 @@ layout: post
 date: 2023-07-28
 place: Minsk, Belarus
 title: "Developer Realms"
-tags: process career
+tags: [process, career]
 ---
 
 How did you deploy software to production?
@@ -20,7 +20,7 @@ to become a ~~CTO~~ self-capable unit of work.
 
 <!--more-->
 
-<img src="/images/2023/07/trio.png">
+<img src="/assets/images/2023/07/trio.png">
 
 I strongly believe that being a developer, besides coding, you need to know
 how to help your project.

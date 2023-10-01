@@ -3,7 +3,7 @@ layout: post
 date: 2023-08-20
 place: Minsk, Belarus
 title: "Money in Open Source"
-tags: oss business
+tags: [oss, business]
 ---
 
 On August 10, 2023, HashiCorp made changes in their products:
@@ -13,7 +13,7 @@ I think this move will scare open source enthusiasts off.
 
 <!--more-->
 
-<img src="/images/2023/08/dc.png">
+<img src="/assets/images/2023/08/dc.png">
 
 Open source is a must.
 But open source is not about "free" software development.

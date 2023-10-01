@@ -3,7 +3,7 @@ layout: post
 date: 2023-04-15
 place: Minsk, Belarus
 title: "EO-Kafka with Spring"
-tags: pets microservices
+tags: [pets, microservices]
 ---
 
 When building the microservices we need to use frameworks to boostrap the project.
@@ -14,7 +14,7 @@ Have fun!
 
 <!--more-->
 
-<img src="/images/2023/04/broen-murder.png">
+<img src="/assets/images/2023/04/broen-murder.png">
 
 [Here](https://h1alexbel.github.io/2023/03/26/eo-kafka-for-elegant-microservices.html) we discuss how to use EO-Kafka and how it's different from Spring Kafka starter.
 In this blog post I will show you how to integrate EO-Kafka into existing Spring Application.

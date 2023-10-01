@@ -3,7 +3,7 @@ layout: post
 date: 2023-07-09
 place: Minsk, Belarus
 title: "Scalar Driven Development"
-tags: oop java
+tags: [oop, java]
 ---
 
 It's very hard to make objects declarative.
@@ -12,7 +12,7 @@ your objects as declarative parts of application.
 
 <!--more-->
 
-<img src="/images/2023/07/saul-take.png">
+<img src="/assets/images/2023/07/saul-take.png">
 
 First things first.
 Imperative programming covers 99% of code.

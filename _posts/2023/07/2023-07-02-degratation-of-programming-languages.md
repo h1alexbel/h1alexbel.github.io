@@ -16,7 +16,7 @@ It's time to change our tooling.
 
 <!--more-->
 
-<img src="/images/2023/07/gone-girl.jpg">
+<img src="/assets/images/2023/07/gone-girl.jpg">
 
 Now, in 2023, modern programming languages are focusing only on one thing:
 <br>
