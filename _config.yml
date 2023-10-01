@@ -3,7 +3,7 @@ description: Aliaksei Bialiauski, a.k.a h1alexbel, an Architect, Integration Dev
 author: Aliaksei Bialiauski
 avatar: /logo.png
 email: aliaksei.bialiauski@hey.com
-skin: Daylight
+skin: daylight
 plugins:
   - jekyll-seo-tag
   - jekyll-feed
