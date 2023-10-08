@@ -35,7 +35,8 @@ We do.
 Each change is controlled since kept in git and has to be pass
 a merge pipeline before getting into `master` branch.
 
-Thus, all the software documents including [requirements document](),
+Thus, all the software documents including 
+[requirements document](https://www.yegor256.com/2015/11/10/ten-mistakes-in-specs.html),
 Use-Cases, diagrams, and others can be defined in the source code
 and empowered with control and integrity checks,
 or even with AI post-analysis tools. 
