@@ -20,6 +20,8 @@ project traceability, artifact management and clearness to the customer on what'
 
 <!--more-->
 
+<img src="/assets/images/2023/10/forbrydelsen-board.png">
+
 ## All Docs are under Control
 
 The main problem is that we're trying to solve is that most projects
@@ -39,7 +41,7 @@ Thus, all the software documents including
 [requirements document](https://www.yegor256.com/2015/11/10/ten-mistakes-in-specs.html),
 Use-Cases, diagrams, and others can be defined in the source code
 and empowered with control and integrity checks,
-or even with AI post-analysis tools. 
+or even with AI post-analysis tools.
 
 ## Manage Artifacts, not People
 
