@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2023-10-08
+date: 2023-10-22
 place: Minsk, Belarus
 title: "Project as a Code"
 tags: [ process ]
