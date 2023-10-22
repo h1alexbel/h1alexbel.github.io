@@ -7,11 +7,11 @@ tags: [ process ]
 ---
 
 We're living in an [Agile](https://en.wikipedia.org/wiki/Agile_software_development) world.
-Customers [trust]() architects, programmers, designers and other product makers to deliver new software
+Customers trust architects, programmers, designers and other product makers to deliver new software
 to the market.
 What is the result of this trust?
 In the best cases, software doesn't meet the requirements,
-the product is _untraceable_, onboarding takes weeks,
+the product is _untraceable_, onboarding [takes](https://www.youtube.com/watch?v=WwjU1ORdz4s) weeks,
 and all the members are _demotivated_ and hate their job.
 In most cases, customer [has nothing](https://www.yegor256.com/2017/11/21/trust-pay-lose.html) out of it.
 Enough is enough.
