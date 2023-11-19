@@ -28,6 +28,11 @@ and others.
 
 Now I'm highly interested in R&D projects in the area of
 Productivity Ecosystems in Software Development.
+All of it!
+Pioneer [project management platforms](http://127.0.0.1:4000/2023/10/22/project-as-a-code.html),
+or even Software Development ones,
+Programming Languages, Frameworks that will imply simplicity,
+traceability and productivity.
 
 Also, I'm making some videos about Software Design, OOAD, and Software Development in general.
 Check out my [YouTube channel](https://www.youtube.com/@absimplearchitect/featured).
