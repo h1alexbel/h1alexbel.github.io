@@ -54,6 +54,6 @@ and good movies, here's
 </p>
 
 <p>
-<img alt="logo" src="../assets/images/collesium.png" style="height:300px;"/>
+<img alt="logo" src="../assets/images/collesium.png"/>
 <br>
 </p>
