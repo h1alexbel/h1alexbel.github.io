@@ -1,0 +1,159 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{svg}
+\usepackage[absolute]{textpos}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\titleformat{\section}{
+    \vspace{-7pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{0pt}]
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+    \item\small{
+            {#1 \vspace{-3pt}}
+    }
+}
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-3pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}       & \textbf{\small #2} \\
+        \small#3 & \small #4 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubheadingContinue}[2]{
+    \vspace{-3pt}
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \small#1 & \small #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-3pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textbf{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{0pt}}
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+
+\begin{document}
+\begin{center}
+
+%\begin{textblock}{2.4}[0.5,0](2,0){
+%\includegraphics[width=\textwidth]{h1alexbel.jpg}
+%}\end{textblock}
+
+{\Huge\scshape Aliaksei Bialiauski}
+\\ Java Developer\\
+
+\small
+\href{mailto:aliaksei.bialiauski@hey.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{aliaksei.bialiauski@hey.com}} ~
+\href{https://github.com/h1alexbel}{\raisebox{-0.2\height}\faGithub\ \underline{@h1alexbel}} ~
+\href{https://stackoverflow.com/users/19147117/h1alexbel}{\raisebox{-0.2\height}\faStackOverflow\ \underline{@h1alexbel}}
+\href{https://h1alexbel.github.io}{\raisebox{-0.2\height}\ \underline{h1alexbel.github.io}} ~
+\href{https://t.me/h1alexbel}{\raisebox{-0.2\height}\faTelegram\ \underline{@h1alexbel}}  ~
+\href{https://www.linkedin.com/in/h1alexbel}{\raisebox{-0.2\height}\faLinkedin\ \underline{in/h1alexbel}}  ~
+\end{center}
+
+\section{Recent Projects}
+\resumeSubHeadingListStart
+
+\small
+\resumeSubheading
+{Solvd}{Minsk, Belarus}
+{\href{https://upsell.northviewhg.com}{\underline{OHIP Upsell Engine}}
+(Java Architect, Mahon Media; Ventura, CA)}{09/23--.}
+\resumeItemListStart
+\resumeItem{Created and integrated hotel inventory upsell engine with Oracle Hospitality Integration Platform.}
+\resumeItem{Created and maintained continuous delivery pipeline.}
+\resumeItem{Developed full-stack features using Spring Boot and React.}
+\resumeItem{Communicating with Frontend Developers, Designers and API Integrators.}
+\resumeItem{GCP GCE/Cloud SQL, Terraform, Java, Spring Boot/Data/Security, PostgreSQL, React, OHIP API, Sendgrid.}
+\resumeItemListEnd
+
+\resumeSubheadingContinue
+{\href{https://motiontms.com}{\underline{USKO TMS NetSuite Integration}}
+(Java Developer, USKO; San Fransisco, CA)}{07/22--11/22}
+\resumeItemListStart
+\resumeItem{CDC Integration with Oracle NetSuite via Celigo in real time.}
+\resumeItem{Created reusable packages for an integration team.}
+\resumeItem{Delivered self-capable microservices to production.}
+\resumeItem{Developed RESTful APIs for integration.}
+\resumeItem{Created and supported integration tests, code review.}
+\resumeItem{AWS EKS/RDS/S3, Java, Spring Boot/Data/Security, PostgreSQL, Debezium, Kafka, Terraform}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Open Source Contribution}
+\vspace{-7pt}
+\begin{itemize}
+[leftmargin=0.15in, label={}]\small{\item{
+\href{https://github.com/eo-cqrs}{\underline{EO-CQRS}}{: True OOP, small components for clean microservices development (Java, Maven, Docker, XML)} \\
+\end{itemize}
+
+\section{Skills}
+\vspace{-7pt}
+\begin{itemize}
+[leftmargin=0.15in, label={}]\small{\item{
+\textbf{JVM}{: Java, Spring Boot, Spring Data, Spring Security, Maven, JUnit4/5, XML} \\
+\textbf{Databases}{: PostgreSQL} \\
+\textbf{Infrastructure}{: AWS, GCP, Docker, Kubernetes, Terraform, GitHub Actions, Rultor, 0pdd} \\
+\textbf{VCS}{: Git on GitHub, Bitbucket} \\
+\textbf{Other}{: React, JavaScript, UML} \\}}
+\textbf{Languages}{: English C1, Russian Native} \\}}
+\end{itemize}
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Belarusian State Economic University}{Minsk, Belarus}
+{BSc in Management}{2021--2025}
+
+Economics and Management Department, Intellectual property.
+\resumeSubHeadingListEnd
+
+\section{About Me}
+Software developer with strong expertise in backend/integration,
+and object-oriented systems with Java.
+Driven by \href{https://github.com/h1alexbel}{\underline{open source}}
+and eventually inventing.
+Have experience of \href{https://h1alexbel.github.io/teaching}{\underline{teaching}}
+students in the discipline ``Distributed Software Systems''.
+Interested in R\&D in the area of High-Level Programming Languages.
+Love playing tennis, watching nordic noir, and traveling.
+Running small tech \href{https://h1alexbel.github.io}{\underline{blog}}.
+\end{document}
