@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Books, that I love
-permalink: /best-books/
+permalink: /fav-books/
 ---
 
 The more books you read, the better structure of knowledge you have, simply that.
