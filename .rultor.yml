@@ -1,0 +1,9 @@
+architect:
+  - h1alexbel
+docker:
+  image: yegor256/rultor-image:1.19.0
+install: |
+  bundle install --no-color
+merge:
+  script: |
+    LC_ALL=en_US.UTF-8 bundle exec jekyll build

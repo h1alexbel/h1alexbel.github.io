@@ -4,14 +4,14 @@
 - title: Stackoverflow
   url: https://stackoverflow.com/users/19147117/h1alexbel
   icon: fab fa-stack-overflow
-- title: LinkedIn
-  url: https://www.linkedin.com/in/h1alexbel
-  icon: fab fa-linkedin
 - title: Telegram
   url: https://t.me/h1alexbeltalks
   icon: fab fa-telegram
-- title: Twitter
-  url: https://twitter.com/h1alexbel
+- title: LinkedIn
+  url: https://www.linkedin.com/in/h1alexbel
+  icon: fab fa-linkedin
+- title: X
+  url: https://x.com/h1alexbel
   icon: fab fa-twitter
 - title: YouTube
   url: https://www.youtube.com/@absimplearchitect
