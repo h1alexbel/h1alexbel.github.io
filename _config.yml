@@ -1,6 +1,5 @@
 title: h1alexbel
-description: Aliaksei Bialiauski, a.k.a h1alexbel, an Integration Developer,
-  Architect, and Open Source advocate.
+description: Aliaksei Bialiauski, a.k.a h1alexbel, and his blog about social coding.
 author: Aliaksei Bialiauski
 avatar: /logo.png
 email: aliaksei.bialiauski@hey.com
@@ -21,10 +20,5 @@ twitter:
   username: h1alexbel
   card: summary
 logo: /logo.png
-social:
-  name: h1alexbel
-  links:
-    - https://twitter.com/h1alexbel
-    - https://github.com/h1alexbel
 google_site_verification: u4WXQl0Eu66rsQo2kRdCNx
 lang: en
