@@ -1,7 +1,7 @@
 ---
 layout: page
-title: My Top Movies
-permalink: /best-movies/
+title: Recommended to Watch
+permalink: /to-watch.html
 ---
 
 I love to watch some movies,

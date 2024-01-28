@@ -1,24 +1,21 @@
+lang: en
 title: h1alexbel
 description: Aliaksei Bialiauski, a.k.a h1alexbel, and his blog about social coding.
 author: Aliaksei Bialiauski
 avatar: https://github.com/h1alexbel.png
 email: aliaksei.bialiauski@hey.com
 skin: daylight
+logo: /logo.png
 plugins:
   - jekyll-seo-tag
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-paginate
-paginate: 8
-# google_analytics:
-disqus: https-h1alexbel-github-io
 exclude:
   - scripts/
   - README.md
   - jekyll-theme-hamilton.gemspec
-twitter:
-  username: h1alexbel
-  card: summary
-logo: /logo.png
+paginate: 8
+# google_analytics:
+disqus: https-h1alexbel-github-io
 google_site_verification: u4WXQl0Eu66rsQo2kRdCNx
-lang: en
