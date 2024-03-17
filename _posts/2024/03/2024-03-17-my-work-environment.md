@@ -36,7 +36,7 @@ Usually, I keep all my documents in [Git](https://git-scm.com).
 [<img style="width:50px;height:50px;" src="/assets/images/2024/03/tg.webp"/>](https://telegram.org)
 [<img style="width:50px;height:50px;" src="/assets/images/2024/03/slack.png"/>](https://slack.com)
 [<img style="width:75px;height:50px;" src="/assets/images/2024/03/hey.png"/>](https://www.hey.com) <br/>
-For social and communications I [prefer using GitHub]({% pst 2023/10/2023-10-22-project-as-a-code %}), for chats with normal people I use [Telegram](https://telegram.org), [Slack](https://slack.com) and Email over [HEY](https://www.hey.com).
+For social and communications I [prefer using GitHub](/2023/10/22/project-as-a-code.html), for chats with normal people I use [Telegram](https://telegram.org), [Slack](https://slack.com) and Email over [HEY](https://www.hey.com).
 
 [<img style="width:50px;height:50px;" src="/assets/images/2024/03/1password.png"/>](https://1password.com) <br/>
 For storing passwords I choose [1Password](https://1password.com).
