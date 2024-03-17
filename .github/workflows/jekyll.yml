@@ -14,7 +14,9 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.1.4
-      - run: gem install webrick
-      - run: gem install faraday-retry
-      - run: bundle update
-      - run: bundle exec jekyll build
+      - run: |
+          gem install webrick
+          gem install faraday-retry
+          gem install jekyll-shorts
+          bundle update
+          bundle exec jekyll build
