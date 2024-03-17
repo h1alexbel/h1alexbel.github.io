@@ -82,8 +82,9 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 2.0)
-  jekyll-shorts
+  jekyll-shorts (= 0.0.10)
   jekyll-theme-hamilton!
+  liquid (= 4.0.4)
   rake (~> 12.0)
   webrick
 

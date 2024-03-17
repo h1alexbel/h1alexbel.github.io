@@ -19,4 +19,5 @@ jobs:
           gem install faraday-retry
           gem install jekyll-shorts
           bundle update
+          bundle exec jekyll clean
           bundle exec jekyll build
