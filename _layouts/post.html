@@ -36,8 +36,19 @@ layout: default
     <a href="https://twitter.com/share?url={{ site.url }}{{ page.url }}&amp;text={{ page.title | cgi_escape }}"><i class="fa-brands fa-x-twitter"></i></a>
     <a href="https://www.linkedin.com/cws/share?url={{ site.url }}{{ page.url }}"><i class='fa-brands fa-linkedin'></i></a>
     <a href="https://reddit.com/submit?url={{ site.url }}{{ page.url }}%3F{{ page.date | date: "%Y-%U" }}&amp;title={{ page.title | cgi_escape }}"><i class='fa-brands fa-reddit'></i></a>
+    <br>
+    <input hidden="hidden" type="text" value="{{site.url}}{{page.short-url}}" id="short-url"/>
+    <button onclick="short()">Copy Short URL</button>
+    <script>
+      function short() {
+        const short = document.getElementById("short-url");
+        short.select();
+        // for mobile devices
+        short.setSelectionRange(0, 99999);
+        navigator.clipboard.writeText(short.value);
+      }
+    </script>
   </header>
-
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>

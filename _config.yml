@@ -11,6 +11,9 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-paginate
+  - jekyll-shorts
+shorts:
+  permalink: :year:month:day:letter.html
 exclude:
   - scripts/
   - README.md
