@@ -22,7 +22,7 @@ Terminals I use are [iTerm 2](https://iterm2.com) and [Warp](https://www.warp.de
 
 [<img style="width:75px;height:60px;" src="/assets/images/2024/03/idea.webp"/>](https://www.jetbrains.com/idea) <br/>
 My main IDE is [IntelliJ IDEA Ultimate](https://www.jetbrains.com/idea/buy/?section=personal&billing=yearly).
-My [settings.zip]().
+My [settings.zip](/assets/settings.zip).
 
 [<img style="width:75px;height:60px;" src="/assets/images/2024/03/arc.png"/>](https://arc.net) <br/>
 Browser I use daily is [Arc](https://arc.net). Amazing Chrome/Safari/Vivaldi replacement.
