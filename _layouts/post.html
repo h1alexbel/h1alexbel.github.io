@@ -38,7 +38,7 @@ layout: default
     <a href="https://reddit.com/submit?url={{ site.url }}{{ page.url }}%3F{{ page.date | date: "%Y-%U" }}&amp;title={{ page.title | cgi_escape }}"><i class='fa-brands fa-reddit'></i></a>
     <br>
     <input hidden="hidden" type="text" value="{{site.url}}{{page.short-url}}" id="short-url"/>
-    <button onclick="short()">Copy Short URL</button>
+    <!-- <button onclick="short()">Copy Short URL</button> -->
     <script>
       function short() {
         const short = document.getElementById("short-url");
