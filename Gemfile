@@ -24,4 +24,4 @@ source "https://rubygems.org"
 gemspec
 gem "webrick"
 gem "jekyll-shorts", "0.0.10"
-gem 'liquid', '4.0.4'
+gem 'liquid', '5.5.0'
