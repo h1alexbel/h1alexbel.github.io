@@ -6,5 +6,9 @@
   url: /about-me.html
 - title: Products
   url: /products/
+#- title: Research
+#  url: /research.html
+#- title: Music
+#  url: /music.html
 - title: Teaching
   url: /teaching/

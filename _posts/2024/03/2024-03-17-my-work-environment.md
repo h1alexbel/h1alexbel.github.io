@@ -18,7 +18,8 @@ My computer is [2020 MacBook Pro 13' with M1 chip](https://support.apple.com/en-
 
 [<img style="width:60px;height:55px;" src="/assets/images/2024/03/iterm.png"/>](https://iterm2.com)
 [<img style="width:60px;height:60px;" src="/assets/images/2024/03/warp.jpeg"/>](https://www.warp.dev) <br/>
-Terminals I use are [iTerm 2](https://iterm2.com) and [Warp](https://www.warp.dev). Configured with [oh-my-zsh](https://ohmyz.sh) and [powerlevel10k](https://github.com/romkatv/powerlevel10k)
+Terminals I use are [iTerm 2](https://iterm2.com) and [Warp](https://www.warp.dev).
+Configured with [oh-my-zsh](https://ohmyz.sh) and [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 
 [<img style="width:75px;height:60px;" src="/assets/images/2024/03/idea.webp"/>](https://www.jetbrains.com/idea) <br/>
 My main IDE is [IntelliJ IDEA Ultimate](https://www.jetbrains.com/idea/buy/?section=personal&billing=yearly).

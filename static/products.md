@@ -4,6 +4,9 @@ title: Products
 permalink: /products/
 ---
 
+I experienced a joy when designing tools for developers like programming
+languages, frameworks, and just reusable components that will inject
+simplicity, traceability and productivity into our daily work.
 This is the list of products I've created and actively using now.
 
 <p>
