@@ -1,23 +1,24 @@
-%%%%%%%%%%%%%%%%%
-% This is altacv.cls (v1.7.1, 25 Aug 2023) written by
-% LianTze Lim (liantze@gmail.com).
+% (The MIT License)
 %
-%% It may be distributed and/or modified under the
-%% conditions of the LaTeX Project Public License, either version 1.3
-%% of this license or (at your option) any later version.
-%% The latest version of this license is in
-%%    http://www.latex-project.org/lppl.txt
-%% and version 1.3 or later is part of all distributions of LaTeX
-%% version 2003/12/01 or later.
-%%
-%%
-% Contributions:
-% - https://github.com/akreuzer Added ragged2e option (5 Nov 2018)
-% - https://github.com/stefanogermano Fixed bad boxes and undefined font shape (July 2018)
-% - https://github.com/foohyfooh Fixed blank spaces in \cvevent and bad link in README.md (June 2018)
-% - https://github.com/logological Remove redundant hyperref and typos (Apr 2021)
-
-%%%%%%%%%%%%%%%%
+% Copyright (c) 2024 Aliaksei Bialiauski
+%
+% Permission is hereby granted, free of charge, to any person obtaining a copy
+% of this software and associated documentation files (the 'Software'), to deal
+% in the Software without restriction, including without limitation the rights
+% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+% copies of the Software, and to permit persons to whom the Software is
+% furnished to do so, subject to the following conditions:
+%
+% The above copyright notice and this permission notice shall be included in all
+% copies or substantial portions of the Software.
+%
+% THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+% SOFTWARE.
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
 \ProvidesClass{altacv}[2023/08/25 AltaCV v1.7.1, yet another alternative class for a resume/curriculum vitae.]
 
