@@ -19,101 +19,152 @@
 % LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 % OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 % SOFTWARE.
+\documentclass[10pt,a4paper,normalphoto]{altacv}
+%\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
 
-\documentclass{h1alexbel}
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+\usepackage{paracol}
+\usepackage{href-ul}
+\hypersetup{
+  colorlinks   = true,
+  urlcolor     = black,
+  linkcolor    = black,
+  citecolor   = red
+}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+% WHEN COMPILING WITH XELATEX PLEASE USE
+% xelatex -shell-escape -output-driver="xdvipdfmx -z 0" sample.tex
+\ifxetexorluatex
+% If using xelatex or lualatex:
+\setmainfont{Roboto Slab}
+\setsansfont{Lato}
+\renewcommand{\familydefault}{\sfdefault}
+\else
+% If using pdflatex:
+\usepackage[rm]{roboto}
+\usepackage[defaultsans]{lato}
+\renewcommand{\familydefault}{\sfdefault}
+\fi
+
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{450808}
+\definecolor{PastelRed}{HTML}{8F0D0D}
+\definecolor{GoldenEarth}{HTML}{E7D192}
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{black}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+% ...and the markers for the date/location for \cvevent
+% \renewcommand{\cvDateMarker}{\faCalendar*[regular]}
+% \renewcommand{\cvLocationMarker}{\faMapMarker*}
 
 \begin{document}
-    \sffamily
+  \name{Aliaksei Bialiauski}
+  \tagline{ML Program Analysis Researcher}
+  \photoR{4cm}{me}
+  \personalinfo{%
+    \email{\href{mailto:h1alexbelx@gmail.com}{h1alexbelx@gmail.com}}
+    \homepage{\href{https://h1alexbel.xyz}{h1alexbel.xyz}}
+    \github{\href{https://github.com/h1alexbel}{h1alexbel}}
+    \orcid{\href{https://orcid.org/0009-0007-1155-2571}{ORCID}}
+    \linkedin{\href{https://www.linkedin.com/in/h1alexbel}{h1alexbel}}
+    \telegram{\href{https://t.me/h1alexbel}{h1alexbel}}
+  }
+  \makecvheader
+  About me: hands-on programmer, open source contributor.
+  Interested in commiting to computer science in the area of ML/AI-powered
+  Program Analysis. My next nearest goal is to finish my first research paper
+  in the area of NLP, while ultimate is to get PhD in Machine Learning. I enjoy
+  making music, watching nordic noir, and traveling around the world.
+  \AtBeginEnvironment{itemize}{\small}
+  \columnratio{0.6}
+  \begin{paracol}{2}
 
-    \printPhoto{}
+    \cvsection{My Life Philosophy}
+    \begin{quote}
+      ``The majority is always wrong, and the minority is rarely right.''
+    \end{quote}
 
-    {\scshape\bfseries\Large \nospell{Aliaks\'ei Bial\'iauski}}\newline
-    \href{mailto:aliaksei.bialiauski@hey.com}{aliaksei.bialiauski@hey.com}\\
-    \href{https://github.com/h1alexbel}{GitHub} /
-    \href{https://www.linkedin.com/in/h1alexbel/}{LinkedIn} /
-    \href{https://h1alexbel.github.io}{Blog} /
-    \href{https://t.me/h1alexbel}{Telegram}
-
-    \subsection*{Experience}
-    \vspace{-7pt}
-    \small
-    \textbf{\href{https://www.solvd.com}{Solvd Inc.}} | {\href{https://upsell.northviewhg.com}{OHIP Upsell Engine} | 02/2023--present | Java Architect.\\
-    Performed requirements analysis, design, implementation, testing and maintenance
-    of full-stack hotel inventory upsell engine integrated with Oracle Hospitality Integration Platform.
-    Created and maintained continuous delivery pipeline using GitHub Actions, GCP and Rultor.
-    Code review, mentoring back-end developers.\\
-    Cloud hosting via \textbf{GCP GCE/Cloud SQL/BigQuery},
-    infrastructure automation via \textbf{Terraform},
-    \textbf{Java 17},
-    \textbf{Spring Boot},
-    \textbf{JUnit},
-    \textbf{Testcontainers},
-    \textbf{Maven},
-    \textbf{PostgreSQL},
-    \textbf{React.js},
-    \textbf{Sendgrid},
-    \textbf{OHIP API}.
-    \\\\
-    \textbf{\href{https://www.solvd.com}{Solvd Inc.}} | {\href{https://motiontms.com}{USKO TMS Motion} | 07/2022--01/2023 | Java Developer.\\
-    Developed microservices for CDC integration with Oracle NetSuite.
-    Code review, communication with stakeholders.
-    Cloud hosting via \textbf{AWS EKS/RDS/S3},
-    \textbf{Kubernetes},
-    \textbf{Java 17},
-    \textbf{Spring Boot/Data/Security},
-    \textbf{JUnit},
-    \textbf{Maven},
-    \textbf{Apache Kafka},
-    \textbf{Debezium},
-    \textbf{PostgreSQL},
-    \textbf{Terraform}.
-    \vspace{-7pt}
-    \\\\
-    \textbf{Open source} | 07/2022--present | Java Developer.\\
-    Involved in developing, testing and maintaining reusable object-oriented components, libraries
-    and quality control tools.
-    \textbf{Java},
-    \textbf{Maven},
-    \textbf{JUnit},
-    \textbf{XML, XSL},
-    \textbf{Docker}.
-    \vspace{-7pt}
-
-    \subsection*{Skills}
-    \vspace{-7pt}
-    \small
+    \cvsection{Experience}
+    \cvevent{Java Developer}{Solvd.com}{July 2022--present}{Minsk, Belarus}
+    Solely integrated Oracle Hospitality Integration Platform into 2 production
+    web applications for SV company.
     \begin{itemize}
-        \item Java: Spring Boot, Liquibase, JUnit, Mockito, Testcontainers, Maven
-        \vspace{-7pt}
-        \item DevOps: GCP, AWS, Terraform, Docker, Kubernetes, GitHub Actions, Rultor
-        \vspace{-7pt}
-        \item Databases: PostgreSQL
-        \vspace{-7pt}
-        \item Collaboration: Git, JIRA
-        \vspace{-7pt}
-        \item Other: React.js, UML
-        \vspace{-7pt}
+      \item Created and maintained full-cycle continuous delivery pipelines using GitHub Actions, GCP and Rultor.
+      \item OHIP, Spring Boot, JUnit 5, GCP Compute Engine
+    \end{itemize}
+    Created CDC integration pipeline with Oracle NetSuite for one of the
+    microservices in production for \href{https://motiontms.com}{USKO TMS Motion}.
+    \begin{itemize}
+      \item Created and released SRS document for team and project stakeholders.
+      \item Spring Boot, Oracle NetSuite, Apache Kafka, AWS EKS
     \end{itemize}
 
-    \subsection*{Education}
-    \vspace{-7pt}
-    \small
-    BSc in Management, 2021--2025, BSEU, Economics Management Department.
-    \vspace{-7pt}
+    \cvsection{Projects}
+    \cvevent{eo-kafka}{Kafka Java client in EO style}{}{}
+    \begin{itemize}
+      \item \href{https://github.com/eo-cqrs/eo-kafka}{eo-cqrs/eo-kafka}
+      \item Gathered 25+ GitHub stars.
+      \item Reached community of 4 open source contributors.
+    \end{itemize}
+    \divider
+    \cvevent{reports-check-action}{Bug Reports Quality Checker}{}{}
+    \begin{itemize}
+      \item \href{https://github.com/tracehubpm/reports-check-action}{h1alexbel/reports-check-action}
+      \item Gathered 10+ GitHub stars.
+      \item Plugged in and \href{https://github.com/objectionary/eo/actions/workflows/reports-check.yml}{actively used}
+      in \href{https://github.com/objectionary/eo}{objectionary/eo} (930+ stars) and
+      \href{https://github.com/yegor256/qulice}{yegor256/qulice} (294+ stars),
+      \href{https://github.com/yegor256/qulice/actions/workflows/reports-check.yml}{usage}.
+    \end{itemize}
+    \divider
+    \cvevent{code-review-action}{Quality of Code Review Checker}{}{}
+    \begin{itemize}
+      \item \href{https://github.com/tracehubpm/code-review-action}{h1alexbel/code-review-action}
+      \item Gathered 7+ GitHub stars.
+      \item Integrated with OpenAI ChatGPT, and Deep Infra models.
+    \end{itemize}
+    \medskip
+%    \cvsection{Publications}
+    \switchcolumn
 
-    \subsection*{About me}
-    \vspace{-7pt}
-    \small
-    Software developer with expertise in modern backend applications,
-    and object-oriented systems with Java.
-    Driven by inventing and knowledge-sharing.
-    Engaged into open source development, main projects I do contribute:
-    \href{https://github.com/yegor256/cactoos}{cactoos},
-    \href{https://github.com/l3r8yJ/oop-cop}{oop-cop},
-    \href{https://github.com/orgs/eo-cqrs/repositories}{EO-CQRS} (Founder).
-    Have experience of \href{https://h1alexbel.github.io/teaching}{teaching}
-    students in the discipline ``Distributed Software Systems''.
-    Interested in R\&D in the area of Program Analysis.
-    Love playing tennis, watching nordic noir, and traveling.
+    \cvsection{Education}
+    \cvevent{B.Sc.\ in Economics and Management}{\href{https://www.bseu.by}{BSEU}}{2021--2025}{Minsk, Belarus}
+    Economics Management Department.
 
+    \cvsection{Skills}
+    \cvtag{Hugging Face Transformers}
+    \cvtag{Spring Boot}\\
+    \cvtag{GCP Compute Engine}
+
+    \divider\smallskip
+
+    A little bit of:
+    \cvtag{OHIP Platform}
+    \cvtag{Oracle NetSuite}
+    \cvtag{Apache Kafka}
+    \medskip
+
+    \cvsection{Most Proud of}
+    \cvachievement{\faTrophy}{Jury member of \href{https://www.kaicode.org/2024.html\#jury}{KaiCode} OSS festival}{Reviewed 20 open source projects on code quality.}
+    \divider
+    \cvachievement{\faHeartbeat}{Contributor to Open source projects}{Contributed to \href{https://github.com/objectionary/eo}{objectionary/eo}, \href{https://github.com/yegor256/cactoos}{yegor256/cactoos}, \href{https://github.com/l3r8yJ/oop-cop}{l3r8yJ/oop-cop}}
+    \divider
+    \cvachievement{\faHeartbeat}{Tutor in ``Microservices and beyond'' course}{Teached students about distributed systems and microservice architecture : \href{https://www.youtube.com/playlist?list=PLb-9LtSbmsvLWmuB2-x1xqu2n22BdEJ4p}{lectures}, \href{https://h1alexbel.github.io/micro9}{slides}}
+  \end{paracol}
 \end{document}
