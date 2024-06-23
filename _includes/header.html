@@ -17,11 +17,9 @@
     {%- endif -%}
     <i class="far fa-user"></i>
   </a>
-
   <div class="site-title">
     {% include search.html %}
   </div>
-
   {% if site.data.navigation %}
   <nav class="site-nav">
     <input type="checkbox" id="nav-trigger" class="nav-trigger"/>
@@ -33,7 +31,6 @@
           </svg>
         </span>
     </label>
-
     <ul class="trigger">
       {%- for nav in site.data.navigation -%}
       {%- if nav.title -%}

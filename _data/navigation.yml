@@ -22,12 +22,12 @@
 ---
 - title: Home
   url: /
-- title: Tags
-  url: /tags/
+- title: All Posts
+  url: /tags
+- title: Pets
+  url: /pets
 - title: About me
   url: /about-me.html
-- title: Products
-  url: /products/
 #- title: Research
 #  url: /research.html
 #- title: Music

@@ -3,9 +3,7 @@ layout: default
 ---
 
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
-
   <header class="post-header">
-
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="post-meta">
       {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
@@ -31,7 +29,6 @@ layout: default
         {{ page.place }}
       {%- endif -%}
     </p>
-
     Submit to <a href="https://news.ycombinator.com/submitlink?u={{ site.url }}{{ page.url }}%3F{{ page.date | date: "%Y-%U" }}&amp;t={{ page.title | cgi_escape }}"><i class='fa-brands fa-hacker-news'></i></a>
     <a href="https://twitter.com/share?url={{ site.url }}{{ page.url }}&amp;text={{ page.title | cgi_escape }}"><i class="fa-brands fa-x-twitter"></i></a>
     <a href="https://www.linkedin.com/cws/share?url={{ site.url }}{{ page.url }}"><i class='fa-brands fa-linkedin'></i></a>
@@ -52,7 +49,6 @@ layout: default
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
-
   <footer class="post-footer">
     {% if page.categories.size > 0 %}
       <div class="post-meta">
@@ -68,7 +64,6 @@ layout: default
 <!--        </ul>-->
       </div>
     {% endif %}
-
     {% if page.tags.size > 0 %}
       <div class="post-meta">
         <i class="fas fa-tags"></i>
@@ -83,7 +78,6 @@ layout: default
         </ul>
       </div>
     {% endif %}
-
     <nav class="post-pagination" role="navigation">
       {% if page.previous %}
         <a class="post-previous" href="{{ page.previous.url | relative_url }}">
@@ -93,7 +87,6 @@ layout: default
           </span>
         </a>
       {% endif %}
-
       {% if page.next %}
         <a class="post-next" href="{{ page.next.url | relative_url }}">
           <h4 class="post-pagination-label">Next</h4>
@@ -104,9 +97,7 @@ layout: default
       {% endif %}
     </nav>
   </footer>
-
   {% if page.comments != false and jekyll.environment == "production" and site.disqus %}
     {% include disqus.html %}
   {% endif %}
-
 </article>

@@ -1,9 +1,7 @@
 ---
 layout: page
 ---
-
 {{ content }}
-
 {% comment %} Check the type of archive {% endcomment %}
 {%- if page.type == 'categories' -%}
   {%- assign taxonomies = site.categories -%}
@@ -12,7 +10,6 @@ layout: page
 {%- else -%}
   {%- assign taxonomies = none -%}
 {%- endif -%}
-
 {% comment %} Calculate the max count of taxonomies {% endcomment %}
 {%- assign max_count = 0 -%}
 {%- for taxonomy in taxonomies -%}
@@ -21,7 +18,6 @@ layout: page
     {%- assign max_count = posts.size -%}
   {%- endif -%}
 {%- endfor -%}
-
 <div class="taxonomies-wrapper">
   <ul class="taxonomies">
     {%- for i in (1..max_count) reversed -%}
@@ -48,7 +44,6 @@ layout: page
     {%- endfor -%}
   </ul>
 </div>
-
 {% comment %} Show posts by taxonomy {% endcomment %}
 {%- for i in (1..max_count) reversed -%}
   {%- for taxonomy in taxonomies -%}
@@ -74,7 +69,6 @@ layout: page
     {%- endif -%}
   {%- endfor -%}
 {%- endfor -%}
-
 <script>
   function backToTop() {
     const main = document.getElementById("site-main");
