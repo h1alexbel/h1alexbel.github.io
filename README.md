@@ -8,10 +8,8 @@ This is my blog: [h1alexbel.github.io](https://h1alexbel.github.io).
 
 ## How to Contribute
 
-You are welcome to submit corrections to this blog. In order to do that,
-you will need [Ruby](https://www.ruby-lang.org/en) 3.1.4+ 
-and [Bundler](https://bundler.io) installed.
-Then, run this:
+You are welcome to submit corrections to this blog. In order to do that, you
+will need [Ruby] 3.1.4+ and [Bundler] installed. Then, run this:
 
 ```bash
 $ bundle update
@@ -19,5 +17,8 @@ $ bundle exec jekyll serve -b ""
 ```
 
 In a few seconds of building you should be able to see the blog
-at `http://localhost:4000`. Make your changes and refresh the page in the browser.
-If everything is fine, submit a pull request.
+at `http://localhost:4000`. Make your changes and refresh the page in the
+browser. If everything is fine, submit a pull request.
+
+[Ruby]: https://www.ruby-lang.org/en
+[Bundler]: https://bundler.io
