@@ -32,7 +32,4 @@ jobs:
       - uses: yegor256/copyrights-action@0.0.4
         with:
           exclude: >-
-            index.html
-            404.html
-            _layouts/**
-            _includes/**
+            **/*.html
