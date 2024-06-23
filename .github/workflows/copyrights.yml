@@ -31,5 +31,8 @@ jobs:
       - uses: actions/checkout@v4
       - uses: yegor256/copyrights-action@0.0.4
         with:
-          exclude: >-
+          ignore: >-
             index.html
+            404.html
+            _layouts/**
+            _includes/**
