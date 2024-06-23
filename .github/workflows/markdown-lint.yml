@@ -20,22 +20,20 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 ---
-name: latexmk
+name: markdown-lint
 on:
   push:
     branches:
       - master
+  pull_request:
+    branches:
+      - master
+concurrency:
+  group: markdown-lint-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
-  latexmk:
+  markdown-lint:
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v4
-      - uses: yegor256/latexmk-action@0.11.1
-        with:
-          cmd: make
-          packages: acmart huawei cjk ffcode href-ul datetime fmtcount libertine paralist makecell footmisc currfile enumitem wrapfig lastpage biblatex titling svg trimspaces catchfile transparent textpos fvextra xstring framed environ totpages hyperxmp ifmtarg ncctools comment anyfontsize fdsymbol algpseudocodex algorithmicx stmaryrd preprint cyrillic cm-super babel-russian hyphen-russian lh to-be-determined cancel crumbs clicks varwidth fontsize multirow changepage tikzpagenodes ifoddpage qrcode ppt-slides upquote relsize
-      - uses: JamesIves/github-pages-deploy-action@v4.6.0
-        with:
-          branch: assets
-          folder: _latex
-          clean: false
+      - uses: actions/checkout@b80ff79f1755d06ba70441c368a6fe801f5f3a62
+      - uses: articulate/actions-markdownlint@v1
