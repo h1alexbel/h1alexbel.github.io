@@ -26,12 +26,12 @@
 - title: Stackoverflow
   url: https://stackoverflow.com/users/19147117/h1alexbel
   icon: fab fa-stack-overflow
-- title: Telegram
-  url: https://t.me/h1alexbeltalks
-  icon: fab fa-telegram
 - title: LinkedIn
   url: https://www.linkedin.com/in/h1alexbel
   icon: fab fa-linkedin
+- title: Telegram
+  url: https://t.me/h1alexbeltalks
+  icon: fab fa-telegram
 - title: Instagram
   url: https://www.instagram.com/aliaksei.bialiauski
   icon: fab fa-instagram
