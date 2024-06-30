@@ -17,7 +17,7 @@ languages too. I feel great contributing to open source projects, that I use on
 a daily basis. Check out my [GitHub profile]. I have my own projects too, check
 out [this](/pets) list.
 
-I'm interested in commiting to computer science in the area of ML/AI-powered
+I'm interested in committing to computer science in the area of ML/AI-powered
 [Program Analysis]. My next nearest goal is to finish my first research paper
 in that area.
 

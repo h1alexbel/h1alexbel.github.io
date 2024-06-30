@@ -104,7 +104,7 @@ with following XML files:
 `userProducer.xml`
 ```xml
 <producer>
-  <bootstrapServers><!--boostrap servers --></bootstrapServers>
+  <bootstrapServers><!--bootstrap servers --></bootstrapServers>
   <keySerializer><!--key serializer--></keySerializer>
   <valueSerializer><!--user serializer--></valueSerializer>
   ...
