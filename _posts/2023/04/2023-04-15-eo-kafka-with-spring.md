@@ -6,7 +6,7 @@ title: "EO-Kafka with Spring"
 tags: [pets, microservices]
 ---
 
-When building the microservices we need to use frameworks to boostrap the project.
+When building the microservices we need to use frameworks to bootstrap the project.
 Spring is one of them.
 We are not going to discuss here problems with Spring Framework in general.
 Instead, we will connect eo-kafka with Spring.
