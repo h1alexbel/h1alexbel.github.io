@@ -1,5 +1,7 @@
 ---
 layout: archive-years
 title: Years
-permalink: /years/
+permalink: years.html
 ---
+
+For contents, grouped by tag visit [this](/posts.html) page.

@@ -20,12 +20,19 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 ---
-architect:
-  - h1alexbel
-docker:
-  image: yegor256/rultor-image:1.19.0
-install: |
-  bundle install --no-color
-merge:
-  script: |
-    LC_ALL=en_US.UTF-8 bundle exec jekyll build
+name: copyrights
+on:
+  push:
+  pull_request:
+jobs:
+  copyrights:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: yegor256/copyrights-action@0.0.4
+        with:
+          ignore: >-
+            index.html
+            404.html
+            _layouts/**
+            _includes/**

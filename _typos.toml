@@ -1,0 +1,9 @@
+[default]
+extend-ignore-identifiers-re = [
+    "Hashi*", # false positive
+    "iterm", # false positive
+    "nd", # variable name
+    "pont", # fr
+    "sur", # fr
+    "fille", # fr
+]

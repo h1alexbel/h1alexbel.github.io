@@ -8,7 +8,6 @@
     <img src="{{ avatar }}" class="author-avatar u-photo align-center" alt="{{ site.author }}">
   </div>
 {%- endif %}
-
 <div class="sidebar-section">
   <ul class="contact-list">
     {% if site.author -%}
@@ -31,7 +30,6 @@
     {%- endif %}
   </ul>
 </div>
-
 {% if site.subscribe != false -%}
 <div class="sidebar-section feed-subscribe">
   <a href="{{ 'feed.xml' | relative_url }}">
@@ -39,7 +37,6 @@
   </a>
 </div>
 {%- endif %}
-
 {% if site.data.social -%}
   <div class="sidebar-section">
     <ul class="social-icons">

@@ -20,12 +20,20 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 ---
-architect:
-  - h1alexbel
-docker:
-  image: yegor256/rultor-image:1.19.0
-install: |
-  bundle install --no-color
-merge:
-  script: |
-    LC_ALL=en_US.UTF-8 bundle exec jekyll build
+name: markdown-lint
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+concurrency:
+  group: markdown-lint-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  markdown-lint:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@b80ff79f1755d06ba70441c368a6fe801f5f3a62
+      - uses: articulate/actions-markdownlint@v1
