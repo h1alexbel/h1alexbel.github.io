@@ -26,10 +26,10 @@
 \usepackage{paracol}
 \usepackage{href-ul}
 \hypersetup{
-  colorlinks   = true,
-  urlcolor     = black,
-  linkcolor    = black,
-  citecolor   = red
+  colorlinks = true,
+  urlcolor = black,
+  linkcolor = black,
+  citecolor = red
 }
 
 % Change the font if you want to, depending on whether
@@ -72,10 +72,9 @@
 % ...and the markers for the date/location for \cvevent
 % \renewcommand{\cvDateMarker}{\faCalendar*[regular]}
 % \renewcommand{\cvLocationMarker}{\faMapMarker*}
-
 \begin{document}
   \name{Aliaksei Bialiauski}
-  \tagline{ML Program Analysis Researcher}
+  \tagline{Java Developer}
   \photoR{4cm}{me}
   \personalinfo{%
     \email{\href{mailto:h1alexbelx@gmail.com}{h1alexbelx@gmail.com}}
@@ -86,11 +85,10 @@
     \telegram{\href{https://t.me/h1alexbel}{h1alexbel}}
   }
   \makecvheader
-  About me: hands-on programmer, open source contributor.
-  Interested in committing to computer science in the area of ML/AI-powered
-  Program Analysis. My next nearest goal is to finish my first research paper
-  in the area of NLP, while ultimate is to get PhD in Machine Learning.
-  I enjoy music, watching movies, and traveling around the world.
+  About me: Java hands-on programmer, actively writing both: commercial and open source software
+  (check my \href{https://github.com/h1alexbel}{GitHub} account).
+  My research interests are Program Analysis and Code Quality.
+  Besides all of that, I enjoy traveling, making photos, and movies (\href{https://www.h1alexbel.xyz/good-movies.html}{favourites}).
   \AtBeginEnvironment{itemize}{\small}
   \columnratio{0.6}
   \begin{paracol}{2}
@@ -101,9 +99,14 @@
     \end{quote}
 
     \cvsection{Experience}
-    \cvevent{Java Developer}{Solvd.com}{July 2022--present}{Minsk, Belarus}
-    Solely integrated Oracle Hospitality Integration Platform into 2 production
-    web applications for SV company.
+    \cvevent{Java Developer}{Solvd Inc.}{July 2022--present}{Warsaw, Poland/Minsk, Belarus}
+    Refactored 900k LoC legacy codebase and implemented auto-refactoring system for US \& French enterprise.
+    \begin{itemize}
+      \item Upgraded to Java 21, Spring 6, Hibernate 6, Apache Tomcat 10.
+      \item Java, OpenRewrite, Spring, Apache Tomcat, Hibernate, JUnit 5, GitHub Actions
+    \end{itemize}
+    Integrated Oracle Hospitality Integration Platform into 2 production
+    web applications for US company.
     \begin{itemize}
       \item Created and maintained full-cycle continuous delivery pipelines using GitHub Actions, GCP and Rultor.
       \item OHIP, Spring Boot, JUnit 5, GCP Compute Engine
@@ -116,55 +119,56 @@
     \end{itemize}
 
     \cvsection{Projects}
-    \cvevent{eo-kafka}{Kafka Java client in EO style}{}{}
+    \cvevent{\href{https://github.com/objectionary/eo}{EOLANG}}{Experimental Pure Object-Oriented Language}{}{}
     \begin{itemize}
-      \item \href{https://github.com/eo-cqrs/eo-kafka}{eo-cqrs/eo-kafka}
+      \item \href{https://github.com/objectionary/eo/pulls?q=is:pr+is:closed+author:h1alexbel}{85+} merged PRs
+      \item Implemented \href{https://github.com/objectionary/eo/issues/4096}{testing framework} in the language core's
+      \item Created \href{https://github.com/h1alexbel/eo-dom}{eo-dom}--\href{https://en.wikipedia.org/wiki/Document_Object_Model}{DOM API} implementation in EOLANG
+    \end{itemize}
+    \divider
+    \cvevent{\href{https://github.com/objectionary/lints}{Lints}}{Linter for EO programming langauge}{}{}
+    \begin{itemize}
+      \item Implemented and maintained \href{https://www.objectionary.com/lints}{80+} linting rules for \href{https://www.eolang.org}{EOLANG} programming language, \href{https://github.com/objectionary/lints/pulls?q=is:pr+is:closed+author:h1alexbel}{175+} merged PRs
+      \item Integrated \href{https://github.com/objectionary/lints?tab=readme-ov-file#benchmark}{benchmarking system} for rules performance tracking using JMH and GitHub Actions
+    \end{itemize}
+    \divider
+    \cvevent{\href{https://github.com/eo-cqrs/eo-kafka}{eo-kafka}}{Kafka Java client in EO style}{}{}
+    \begin{itemize}
       \item Gathered 25+ GitHub stars.
       \item Reached community of 4 open source contributors.
     \end{itemize}
-    \divider
-    \cvevent{reports-check-action}{Bug Reports Quality Checker}{}{}
-    \begin{itemize}
-      \item \href{https://github.com/tracehubpm/reports-check-action}{h1alexbel/reports-check-action}
-      \item Gathered 10+ GitHub stars.
-      \item Plugged in and \href{https://github.com/objectionary/eo/actions/workflows/reports-check.yml}{actively used}
-      in \href{https://github.com/objectionary/eo}{objectionary/eo} (930+ stars) and
-      \href{https://github.com/yegor256/qulice}{yegor256/qulice} (294+ stars),
-      \href{https://github.com/yegor256/qulice/actions/workflows/reports-check.yml}{usage}.
-    \end{itemize}
-    \divider
-    \cvevent{code-review-action}{Quality of Code Review Checker}{}{}
-    \begin{itemize}
-      \item \href{https://github.com/tracehubpm/code-review-action}{h1alexbel/code-review-action}
-      \item Gathered 7+ GitHub stars.
-      \item Integrated with OpenAI ChatGPT, and Deep Infra models.
-    \end{itemize}
     \medskip
-%    \cvsection{Publications}
     \switchcolumn
 
     \cvsection{Education}
-    \cvevent{B.Sc.\ in Economics and Management}{\href{https://www.bseu.by}{BSEU}}{2021--2025}{Minsk, Belarus}
-    Economics Management Department.
+    \cvevent{MSc\ in Computer Science}{\href{https://www.hse.ru/en/}{HSE} (Faculty of Computer Science)}{2025--2027}{Moscow, Russia}
+    \cvevent{BSc\ in Economics and Management}{\href{https://www.bseu.by}{BSEU} (Economics Management Department)}{2021--2025}{Minsk, Belarus}
 
     \cvsection{Skills}
-    \cvtag{Hugging Face Transformers}
-    \cvtag{Spring Boot}\\
-    \cvtag{GCP Compute Engine}
+    \cvtag{Java}
+    \cvtag{XSLT, XML}
+    \cvtag{ANTLR 4}
+    \cvtag{Apache Maven}
+    \cvtag{JUnit 5}
+    \cvtag{PostgreSQL}
+    \cvtag{Docker}
+    \cvtag{Bash}
+    \cvtag{LaTeX}
 
     \divider\smallskip
 
     A little bit of:
-    \cvtag{OHIP Platform}
-    \cvtag{Oracle NetSuite}
+    \cvtag{Rust}
+    \cvtag{Python}
     \cvtag{Apache Kafka}
+    \cvtag{AWS EC2}
     \medskip
 
     \cvsection{Most Proud of}
-    \cvachievement{\faTrophy}{Jury member of \href{https://www.kaicode.org/2024.html\#jury}{KaiCode} OSS festival}{Reviewed 20 open source projects on code quality.}
+    \cvachievement{\faTrophy}{Jury member of \href{https://www.kaicode.org}{KaiCode} OSS festival (2024, 2025)}{Reviewed 20+ open source projects on code quality.}
     \divider
-    \cvachievement{\faHeartbeat}{Contributor to Open source projects}{Contributed to \href{https://github.com/objectionary/eo}{objectionary/eo}, \href{https://github.com/yegor256/cam}{yegor256/cam}, \href{https://github.com/l3r8yJ/oop-cop}{l3r8yJ/oop-cop}}
+    \cvachievement{\faHeartbeat}{Contributor to Open source projects}{Contributed to \href{https://github.com/volodya-lombrozo/jtcop}{jtcop}, \href{https://github.com/l3r8yJ/oop-cop}{oop-cop}, \href{https://github.com/yegor256/cam}{CAM}}
     \divider
-    \cvachievement{\faHeartbeat}{Tutor in ``Microservices and beyond'' course}{Taught students about distributed systems and microservice architecture : \href{https://www.youtube.com/playlist?list=PLb-9LtSbmsvLWmuB2-x1xqu2n22BdEJ4p}{lectures}, \href{https://h1alexbel.github.io/micro9}{slides}}
+    \cvachievement{\faHeartbeat}{Teacher of ``Microservices and beyond'' course}{Taught students about distributed systems and microservice architecture : \href{https://www.youtube.com/playlist?list=PLb-9LtSbmsvLWmuB2-x1xqu2n22BdEJ4p}{lectures}, \href{https://h1alexbel.github.io/micro9}{slides}}
   \end{paracol}
 \end{document}
